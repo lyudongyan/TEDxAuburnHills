@@ -33,9 +33,9 @@ const pageSections = {
   speakers: [
     ["Overview", "#speakers-top"],
     ["Introduction", "#speaker-intro"],
+    ["Ahmad Tafti", "#ahmad-tafti"],
     ["Kefei Duan", "#kefei-duan"],
     ["Janilla Lee", "#janilla-lee"],
-    ["Ahmad Tafti", "#ahmad-tafti"],
     ["Open speaker place", "#speaker-04"],
     ["Open speaker place", "#speaker-05"],
     ["Open speaker place", "#speaker-06"],

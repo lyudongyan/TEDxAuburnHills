@@ -1969,6 +1969,50 @@ textarea {
   line-height: 1.36;
 }
 
+.speaker-directory-panel {
+  padding: clamp(30px, 4vw, 54px);
+}
+
+.speaker-directory-card {
+  color: inherit;
+  cursor: pointer;
+  transition:
+    transform .45s var(--ease),
+    border-color .45s var(--ease),
+    box-shadow .45s var(--ease);
+}
+
+.speaker-directory-card:hover,
+.speaker-directory-card:focus-visible {
+  border-color: rgba(235, 0, 40, .78);
+  box-shadow: 0 22px 48px rgba(92, 0, 18, .2);
+  transform: translateY(-6px);
+}
+
+.speaker-directory-card:focus-visible {
+  outline: 3px solid var(--red);
+  outline-offset: 4px;
+}
+
+.speaker-directory-card .speaker-copy {
+  display: flex;
+  flex-direction: column;
+}
+
+.speaker-jump {
+  margin-top: auto;
+  padding-top: 17px;
+  color: var(--red-deep);
+  font-family: var(--font-display);
+  font-size: .78rem;
+  font-weight: 700;
+}
+
+.glass-tone-red .speaker-jump,
+.glass-tone-dark .speaker-jump {
+  color: #ffd0cc;
+}
+
 .speaker-profile {
   min-height: 650px;
 }
@@ -3121,15 +3165,15 @@ textarea {
 
 /* Screenshot-directed refinements. */
 body {
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .hero-context {
-  font-size: 1.1rem;
+  font-size: 1.16rem;
 }
 
 .section-lead {
-  font-size: clamp(1.2rem, 1.75vw, 1.48rem);
+  font-size: clamp(1.28rem, 1.82vw, 1.56rem);
 }
 
 .side-card p,
@@ -3140,21 +3184,21 @@ body {
 .speaker-card p,
 .team-card p,
 .home-speaker-card p {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   line-height: 1.58;
 }
 
 .profile-copy p:not(.speaker-topic),
 .timeline-item p,
 .faq-list details p {
-  font-size: 1.12rem;
+  font-size: 1.2rem;
   line-height: 1.58;
 }
 
 .footer-inner p,
 .footer-inner a,
 .footer-legal {
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 
 .anchor-sidebar {
@@ -3319,7 +3363,7 @@ body {
 
 @media (max-width: 600px) {
   body {
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .side-card p,
@@ -3333,7 +3377,7 @@ body {
   .profile-copy p:not(.speaker-topic),
   .timeline-item p,
   .faq-list details p {
-    font-size: 1.05rem;
+    font-size: 1.12rem;
   }
 
   .footer-inner {
