@@ -176,7 +176,7 @@ function buildPageFlow() {
   section.innerHTML = `
     <a href="${nextHref}">
       <span class="page-next-copy"><span>${prompt}</span><strong>${nextLabel}</strong></span>
-      <i class="page-next-arrow" aria-hidden="true">&nearr;</i>
+      <i class="page-next-arrow" aria-hidden="true">&nearr;&#xfe0e;</i>
     </a>`;
   footerMount.before(section);
 }
