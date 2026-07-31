@@ -656,28 +656,6 @@ function setupPageTransitions() {
       <em>Retooling</em>
     </div>`;
   document.body.append(curtain);
-
-  let recoveryTimer = 0;
-  document.addEventListener("click", event => {
-    const link = event.target.closest("a");
-    if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-    if (link.target === "_blank" || link.hasAttribute("download")) return;
-
-    const rawHref = link.getAttribute("href");
-    if (!rawHref || rawHref.startsWith("#") || rawHref.startsWith("mailto:") || rawHref.startsWith("tel:")) return;
-
-    const url = new URL(link.href, window.location.href);
-    const isInternalPage = url.origin === window.location.origin && url.pathname !== window.location.pathname && /\.html$/i.test(url.pathname);
-    if (!isInternalPage) return;
-
-    event.preventDefault();
-    document.body.classList.add("is-leaving");
-    window.clearTimeout(recoveryTimer);
-    recoveryTimer = window.setTimeout(() => document.body.classList.remove("is-leaving"), 2400);
-    window.setTimeout(() => {
-      window.location.href = url.href;
-    }, 560);
-  });
 }
 
 function setupPlaceholderUI() {
