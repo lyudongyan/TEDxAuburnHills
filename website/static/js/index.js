@@ -460,7 +460,7 @@ function setupNeuralField() {
   const lowPower = Boolean(connection?.saveData || (navigator.deviceMemory && navigator.deviceMemory <= 4));
 
   try {
-    const effect = window.VANTA.NET({
+    window.VANTA.NET({
       el: field,
       THREE: window.THREE,
       mouseControls: !lowPower,
@@ -477,9 +477,6 @@ function setupNeuralField() {
       spacing: lowPower ? 22 : 18,
       showDots: true
     });
-    window.addEventListener("pagehide", event => {
-      if (!event.persisted) effect.destroy();
-    }, { once: true });
   } catch {
     field.classList.add("is-static");
   }
