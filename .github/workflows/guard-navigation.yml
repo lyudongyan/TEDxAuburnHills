@@ -1,0 +1,25 @@
+name: Guard page navigation
+
+on:
+  pull_request:
+    paths:
+      - website/static/js/index.js
+      - .github/workflows/guard-navigation.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  guard-navigation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+      - name: Reject renderer-crashing navigation hooks
+        shell: bash
+        run: |
+          if grep -nE 'effect\.destroy\(\)|classList\.add\("is-leaving"\)|window\.location\.href = url\.href' website/static/js/index.js; then
+            echo "Renderer-crashing navigation code was reintroduced."
+            exit 1
+          fi
