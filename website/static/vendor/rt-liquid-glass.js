@@ -180,7 +180,6 @@
       "\n  background-color: var(--rt-liquid-tint, " +
       baseBg +
       ");" +
-      "\n  will-change: transform, backdrop-filter;" +
       "\n  transition:backdrop-filter " +
       transitionMs +
       "ms ease,-webkit-backdrop-filter " +
@@ -203,17 +202,20 @@
       "\n[rt-liquid-glass].rt-reveal-visible{" +
       "\n  opacity:1;" +
       "\n  transition:opacity var(--rt-reveal-duration, 1.0s) ease;" +
+      "\n}" +
+      "\n[rt-liquid-glass].rt-liquid-active{" +
+      "\n  will-change:backdrop-filter;" +
       "\n}";
 
     if (enableLiquidEffect) {
       style.innerHTML +=
-        "\n[rt-liquid-glass]{" +
+        "\n[rt-liquid-glass].rt-liquid-active{" +
         "\n  -webkit-backdrop-filter:var(--rt-liquid-final-filter, none);" +
         "\n  backdrop-filter:var(--rt-liquid-final-filter, none);" +
         "\n}";
     } else {
       style.innerHTML +=
-        "\n[rt-liquid-glass]{" +
+        "\n[rt-liquid-glass].rt-liquid-active{" +
         "\n  -webkit-backdrop-filter:blur(var(--rt-fallback-blur, 10px));" +
         "\n  backdrop-filter:blur(var(--rt-fallback-blur, 10px));" +
         "\n}";
@@ -262,6 +264,8 @@
         }
       });
     }
+    var renderObserver = null;
+    var renderRootMargin = "1200px 0px 1200px 0px";
 
     function createDisplacementMap(
       width,
@@ -478,23 +482,78 @@
       return opts;
     }
 
+    function activateElement(el) {
+      if (!el || shouldDisableEl(el)) return;
+      if (el.classList.contains("rt-liquid-active")) return;
+
+      var idx = el.getAttribute("data-rt-idx");
+      if (idx === null) return;
+      var opts = buildPerElOptions(el);
+      if (enableLiquidEffect) {
+        applyLiquid(el, idx, opts);
+        if (resizeObserver) resizeObserver.observe(el);
+      } else {
+        applyFallback(el, opts);
+      }
+      el.classList.add("rt-liquid-active");
+    }
+
+    function deactivateElement(el) {
+      if (!el || !el.classList.contains("rt-liquid-active")) return;
+      el.classList.remove("rt-liquid-active");
+      if (resizeObserver) resizeObserver.unobserve(el);
+    }
+
+    function isNearViewport(el) {
+      try {
+        var rect = el.getBoundingClientRect();
+        var margin = 1200;
+        return rect.bottom >= -margin && rect.top <= window.innerHeight + margin;
+      } catch (e) {
+        return true;
+      }
+    }
+
+    if ("IntersectionObserver" in window) {
+      renderObserver = new IntersectionObserver(
+        function (entries) {
+          for (var i = 0; i < entries.length; i++) {
+            var entry = entries[i];
+            if (entry.isIntersecting) {
+              activateElement(entry.target);
+            } else {
+              deactivateElement(entry.target);
+            }
+          }
+        },
+        {
+          root: null,
+          threshold: 0,
+          rootMargin: renderRootMargin,
+        },
+      );
+    }
+
     function makeApi() {
       return {
         __initialized: true,
         refresh: function () {
           if (svgContainer) svgContainer.innerHTML = "";
+          if (resizeObserver) resizeObserver.disconnect();
+          if (renderObserver) renderObserver.disconnect();
           var els = document.querySelectorAll("[rt-liquid-glass]");
           for (var i = 0; i < els.length; i++) {
             var el = els[i];
             if (shouldDisableEl(el)) continue;
+            el.classList.remove("rt-liquid-active");
             el.setAttribute("data-rt-idx", i);
             var opts = buildPerElOptions(el);
             applyReveal(el, opts);
-            if (!enableLiquidEffect) {
-              applyFallback(el, opts);
+            if (renderObserver) {
+              if (isNearViewport(el)) activateElement(el);
+              renderObserver.observe(el);
             } else {
-              applyLiquid(el, i, opts);
-              if (resizeObserver) resizeObserver.observe(el);
+              activateElement(el);
             }
           }
         },

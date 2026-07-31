@@ -805,6 +805,11 @@ body.is-ready .title-word {
   scroll-margin-top: calc(var(--header-h) + 28px);
 }
 
+.content-section.is-render-managed {
+  content-visibility: auto;
+  contain-intrinsic-size: auto var(--section-intrinsic-size, 900px);
+}
+
 .content-section.image-band {
   --section-photo: var(--photo-rochester-one);
   --section-photo-position: center;
@@ -1862,7 +1867,7 @@ textarea {
 
 #theme,
 #speaker-application,
-#speaker-05,
+#kaiqi-zhao,
 #opportunities,
 #official-event {
   --section-photo: var(--photo-rochester-two);

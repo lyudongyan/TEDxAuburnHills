@@ -36,8 +36,8 @@ const pageSections = {
     ["Ahmad Tafti", "#ahmad-tafti"],
     ["Kefei Duan", "#kefei-duan"],
     ["Janilla Lee", "#janilla-lee"],
-    ["Open speaker place", "#speaker-04"],
-    ["Open speaker place", "#speaker-05"],
+    ["Shelly Propson Lennon", "#shelly-propson-lennon"],
+    ["Kaiqi Zhao", "#kaiqi-zhao"],
     ["Open speaker place", "#speaker-06"],
     ["Open speaker place", "#speaker-07"],
     ["Open speaker place", "#speaker-08"],
@@ -332,6 +332,45 @@ function setupRevealMotion() {
   }, { rootMargin: "0px 0px -8% 0px", threshold: .1 });
 
   elements.forEach(element => observer.observe(element));
+}
+
+function setupSectionRendering() {
+  const sections = [...document.querySelectorAll(".content-section")];
+  if (!sections.length || !window.CSS?.supports("content-visibility", "auto")) return;
+
+  let measureFrame = 0;
+  let resizeTimer = 0;
+
+  const measureSections = () => {
+    sections.forEach(section => section.classList.remove("is-render-managed"));
+    window.cancelAnimationFrame(measureFrame);
+    measureFrame = window.requestAnimationFrame(() => {
+      sections.forEach(section => {
+        const styles = window.getComputedStyle(section);
+        const blockExtras = [
+          styles.paddingTop,
+          styles.paddingBottom,
+          styles.borderTopWidth,
+          styles.borderBottomWidth
+        ].reduce((total, value) => total + (Number.parseFloat(value) || 0), 0);
+        const contentHeight = Math.max(1, section.getBoundingClientRect().height - blockExtras);
+        section.style.setProperty("--section-intrinsic-size", `${contentHeight.toFixed(3)}px`);
+        section.classList.add("is-render-managed");
+      });
+      measureFrame = 0;
+    });
+  };
+
+  if (document.readyState === "complete") {
+    measureSections();
+  } else {
+    window.addEventListener("load", measureSections, { once: true });
+  }
+
+  window.addEventListener("resize", () => {
+    window.clearTimeout(resizeTimer);
+    resizeTimer = window.setTimeout(measureSections, 180);
+  }, { passive: true });
 }
 
 function setupLiquidGlass() {
@@ -673,6 +712,7 @@ prepareSectionVariants();
 setupMenu();
 setupAnchorNavigation();
 setupRevealMotion();
+setupSectionRendering();
 setupAmbientGradients();
 setupLiquidGlass();
 setupNeuralField();
