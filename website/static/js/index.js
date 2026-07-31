@@ -660,6 +660,9 @@ function setupPageTransitions() {
     </div>`;
   document.body.append(curtain);
 
+  const diagnosticMode = new URLSearchParams(window.location.search).get("diagnostic");
+  if (diagnosticMode === "native-navigation") return;
+
   let recoveryTimer = 0;
   document.addEventListener("click", event => {
     const link = event.target.closest("a");
