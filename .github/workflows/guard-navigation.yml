@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - website/static/js/index.js
+      - website/static/css/index.css
       - .github/workflows/guard-navigation.yml
   workflow_dispatch:
 
@@ -21,5 +22,9 @@ jobs:
         run: |
           if grep -nE 'effect\.destroy\(\)|classList\.add\("is-leaving"\)|window\.location\.href = url\.href' website/static/js/index.js; then
             echo "Renderer-crashing navigation code was reintroduced."
+            exit 1
+          fi
+          if grep -nE 'navigation:[[:space:]]*auto' website/static/css/index.css; then
+            echo "Cross-document view transitions were reintroduced."
             exit 1
           fi
