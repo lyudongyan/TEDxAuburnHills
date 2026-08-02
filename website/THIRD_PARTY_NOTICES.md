@@ -32,12 +32,14 @@ profiles for layout review:
   (`assets/images/janilla-lee-official.jpg`)
 - Ahmad Tafti: https://www.shrs.pitt.edu/person/ahmad-tafti/
   (`assets/images/ahmad-tafti-official.jpg`)
+- Amartya Sen: https://sites.google.com/oakland.edu/sen
+  (`assets/images/amartya-sen-official.jpg`)
 
 These images are not treated as openly licensed. Obtain permission from each
 speaker or source organization before public launch.
 
-Optimized `.avif` and `.webp` copies are used when the browser supports them;
-the listed JPEG files remain the fallbacks.
+Optimized `.avif` and `.webp` copies are used when available; the listed JPEG
+files remain the fallbacks.
 
 ## rt-liquid-glass 1.0.2
 

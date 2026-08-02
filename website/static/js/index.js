@@ -32,13 +32,13 @@ const pageSections = {
   ],
   speakers: [
     ["Overview", "#speakers-top"],
-    ["Introduction", "#speaker-intro"],
-    ["Ahmad Tafti", "#ahmad-tafti"],
+    ["Speaker list", "#speaker-intro"],
     ["Kefei Duan", "#kefei-duan"],
     ["Janilla Lee", "#janilla-lee"],
     ["Shelly Propson Lennon", "#shelly-propson-lennon"],
+    ["Amartya Sen", "#amartya-sen"],
+    ["Ahmad Tafti", "#ahmad-tafti"],
     ["Kaiqi Zhao", "#kaiqi-zhao"],
-    ["Open speaker place", "#speaker-06"],
     ["Open speaker place", "#speaker-07"],
     ["Open speaker place", "#speaker-08"],
     ["Applications", "#speaker-note"]
@@ -55,7 +55,7 @@ const pageSections = {
     ["Apply to Speak", "#speaker-application"],
     ["Speaker Commitments", "#speaker-expectations"],
     ["Livestream", "#livestream"],
-    ["Venue & Access", "#access"]
+    ["Location & Access", "#access"]
   ],
   partners: [
     ["Overview", "#partners-top"],
@@ -151,7 +151,7 @@ function buildFooter() {
         </div>
         <div>
           <strong>Event</strong>
-          <p>October 10, 2026 &bull; 11:00 a.m.&ndash;3:00 p.m. Eastern time<br>Rochester Hills Public Library<br>500 Olde Towne Rd, Rochester, MI 48307</p>
+          <p>October 10, 2026 &bull; 11:00 a.m.&ndash;3:00 p.m. Eastern time<br>Location to be announced</p>
           <p><a href="https://www.ted.com/tedx/events/69999" target="_blank" rel="noopener noreferrer">View the official TED event page</a></p>
         </div>
         <div>
@@ -373,7 +373,7 @@ function setupSectionRendering() {
   }, { passive: true });
 }
 
-function setupLiquidGlass() {
+function setupGlassStyling() {
   const toneTargets = document.querySelectorAll([
     ".side-card",
     ".info-card",
@@ -394,92 +394,31 @@ function setupLiquidGlass() {
     element.classList.add(`glass-tone-${tone}`);
   });
 
-  const presets = [
-    [".glass-panel", { blur: 20, scale: 40, map: 820, tint: "rgba(255,255,255,.09)" }],
-    [".section-glass", { blur: 18, scale: 34, map: 920, tint: "rgba(255,255,255,.07)" }],
-    [".side-card", { blur: 18, scale: 34, map: 520, tint: "rgba(235,0,40,.18)" }],
-    [".info-card", { blur: 17, scale: 32, map: 460, tint: "rgba(255,255,255,.08)" }],
-    [".action-card", { blur: 17, scale: 32, map: 460, tint: "rgba(255,255,255,.08)" }],
-    [".speaker-card", { blur: 17, scale: 32, map: 500, tint: "rgba(255,255,255,.08)" }],
-    [".home-speaker-card", { blur: 16, scale: 30, map: 460, tint: "rgba(255,255,255,.08)" }],
-    [".profile-card", { blur: 20, scale: 38, map: 760, tint: "rgba(255,255,255,.08)" }],
-    [".team-card", { blur: 17, scale: 32, map: 500, tint: "rgba(255,255,255,.08)" }],
-    [".contact-card", { blur: 17, scale: 32, map: 500, tint: "rgba(255,255,255,.08)" }],
-    [".timeline-item", { blur: 18, scale: 34, map: 560, tint: "rgba(255,255,255,.08)" }],
-    [".logo-placeholder", { blur: 16, scale: 30, map: 420, tint: "rgba(255,255,255,.08)" }],
-    [".faq-list details", { blur: 16, scale: 30, map: 520, tint: "rgba(255,255,255,.08)" }],
-    [".signup-form", { blur: 18, scale: 34, map: 680, tint: "rgba(255,255,255,.08)" }],
-    [".notice", { blur: 14, scale: 26, map: 460, tint: "rgba(255,255,255,.08)" }],
-    [".button", { blur: 13, scale: 26, map: 360, tint: "rgba(255,255,255,.10)" }]
-  ];
-
-  presets.forEach(([selector, options]) => {
-    document.querySelectorAll(selector).forEach(element => {
-      let tint = options.tint;
-      if (element.classList.contains("glass-tone-red")) tint = "rgba(142,0,25,.66)";
-      if (element.classList.contains("glass-tone-dark") || element.classList.contains("tone-dark")) tint = "rgba(16,14,15,.56)";
-      if (element.classList.contains("glass-tone-light")) tint = "rgba(255,255,255,.08)";
-      element.setAttribute("rt-liquid-glass", "");
-      element.setAttribute("rt-liquid-glass-blur", String(options.blur));
-      element.setAttribute("rt-liquid-glass-scale", String(options.scale));
-      element.setAttribute("rt-liquid-glass-map", String(options.map));
-      element.setAttribute("rt-liquid-glass-tint", tint);
-      element.setAttribute("rt-liquid-glass-fallback-blur", "14");
-    });
-  });
-
-  document.querySelectorAll("[rt-liquid-glass]").forEach(element => {
-    element.addEventListener("pointermove", event => {
-      const rect = element.getBoundingClientRect();
-      const x = ((event.clientX - rect.left) / Math.max(1, rect.width)) * 100;
-      const y = ((event.clientY - rect.top) / Math.max(1, rect.height)) * 100;
-      element.style.setProperty("--glass-x", `${x.toFixed(1)}%`);
-      element.style.setProperty("--glass-y", `${y.toFixed(1)}%`);
-    }, { passive: true });
-    element.addEventListener("pointerleave", () => {
-      element.style.setProperty("--glass-x", "18%");
-      element.style.setProperty("--glass-y", "8%");
-    });
-  });
-
-  const refresh = () => window.rtLiquidGlass?.refresh();
-  window.addEventListener("load", refresh, { once: true });
-  window.setTimeout(refresh, 0);
+  document.querySelectorAll([
+    ".glass-panel",
+    ".section-glass",
+    ".side-card",
+    ".info-card",
+    ".action-card",
+    ".speaker-card",
+    ".home-speaker-card",
+    ".profile-card",
+    ".team-card",
+    ".contact-card",
+    ".timeline-item",
+    ".logo-placeholder",
+    ".faq-list details",
+    ".signup-form",
+    ".notice",
+    ".button"
+  ].join(",")).forEach(element => element.setAttribute("rt-liquid-glass", ""));
 }
 
-function setupNeuralField() {
+function setupStaticBackdrop() {
   const field = document.createElement("div");
   field.id = "neural-field";
   field.setAttribute("aria-hidden", "true");
   document.body.prepend(field);
-
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (reduceMotion || !window.VANTA?.NET || !window.THREE) return;
-
-  const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-  const lowPower = Boolean(connection?.saveData || (navigator.deviceMemory && navigator.deviceMemory <= 4));
-
-  try {
-    window.VANTA.NET({
-      el: field,
-      THREE: window.THREE,
-      mouseControls: !lowPower,
-      touchControls: !lowPower,
-      gyroControls: false,
-      minHeight: 200,
-      minWidth: 200,
-      scale: 1,
-      scaleMobile: .7,
-      color: 0x9a001b,
-      backgroundColor: 0xf1e8e8,
-      points: lowPower ? 6 : 9,
-      maxDistance: lowPower ? 18 : 24,
-      spacing: lowPower ? 22 : 18,
-      showDots: true
-    });
-  } catch {
-    field.classList.add("is-static");
-  }
 }
 
 function setupScrollEffects() {
@@ -511,22 +450,7 @@ function setupScrollEffects() {
   window.addEventListener("resize", requestUpdate, { passive: true });
 }
 
-function setupMastheadPointer() {
-  const masthead = document.querySelector(".page-masthead");
-  if (!masthead || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-  masthead.addEventListener("pointermove", event => {
-    const rect = masthead.getBoundingClientRect();
-    const x = ((event.clientX - rect.left) / Math.max(1, rect.width)) * 100;
-    const y = ((event.clientY - rect.top) / Math.max(1, rect.height)) * 100;
-    masthead.style.setProperty("--pointer-x", `${x.toFixed(1)}%`);
-    masthead.style.setProperty("--pointer-y", `${y.toFixed(1)}%`);
-  }, { passive: true });
-}
-
 function setupAmbientGradients() {
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
   document.querySelectorAll(".ambient-zone").forEach(zone => {
     if (!zone.querySelector(":scope > .ambient-glow")) {
       const glow = document.createElement("span");
@@ -534,41 +458,6 @@ function setupAmbientGradients() {
       glow.setAttribute("aria-hidden", "true");
       zone.prepend(glow);
     }
-
-    let currentX = 50;
-    let currentY = 50;
-    let targetX = 50;
-    let targetY = 50;
-    let frame = 0;
-
-    const animate = () => {
-      currentX += (targetX - currentX) * .075;
-      currentY += (targetY - currentY) * .075;
-      zone.style.setProperty("--ambient-x", `${currentX.toFixed(2)}%`);
-      zone.style.setProperty("--ambient-y", `${currentY.toFixed(2)}%`);
-      if (Math.abs(targetX - currentX) > .03 || Math.abs(targetY - currentY) > .03) {
-        frame = window.requestAnimationFrame(animate);
-      } else {
-        frame = 0;
-      }
-    };
-
-    const requestAnimation = () => {
-      if (!frame) frame = window.requestAnimationFrame(animate);
-    };
-
-    zone.addEventListener("pointermove", event => {
-      const rect = zone.getBoundingClientRect();
-      targetX = ((event.clientX - rect.left) / Math.max(1, rect.width)) * 100;
-      targetY = ((event.clientY - rect.top) / Math.max(1, rect.height)) * 100;
-      requestAnimation();
-    }, { passive: true });
-
-    zone.addEventListener("pointerleave", () => {
-      targetX = 50;
-      targetY = 50;
-      requestAnimation();
-    }, { passive: true });
   });
 }
 
@@ -689,10 +578,9 @@ setupAnchorNavigation();
 setupRevealMotion();
 setupSectionRendering();
 setupAmbientGradients();
-setupLiquidGlass();
-setupNeuralField();
+setupGlassStyling();
+setupStaticBackdrop();
 setupScrollEffects();
-setupMastheadPointer();
 setupScheduleThread();
 setupPageTransitions();
 setupPlaceholderUI();

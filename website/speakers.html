@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="static/css/index.css?v=20260731-native-page-loads">
+  <link rel="stylesheet" href="static/css/index.css?v=20260801-static-effects">
 </head>
 <body data-page="speakers">
   <a class="skip-link" href="#speaker-intro">Skip to content</a>
@@ -31,25 +31,14 @@
     <section class="content-section ambient-zone" id="speaker-intro">
       <div class="content-wrap glass-panel speaker-directory-panel">
         <h2 class="section-heading">Ideas with a person behind them.</h2>
-        <p class="section-lead">Each speaker profile will grow as talk titles, biographies, and program details are finalized. Five speakers are confirmed; three places remain open.</p>
-        <div class="home-speaker-grid speaker-directory-grid" aria-label="Speaker directory">
-          <a class="home-speaker-card speaker-directory-card" href="#ahmad-tafti" aria-label="View Ahmad Tafti's full profile">
-            <picture class="home-speaker-picture">
-              <source srcset="assets/images/ahmad-tafti-official.avif" type="image/avif">
-              <source srcset="assets/images/ahmad-tafti-official.webp" type="image/webp">
-              <img class="speaker-photo" src="assets/images/ahmad-tafti-official.jpg" alt="Ahmad Tafti" loading="eager" fetchpriority="high" decoding="async">
-            </picture>
-            <div class="speaker-copy">
-              <h3>Ahmad Tafti, PhD</h3>
-              <p>Explainable artificial intelligence and health decisions.</p>
-              <span class="speaker-jump" aria-hidden="true">View profile &darr;&#xfe0e;</span>
-            </div>
-          </a>
+        <p class="section-lead">Each speaker profile will grow as talk titles, biographies, and program details are finalized. Six speakers are confirmed; two places remain open.</p>
+        <p class="speaker-order-note">Ordered by last name.</p>
+        <div class="home-speaker-grid speaker-directory-grid" aria-label="Speaker directory, ordered by last name">
           <a class="home-speaker-card speaker-directory-card" href="#kefei-duan" aria-label="View Kefei Duan's full profile">
             <picture class="home-speaker-picture">
               <source srcset="assets/images/kefei-duan-official.avif" type="image/avif">
               <source srcset="assets/images/kefei-duan-official.webp" type="image/webp">
-              <img class="speaker-photo kefei-photo" src="assets/images/kefei-duan-official.jpg" alt="Kefei Duan" loading="lazy" decoding="async">
+              <img class="speaker-photo kefei-photo" src="assets/images/kefei-duan-official.jpg" alt="Kefei Duan" loading="eager" fetchpriority="high" decoding="async">
             </picture>
             <div class="speaker-copy">
               <h3>Kefei Duan, DDS</h3>
@@ -76,16 +65,30 @@
             </picture>
             <div class="speaker-copy"><h3>Shelly Propson Lennon</h3><p>Inclusive art, disability, and community possibility.</p><span class="speaker-jump" aria-hidden="true">View profile &darr;&#xfe0e;</span></div>
           </a>
+          <a class="home-speaker-card speaker-directory-card" href="#amartya-sen" aria-label="View Amartya Sen's full profile">
+            <picture class="home-speaker-picture">
+              <img class="speaker-photo" src="assets/images/amartya-sen-official.jpg" alt="Amartya Sen" loading="lazy" decoding="async">
+            </picture>
+            <div class="speaker-copy"><h3>Amartya Sen, PhD</h3><p>Cybersecurity, secure systems, and connected devices.</p><span class="speaker-jump" aria-hidden="true">View profile &darr;&#xfe0e;</span></div>
+          </a>
+          <a class="home-speaker-card speaker-directory-card" href="#ahmad-tafti" aria-label="View Ahmad Tafti's full profile">
+            <picture class="home-speaker-picture">
+              <source srcset="assets/images/ahmad-tafti-official.avif" type="image/avif">
+              <source srcset="assets/images/ahmad-tafti-official.webp" type="image/webp">
+              <img class="speaker-photo" src="assets/images/ahmad-tafti-official.jpg" alt="Ahmad Tafti" loading="lazy" decoding="async">
+            </picture>
+            <div class="speaker-copy">
+              <h3>Ahmad Tafti, PhD</h3>
+              <p>Explainable artificial intelligence and health decisions.</p>
+              <span class="speaker-jump" aria-hidden="true">View profile &darr;&#xfe0e;</span>
+            </div>
+          </a>
           <a class="home-speaker-card speaker-directory-card" href="#kaiqi-zhao" aria-label="View Kaiqi Zhao's full profile">
             <picture class="home-speaker-picture">
               <source srcset="assets/images/kaiqi-zhao-official.webp" type="image/webp">
               <img class="speaker-photo" src="assets/images/kaiqi-zhao-official.jpg" alt="Kaiqi Zhao" loading="lazy" decoding="async">
             </picture>
             <div class="speaker-copy"><h3>Kaiqi Zhao, PhD</h3><p>Efficient AI, model compression, and edge computing.</p><span class="speaker-jump" aria-hidden="true">View profile &darr;&#xfe0e;</span></div>
-          </a>
-          <a class="home-speaker-card speaker-directory-card" href="#speaker-06" aria-label="View the sixth speaker place">
-            <div class="portrait-placeholder" aria-hidden="true"><span>Photo</span></div>
-            <div class="speaker-copy"><h3>Speaker to be announced</h3><p>A practical tool for navigating change.</p><span class="speaker-jump" aria-hidden="true">View profile &darr;&#xfe0e;</span></div>
           </a>
           <a class="home-speaker-card speaker-directory-card" href="#speaker-07" aria-label="View the seventh speaker place">
             <div class="portrait-placeholder" aria-hidden="true"><span>Photo</span></div>
@@ -99,27 +102,7 @@
       </div>
     </section>
 
-    <section class="content-section speaker-profile" id="ahmad-tafti">
-      <div class="content-wrap">
-        <article class="profile-card glass-panel ambient-zone">
-          <div class="profile-visual">
-            <picture class="profile-picture">
-              <source srcset="assets/images/ahmad-tafti-official.avif" type="image/avif">
-              <source srcset="assets/images/ahmad-tafti-official.webp" type="image/webp">
-              <img class="profile-photo" src="assets/images/ahmad-tafti-official.jpg" alt="Ahmad Tafti" loading="lazy" decoding="async">
-            </picture>
-          </div>
-          <div class="profile-copy">
-            <p class="speaker-topic">Talk title to be added</p>
-            <h2><a href="https://www.shrs.pitt.edu/person/ahmad-tafti/" target="_blank" rel="noopener noreferrer">Ahmad Tafti, PhD <span aria-hidden="true">&nearr;&#xfe0e;</span></a></h2>
-            <p>Dr. Tafti directs the Pitt HexAI Lab and is an assistant professor in health information management. His work focuses on explainable artificial intelligence, clinical data, and better health-care decisions.</p>
-            <p>His final talk description and connection to Retooling will be added after the program is confirmed.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="content-section speaker-profile profile-reverse image-band" id="kefei-duan">
+    <section class="content-section speaker-profile" id="kefei-duan">
       <div class="content-wrap">
         <article class="profile-card glass-panel ambient-zone">
           <div class="profile-visual">
@@ -139,7 +122,7 @@
       </div>
     </section>
 
-    <section class="content-section speaker-profile" id="janilla-lee">
+    <section class="content-section speaker-profile profile-reverse image-band" id="janilla-lee">
       <div class="content-wrap">
         <article class="profile-card glass-panel ambient-zone">
           <div class="profile-visual">
@@ -159,7 +142,7 @@
       </div>
     </section>
 
-    <section class="content-section speaker-profile profile-reverse" id="shelly-propson-lennon">
+    <section class="content-section speaker-profile" id="shelly-propson-lennon">
       <div class="content-wrap">
         <article class="profile-card glass-panel ambient-zone">
           <div class="profile-visual">
@@ -178,7 +161,45 @@
       </div>
     </section>
 
-    <section class="content-section speaker-profile image-band" id="kaiqi-zhao">
+    <section class="content-section speaker-profile profile-reverse" id="amartya-sen">
+      <div class="content-wrap">
+        <article class="profile-card glass-panel ambient-zone">
+          <div class="profile-visual">
+            <picture class="profile-picture">
+              <img class="profile-photo" src="assets/images/amartya-sen-official.jpg" alt="Amartya Sen" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="profile-copy">
+            <p class="speaker-topic">Talk title to be added</p>
+            <h2><a href="https://sites.google.com/oakland.edu/sen" target="_blank" rel="noopener noreferrer">Amartya Sen, PhD <span aria-hidden="true">&nearr;&#xfe0e;</span></a></h2>
+            <p>Dr. Sen is an associate professor in Oakland University's Department of Computer Science and Engineering. His research includes cybersecurity risk assessment, secure systems for connected devices, and applications of predictive and generative AI in cybersecurity.</p>
+            <p>His final talk description and connection to Retooling will be added after the program is confirmed.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section speaker-profile image-band" id="ahmad-tafti">
+      <div class="content-wrap">
+        <article class="profile-card glass-panel ambient-zone">
+          <div class="profile-visual">
+            <picture class="profile-picture">
+              <source srcset="assets/images/ahmad-tafti-official.avif" type="image/avif">
+              <source srcset="assets/images/ahmad-tafti-official.webp" type="image/webp">
+              <img class="profile-photo" src="assets/images/ahmad-tafti-official.jpg" alt="Ahmad Tafti" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="profile-copy">
+            <p class="speaker-topic">Talk title to be added</p>
+            <h2><a href="https://www.shrs.pitt.edu/person/ahmad-tafti/" target="_blank" rel="noopener noreferrer">Ahmad Tafti, PhD <span aria-hidden="true">&nearr;&#xfe0e;</span></a></h2>
+            <p>Dr. Tafti directs the Pitt HexAI Lab and is an assistant professor in health information management. His work focuses on explainable artificial intelligence, clinical data, and better health-care decisions.</p>
+            <p>His final talk description and connection to Retooling will be added after the program is confirmed.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section speaker-profile profile-reverse" id="kaiqi-zhao">
       <div class="content-wrap">
         <article class="profile-card glass-panel ambient-zone">
           <div class="profile-visual">
@@ -192,20 +213,6 @@
             <h2><a href="https://kaiqi-zhao.github.io/" target="_blank" rel="noopener noreferrer">Kaiqi Zhao, PhD <span aria-hidden="true">&nearr;&#xfe0e;</span></a></h2>
             <p>Dr. Zhao is a tenure-track assistant professor in Oakland University's Department of Computer Science and Engineering and directs the Efficient AI Lab. Her research spans efficient AI, deep-learning model compression, speech recognition, and cloud and edge computing.</p>
             <p>Her work develops smaller, high-performance, hardware-efficient models that can bring advanced AI to edge devices. Her final talk title and connection to Retooling will be added after the program is confirmed.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="content-section speaker-profile profile-reverse" id="speaker-06">
-      <div class="content-wrap">
-        <article class="profile-card glass-panel ambient-zone">
-          <div class="profile-visual"><div class="portrait-placeholder profile-placeholder" aria-label="Speaker photograph placeholder"><span>Photo</span></div></div>
-          <div class="profile-copy">
-            <p class="speaker-topic">Talk title to be added</p>
-            <h2><a href="attend.html#speaker-application">Speaker to be announced <span aria-hidden="true">&rarr;&#xfe0e;</span></a></h2>
-            <p>This profile is reserved for a speaker who can make a complex shift understandable, useful, and connected to the people it affects.</p>
-            <p>The photograph, biography, talk title, and speaker link will be replaced when the speaker is confirmed.</p>
           </div>
         </article>
       </div>
@@ -249,9 +256,6 @@
   </main>
 
   <div id="site-footer"></div>
-  <script src="static/vendor/three.r134.min.js"></script>
-  <script src="static/vendor/vanta.net.min.js"></script>
-  <script src="static/vendor/rt-liquid-glass.js"></script>
-  <script src="static/js/index.js?v=20260731-restore-native-nav"></script>
+  <script src="static/js/index.js?v=20260801-static-effects"></script>
 </body>
 </html>
