@@ -3380,3 +3380,134 @@ body {
     }
   }
 }
+
+/* Richer static glass without per-card backdrop sampling. */
+[rt-liquid-glass]::before {
+  mix-blend-mode: normal;
+  opacity: .24;
+  transition-duration: .34s;
+}
+
+[rt-liquid-glass]::after {
+  opacity: .3;
+  transition-duration: .34s;
+}
+
+.page-masthead .masthead-panel[rt-liquid-glass] {
+  background: rgba(18, 14, 16, .74);
+  border-color: rgba(255, 255, 255, .72);
+  box-shadow:
+    inset 1px 1px 0 rgba(255, 255, 255, .34),
+    inset -1px -1px 0 rgba(235, 0, 40, .14),
+    0 30px 78px -46px rgba(37, 4, 7, .72);
+}
+
+.glass-panel[rt-liquid-glass] {
+  background: rgba(250, 247, 247, .7);
+}
+
+.section-glass[rt-liquid-glass]:not(.tone-dark) {
+  background: rgba(250, 247, 247, .6);
+}
+
+.glass-tone-light[rt-liquid-glass] {
+  background: rgba(252, 249, 249, .76);
+  border-color: rgba(255, 255, 255, .9);
+}
+
+.glass-tone-red[rt-liquid-glass] {
+  background: rgba(112, 0, 20, .84);
+  border-color: rgba(255, 255, 255, .64);
+}
+
+.glass-tone-dark[rt-liquid-glass],
+.tone-dark[rt-liquid-glass] {
+  background: rgba(16, 14, 15, .86);
+  border-color: rgba(255, 255, 255, .32);
+}
+
+.flow-background .glass-panel[rt-liquid-glass] {
+  background: rgba(16, 14, 15, .76);
+}
+
+.button.secondary[rt-liquid-glass] {
+  background: rgba(255, 255, 255, .8);
+}
+
+@media (hover: hover) {
+  [rt-liquid-glass]:hover::before,
+  [rt-liquid-glass]:focus-within::before {
+    opacity: .56;
+  }
+
+  [rt-liquid-glass]:hover::after,
+  [rt-liquid-glass]:focus-within::after {
+    opacity: .46;
+  }
+}
+
+/* The collapsed desktop header is 44px shorter than the full header. */
+@media (min-width: 1051px) {
+  .site-header {
+    transition: height .5s var(--ease);
+  }
+
+  .site-header.is-condensed {
+    height: 72px;
+  }
+
+  .anchor-sidebar {
+    transition: top .5s var(--ease);
+  }
+
+  body.header-condensed .anchor-sidebar {
+    top: 72px;
+  }
+}
+
+/* A single composited grid layer replaces a continuously rendered particle field. */
+#speaker-intro > .speaker-grid-field {
+  position: absolute !important;
+  z-index: 1 !important;
+  inset: -58px !important;
+  pointer-events: none;
+  opacity: .46;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, .13) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .13) 1px, transparent 1px),
+    linear-gradient(rgba(235, 0, 40, .12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(235, 0, 40, .12) 1px, transparent 1px);
+  background-size: 46px 46px, 46px 46px, 184px 184px, 184px 184px;
+  mask-image: radial-gradient(ellipse at center, #000 18%, rgba(0, 0, 0, .88) 48%, transparent 82%);
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 18%, rgba(0, 0, 0, .88) 48%, transparent 82%);
+  transform: translate3d(var(--speaker-grid-shift-x, 0), var(--speaker-grid-shift-y, 0), 0);
+  transition: opacity .3s ease;
+  will-change: transform;
+  contain: strict;
+}
+
+#speaker-intro > .content-wrap {
+  z-index: 2;
+}
+
+@media (hover: hover) {
+  #speaker-intro:hover > .speaker-grid-field {
+    opacity: .64;
+  }
+}
+
+/* Avoid full-section filter surfaces; the tinting remains in the gradient overlays. */
+.anchor-sidebar::before,
+.content-section.image-band::before,
+#day-at-a-glance::before,
+.flow-background::before {
+  filter: none;
+}
+
+@media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+  #speaker-intro > .speaker-grid-field {
+    opacity: .3;
+    transform: none;
+    will-change: auto;
+  }
+}

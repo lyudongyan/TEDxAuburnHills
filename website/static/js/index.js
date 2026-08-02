@@ -337,40 +337,7 @@ function setupRevealMotion() {
 function setupSectionRendering() {
   const sections = [...document.querySelectorAll(".content-section")];
   if (!sections.length || !window.CSS?.supports("content-visibility", "auto")) return;
-
-  let measureFrame = 0;
-  let resizeTimer = 0;
-
-  const measureSections = () => {
-    sections.forEach(section => section.classList.remove("is-render-managed"));
-    window.cancelAnimationFrame(measureFrame);
-    measureFrame = window.requestAnimationFrame(() => {
-      sections.forEach(section => {
-        const styles = window.getComputedStyle(section);
-        const blockExtras = [
-          styles.paddingTop,
-          styles.paddingBottom,
-          styles.borderTopWidth,
-          styles.borderBottomWidth
-        ].reduce((total, value) => total + (Number.parseFloat(value) || 0), 0);
-        const contentHeight = Math.max(1, section.getBoundingClientRect().height - blockExtras);
-        section.style.setProperty("--section-intrinsic-size", `${contentHeight.toFixed(3)}px`);
-        section.classList.add("is-render-managed");
-      });
-      measureFrame = 0;
-    });
-  };
-
-  if (document.readyState === "complete") {
-    measureSections();
-  } else {
-    window.addEventListener("load", measureSections, { once: true });
-  }
-
-  window.addEventListener("resize", () => {
-    window.clearTimeout(resizeTimer);
-    resizeTimer = window.setTimeout(measureSections, 180);
-  }, { passive: true });
+  sections.forEach(section => section.classList.add("is-render-managed"));
 }
 
 function setupGlassStyling() {
@@ -421,6 +388,16 @@ function setupStaticBackdrop() {
   document.body.prepend(field);
 }
 
+function setupSpeakerGrid() {
+  const section = document.querySelector("#speaker-intro");
+  if (!section) return;
+
+  const grid = document.createElement("span");
+  grid.className = "speaker-grid-field";
+  grid.setAttribute("aria-hidden", "true");
+  section.prepend(grid);
+}
+
 function setupScrollEffects() {
   const header = document.querySelector(".site-header");
   const progress = document.querySelector(".site-progress-bar");
@@ -432,10 +409,12 @@ function setupScrollEffects() {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
     const maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
     const ratio = Math.min(1, Math.max(0, scrollTop / maxScroll));
+    const isCondensed = scrollTop > 52 && window.innerWidth > 1050;
     progress?.style.setProperty("transform", `scaleX(${ratio})`);
     sidebar?.style.setProperty("--side-progress", ratio.toFixed(4));
     masthead?.style.setProperty("--hero-shift", `${Math.min(70, scrollTop * .08).toFixed(1)}px`);
-    header?.classList.toggle("is-condensed", scrollTop > 52 && window.innerWidth > 1050);
+    header?.classList.toggle("is-condensed", isCondensed);
+    document.body.classList.toggle("header-condensed", isCondensed);
     ticking = false;
   };
 
@@ -450,7 +429,7 @@ function setupScrollEffects() {
   window.addEventListener("resize", requestUpdate, { passive: true });
 }
 
-function setupAmbientGradients() {
+function setupPointerAtmosphere() {
   document.querySelectorAll(".ambient-zone").forEach(zone => {
     if (!zone.querySelector(":scope > .ambient-glow")) {
       const glow = document.createElement("span");
@@ -459,6 +438,95 @@ function setupAmbientGradients() {
       zone.prepend(glow);
     }
   });
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const coarsePointer = window.matchMedia("(hover: none), (pointer: coarse)").matches;
+  if (reduceMotion || coarsePointer) return;
+
+  let frame = 0;
+  let latestEvent = null;
+  let activeAmbient = null;
+  let activeGlass = null;
+  let activeMasthead = null;
+  let activeSpeakerGrid = null;
+
+  const resetPair = (element, xName, yName, xValue, yValue) => {
+    if (!element) return;
+    element.style.setProperty(xName, xValue);
+    element.style.setProperty(yName, yValue);
+  };
+
+  const setRelativePoint = (element, event, xName, yName, pointCache) => {
+    let point = pointCache.get(element);
+    if (!point) {
+      const rect = element.getBoundingClientRect();
+      point = {
+        x: Math.min(100, Math.max(0, ((event.clientX - rect.left) / Math.max(1, rect.width)) * 100)),
+        y: Math.min(100, Math.max(0, ((event.clientY - rect.top) / Math.max(1, rect.height)) * 100))
+      };
+      pointCache.set(element, point);
+    }
+    element.style.setProperty(xName, `${point.x.toFixed(1)}%`);
+    element.style.setProperty(yName, `${point.y.toFixed(1)}%`);
+    return point;
+  };
+
+  const resetActive = () => {
+    resetPair(activeAmbient, "--ambient-x", "--ambient-y", "50%", "50%");
+    resetPair(activeGlass, "--glass-x", "--glass-y", "18%", "8%");
+    resetPair(activeMasthead, "--pointer-x", "--pointer-y", "70%", "28%");
+    resetPair(activeSpeakerGrid, "--speaker-grid-x", "--speaker-grid-y", "50%", "50%");
+    if (activeSpeakerGrid) {
+      activeSpeakerGrid.style.setProperty("--speaker-grid-shift-x", "0px");
+      activeSpeakerGrid.style.setProperty("--speaker-grid-shift-y", "0px");
+    }
+    activeAmbient = null;
+    activeGlass = null;
+    activeMasthead = null;
+    activeSpeakerGrid = null;
+  };
+
+  const render = () => {
+    const event = latestEvent;
+    frame = 0;
+    if (!event || !(event.target instanceof Element)) return;
+
+    const nextAmbient = event.target.closest(".ambient-zone");
+    const nextGlass = event.target.closest("[rt-liquid-glass]");
+    const nextMasthead = event.target.closest(".page-masthead");
+    const nextSpeakerGrid = event.target.closest("#speaker-intro");
+    const pointCache = new Map();
+
+    if (activeAmbient && activeAmbient !== nextAmbient) resetPair(activeAmbient, "--ambient-x", "--ambient-y", "50%", "50%");
+    if (activeGlass && activeGlass !== nextGlass) resetPair(activeGlass, "--glass-x", "--glass-y", "18%", "8%");
+    if (activeMasthead && activeMasthead !== nextMasthead) resetPair(activeMasthead, "--pointer-x", "--pointer-y", "70%", "28%");
+    if (activeSpeakerGrid && activeSpeakerGrid !== nextSpeakerGrid) {
+      resetPair(activeSpeakerGrid, "--speaker-grid-x", "--speaker-grid-y", "50%", "50%");
+      activeSpeakerGrid.style.setProperty("--speaker-grid-shift-x", "0px");
+      activeSpeakerGrid.style.setProperty("--speaker-grid-shift-y", "0px");
+    }
+
+    activeAmbient = nextAmbient;
+    activeGlass = nextGlass;
+    activeMasthead = nextMasthead;
+    activeSpeakerGrid = nextSpeakerGrid;
+
+    if (activeAmbient) setRelativePoint(activeAmbient, event, "--ambient-x", "--ambient-y", pointCache);
+    if (activeGlass) setRelativePoint(activeGlass, event, "--glass-x", "--glass-y", pointCache);
+    if (activeMasthead) setRelativePoint(activeMasthead, event, "--pointer-x", "--pointer-y", pointCache);
+    if (activeSpeakerGrid) {
+      const point = setRelativePoint(activeSpeakerGrid, event, "--speaker-grid-x", "--speaker-grid-y", pointCache);
+      activeSpeakerGrid.style.setProperty("--speaker-grid-shift-x", `${((point.x - 50) * .18).toFixed(1)}px`);
+      activeSpeakerGrid.style.setProperty("--speaker-grid-shift-y", `${((point.y - 50) * .12).toFixed(1)}px`);
+    }
+  };
+
+  document.addEventListener("pointermove", event => {
+    latestEvent = event;
+    if (!frame) frame = window.requestAnimationFrame(render);
+  }, { passive: true });
+  document.documentElement.addEventListener("pointerleave", resetActive, { passive: true });
+  window.addEventListener("blur", resetActive, { passive: true });
 }
 
 function setupScheduleThread() {
@@ -577,9 +645,10 @@ setupMenu();
 setupAnchorNavigation();
 setupRevealMotion();
 setupSectionRendering();
-setupAmbientGradients();
 setupGlassStyling();
 setupStaticBackdrop();
+setupSpeakerGrid();
+setupPointerAtmosphere();
 setupScrollEffects();
 setupScheduleThread();
 setupPageTransitions();

@@ -22,12 +22,13 @@ The Partners and Team pages remain in the project but are temporarily hidden
 from global navigation and the page-to-page flow while their content is being
 developed.
 
-The visual system combines highly transparent refractive glass, red and dark
-tints, hover-only highlights, blurred network animation, cursor-following
-ambient gradients, and Rochester Hills photography. The speaker page uses
-alternating full-width profiles. The schedule uses a scroll-drawn curved thread,
-alternating event cards, a centered-item glow, and an original abstract
-red-and-charcoal background generated for the timeline.
+The visual system combines opaque static glass, red and dark tints,
+cursor-following highlights, lightweight ambient gradients, and Rochester
+Hills photography. The speaker page adds a pointer-responsive CSS grid and uses
+alternating full-width profiles. No continuous canvas or WebGL animation is
+required. The schedule uses a scroll-drawn curved thread, alternating event
+cards, a centered-item glow, and an original abstract red-and-charcoal
+background generated for the timeline.
 
 ## Local preview
 
@@ -38,7 +39,7 @@ required.
 ## Content status
 
 This version is for layout review. Confirmed event details, the official TED
-listing, the speaker application, three speaker profiles, the draft program,
+listing, the speaker application, six speaker profiles, the draft program,
 and accessibility information are included.
 
 The registration service, livestream URL, contact email and delivery service,
