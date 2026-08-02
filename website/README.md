@@ -10,17 +10,13 @@ different tools.**
 - Speakers
 - Schedule
 - Attend
-- Partners
-- Team
+- Sponsors
+- Organizers
 - Contact and FAQ
 
 Every page includes fixed site navigation and a same-page section navigator.
 On smaller screens, the section sidebar is removed and the visible page links
 become a horizontally scrollable navigation strip below the logo.
-
-The Partners and Team pages remain in the project but are temporarily hidden
-from global navigation and the page-to-page flow while their content is being
-developed.
 
 The visual system combines opaque static glass, red and dark tints,
 cursor-following highlights, lightweight ambient gradients, and Rochester

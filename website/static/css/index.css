@@ -3257,7 +3257,9 @@ body {
 }
 
 #speaker-intro::before,
-#contact-team::before {
+#contact-team::before,
+#why-partner::before,
+#organizing-team::before {
   background-position: center 38%;
 }
 
@@ -3509,5 +3511,19 @@ body {
     opacity: .3;
     transform: none;
     will-change: auto;
+  }
+}
+
+@media (min-width: 821px) {
+  .home-action-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .home-action-grid > .action-card {
+    grid-column: span 2;
+  }
+
+  .home-action-grid > .action-card:nth-last-child(-n + 2) {
+    grid-column: span 3;
   }
 }

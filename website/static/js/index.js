@@ -6,12 +6,11 @@ const pages = [
   ["speakers", "Speakers", "speakers.html"],
   ["schedule", "Schedule", "schedule.html"],
   ["attend", "Attend", "attend.html"],
-  ["partners", "Partners", "partners.html"],
-  ["team", "Team", "team.html"],
+  ["partners", "Sponsors", "partners.html"],
+  ["team", "Organizers", "team.html"],
   ["contact", "Contact", "contact.html"]
 ];
-const hiddenPageKeys = new Set(["partners", "team"]);
-const visiblePages = pages.filter(([key]) => !hiddenPageKeys.has(key));
+const visiblePages = pages;
 
 const pageSections = {
   home: [
@@ -59,9 +58,9 @@ const pageSections = {
   ],
   partners: [
     ["Overview", "#partners-top"],
-    ["Why Partner", "#why-partner"],
+    ["Why Sponsor", "#why-partner"],
     ["Opportunities", "#opportunities"],
-    ["Partners", "#partner-grid"],
+    ["Sponsors", "#partner-grid"],
     ["Contact", "#partner-contact"]
   ],
   team: [
@@ -223,7 +222,9 @@ function prepareSectionVariants() {
     "speaker-intro",
     "speaker-note",
     "speaker-expectations",
-    "contact-team"
+    "contact-team",
+    "why-partner",
+    "organizing-team"
   ];
   flowSections.forEach(id => {
     const section = document.getElementById(id);
