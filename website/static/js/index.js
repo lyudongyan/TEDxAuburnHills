@@ -98,7 +98,7 @@ function buildHeader() {
       <div class="utility-bar">
         <strong>TEDxAuburnHills &bull; Retooling</strong>
         <div class="utility-links">
-          <span>October 10, 2026 &bull; 11:00 a.m.&ndash;3:00 p.m. Eastern time</span>
+          <span>October 10, 2026 &bull; 11:00 a.m.&ndash;4:00 p.m. Eastern time</span>
           <a href="https://www.ted.com/tedx/events/69999" target="_blank" rel="noopener noreferrer">Official TED event page</a>
         </div>
       </div>
@@ -150,7 +150,7 @@ function buildFooter() {
         </div>
         <div>
           <strong>Event</strong>
-          <p>October 10, 2026 &bull; 11:00 a.m.&ndash;3:00 p.m. Eastern time<br>Location to be announced</p>
+          <p>October 10, 2026 &bull; 11:00 a.m.&ndash;4:00 p.m. Eastern time</p>
           <p><a href="https://www.ted.com/tedx/events/69999" target="_blank" rel="noopener noreferrer">View the official TED event page</a></p>
         </div>
         <div>
