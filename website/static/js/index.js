@@ -35,12 +35,12 @@ const pageSections = {
     ["Kefei Duan", "#kefei-duan"],
     ["Janilla Lee", "#janilla-lee"],
     ["Shelly Propson Lennon", "#shelly-propson-lennon"],
+    ["Khalid Mirza", "#khalid-mirza"],
+    ["Pavan Muzumdar", "#pavan-muzumdar"],
     ["Amartya Sen", "#amartya-sen"],
     ["Ahmad Tafti", "#ahmad-tafti"],
     ["Kaiqi Zhao", "#kaiqi-zhao"],
-    ["Open speaker place", "#speaker-07"],
-    ["Open speaker place", "#speaker-08"],
-    ["Applications", "#speaker-note"]
+    ["Program updates", "#speaker-note"]
   ],
   schedule: [
     ["Overview", "#schedule-top"],

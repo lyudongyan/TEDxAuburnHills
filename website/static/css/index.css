@@ -1133,6 +1133,11 @@ body.is-ready .title-word {
   object-position: center 30%;
 }
 
+.speaker-photo.pavan-photo,
+.profile-photo.pavan-photo {
+  object-position: 60% center;
+}
+
 .portrait-placeholder::before,
 .portrait-placeholder::after {
   content: "";
@@ -1847,8 +1852,7 @@ textarea {
 }
 
 #experience,
-#participate,
-#speaker-08 {
+#participate {
   --section-photo: var(--photo-spencer);
   --section-photo-position: center 52%;
 }
