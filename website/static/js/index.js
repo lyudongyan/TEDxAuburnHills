@@ -39,6 +39,7 @@ const pageSections = {
     ["Pavan Muzumdar", "#pavan-muzumdar"],
     ["Amartya Sen", "#amartya-sen"],
     ["Ahmad Tafti", "#ahmad-tafti"],
+    ["Debbie Wertz", "#debbie-wertz"],
     ["Kaiqi Zhao", "#kaiqi-zhao"],
     ["Program updates", "#speaker-note"]
   ],

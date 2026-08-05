@@ -38,6 +38,8 @@ profiles for layout review:
   (`assets/images/khalid-mirza-official.jpg`)
 - Pavan Muzumdar: https://automationalley.com/our-team/
   (`assets/images/pavan-muzumdar-official.jpg`)
+- Debbie Wertz: https://www.ccwaterford.org/our-team-board
+  (`assets/images/debbie-wertz-official.jpg`)
 
 These images are not treated as openly licensed. Obtain permission from each
 speaker or source organization before public launch.
