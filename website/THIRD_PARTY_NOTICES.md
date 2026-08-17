@@ -26,6 +26,8 @@
 The following images were downloaded from the speakers' public professional
 profiles for layout review:
 
+- Arina Bokas: https://www.oakland.edu/secs/directory/index
+  (`assets/images/arina-bokas-official.jpg`)
 - Kefei Duan: https://chesleyfamilydental.com/meet-our-team
   (`assets/images/kefei-duan-official.jpg`)
 - Janilla Lee: https://asiancentersemi.org/about-us/board-of-directors/
@@ -38,6 +40,8 @@ profiles for layout review:
   (`assets/images/khalid-mirza-official.jpg`)
 - Pavan Muzumdar: https://automationalley.com/our-team/
   (`assets/images/pavan-muzumdar-official.jpg`)
+- Darin Weiss: https://gracecentersofhope.org/about-us/meet-the-staff/
+  (`assets/images/darin-weiss-official.jpg`)
 - Debbie Wertz: https://www.ccwaterford.org/our-team-board
   (`assets/images/debbie-wertz-official.jpg`)
 

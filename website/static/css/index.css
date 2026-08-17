@@ -1896,52 +1896,66 @@ textarea {
   margin-top: 34px;
 }
 
-.speaker-grid-nine > :nth-child(n) {
+.speaker-grid-eleven {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.speaker-grid-eleven > :nth-child(n) {
   grid-column: span 2;
 }
 
-.speaker-grid-nine > :nth-child(1) {
+.speaker-grid-eleven > :nth-child(1) {
   grid-column: 1 / span 2;
   grid-row: 1;
 }
 
-.speaker-grid-nine > :nth-child(2) {
+.speaker-grid-eleven > :nth-child(2) {
   grid-column: 3 / span 2;
   grid-row: 1;
 }
 
-.speaker-grid-nine > :nth-child(3) {
+.speaker-grid-eleven > :nth-child(3) {
   grid-column: 5 / span 2;
   grid-row: 1;
 }
 
-.speaker-grid-nine > :nth-child(4) {
+.speaker-grid-eleven > :nth-child(4) {
   grid-column: 7 / span 2;
   grid-row: 1;
 }
 
-.speaker-grid-nine > :nth-child(5) {
+.speaker-grid-eleven > :nth-child(5) {
   grid-column: 9 / span 2;
   grid-row: 1;
 }
 
-.speaker-grid-nine > :nth-child(6) {
+.speaker-grid-eleven > :nth-child(6) {
+  grid-column: 11 / span 2;
+  grid-row: 1;
+}
+
+.speaker-grid-eleven > :nth-child(7) {
   grid-column: 2 / span 2;
   grid-row: 2;
 }
 
-.speaker-grid-nine > :nth-child(7) {
+.speaker-grid-eleven > :nth-child(8) {
   grid-column: 4 / span 2;
   grid-row: 2;
 }
 
-.speaker-grid-nine > :nth-child(8) {
+.speaker-grid-eleven > :nth-child(9) {
   grid-column: 6 / span 2;
   grid-row: 2;
 }
 
-.speaker-grid-nine > :nth-child(9) {
+.speaker-grid-eleven > :nth-child(10) {
   grid-column: 8 / span 2;
+  grid-row: 2;
+}
+
+.speaker-grid-eleven > :nth-child(11) {
+  grid-column: 10 / span 2;
   grid-row: 2;
 }
 
@@ -1989,6 +2003,10 @@ textarea {
 .home-speaker-card h3 {
   font-size: clamp(1.22rem, 1.7vw, 1.68rem);
   line-height: 1.04;
+}
+
+.speaker-grid-eleven .home-speaker-card h3 {
+  font-size: clamp(1.18rem, 1.35vw, 1.46rem);
 }
 
 .home-speaker-card p {
@@ -2593,12 +2611,61 @@ textarea {
   }
 }
 
+@media (min-width: 1101px) and (max-width: 1500px) {
+  .speaker-grid-eleven {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+
+  .speaker-grid-eleven > :nth-child(1),
+  .speaker-grid-eleven > :nth-child(5) {
+    grid-column: 1 / span 2;
+  }
+
+  .speaker-grid-eleven > :nth-child(2),
+  .speaker-grid-eleven > :nth-child(6) {
+    grid-column: 3 / span 2;
+  }
+
+  .speaker-grid-eleven > :nth-child(3),
+  .speaker-grid-eleven > :nth-child(7) {
+    grid-column: 5 / span 2;
+  }
+
+  .speaker-grid-eleven > :nth-child(4),
+  .speaker-grid-eleven > :nth-child(8) {
+    grid-column: 7 / span 2;
+  }
+
+  .speaker-grid-eleven > :nth-child(-n + 4) {
+    grid-row: 1;
+  }
+
+  .speaker-grid-eleven > :nth-child(n + 5):nth-child(-n + 8) {
+    grid-row: 2;
+  }
+
+  .speaker-grid-eleven > :nth-child(9) {
+    grid-column: 2 / span 2;
+    grid-row: 3;
+  }
+
+  .speaker-grid-eleven > :nth-child(10) {
+    grid-column: 4 / span 2;
+    grid-row: 3;
+  }
+
+  .speaker-grid-eleven > :nth-child(11) {
+    grid-column: 6 / span 2;
+    grid-row: 3;
+  }
+}
+
 @media (max-width: 1100px) {
   .home-speaker-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .speaker-grid-nine > :nth-child(n) {
+  .speaker-grid-eleven > :nth-child(n) {
     grid-column: auto;
     grid-row: auto;
   }

@@ -15,11 +15,11 @@ const visiblePages = pages;
 const pageSections = {
   home: [
     ["Home", "#home"],
-    ["Why Retooling", "#why-retooled"],
-    ["Community", "#community"],
-    ["Speakers", "#speakers-preview"],
-    ["What is TEDx?", "#what-is-tedx"],
-    ["Participate", "#participate"]
+    ["About Retooling", "#why-retooled"],
+    ["Retooling in Practice", "#community"],
+    ["Speakers List", "#speakers-preview"],
+    ["About TEDx", "#what-is-tedx"],
+    ["Get Involved", "#participate"]
   ],
   about: [
     ["Overview", "#about-top"],
@@ -31,7 +31,8 @@ const pageSections = {
   ],
   speakers: [
     ["Overview", "#speakers-top"],
-    ["Speaker list", "#speaker-intro"],
+    ["Speakers List", "#speaker-intro"],
+    ["Arina Bokas", "#arina-bokas"],
     ["Kefei Duan", "#kefei-duan"],
     ["Janilla Lee", "#janilla-lee"],
     ["Shelly Propson Lennon", "#shelly-propson-lennon"],
@@ -39,6 +40,7 @@ const pageSections = {
     ["Pavan Muzumdar", "#pavan-muzumdar"],
     ["Amartya Sen", "#amartya-sen"],
     ["Ahmad Tafti", "#ahmad-tafti"],
+    ["Darin Weiss", "#darin-weiss"],
     ["Debbie Wertz", "#debbie-wertz"],
     ["Kaiqi Zhao", "#kaiqi-zhao"],
     ["Program updates", "#speaker-note"]
