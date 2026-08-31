@@ -15,6 +15,7 @@ const visiblePages = pages;
 const pageSections = {
   home: [
     ["Home", "#home"],
+    ["Register", "#register"],
     ["About Retooling", "#why-retooled"],
     ["Retooling in Practice", "#community"],
     ["Speakers List", "#speakers-preview"],
@@ -33,10 +34,11 @@ const pageSections = {
     ["Overview", "#speakers-top"],
     ["Speakers List", "#speaker-intro"],
     ["Arina Bokas", "#arina-bokas"],
-    ["Kefei Duan", "#kefei-duan"],
+    ["Zelora Farmer", "#zelora-farmer"],
     ["Janilla Lee", "#janilla-lee"],
     ["Shelly Propson Lennon", "#shelly-propson-lennon"],
     ["Khalid Mirza", "#khalid-mirza"],
+    ["Evan Monaghan", "#evan-monaghan"],
     ["Pavan Muzumdar", "#pavan-muzumdar"],
     ["Amartya Sen", "#amartya-sen"],
     ["Ahmad Tafti", "#ahmad-tafti"],
@@ -102,6 +104,7 @@ function buildHeader() {
         <strong>TEDxAuburnHills &bull; Retooling</strong>
         <div class="utility-links">
           <span>October 10, 2026 &bull; 11:00 a.m.&ndash;4:00 p.m. Eastern time</span>
+          <a href="https://www.signupgenius.com/go/10C0444AAAA2FA1FDC25-64827609-attendee#/" target="_blank" rel="noopener noreferrer">Register free</a>
           <a href="https://www.ted.com/tedx/events/69999" target="_blank" rel="noopener noreferrer">Official TED event page</a>
         </div>
       </div>
@@ -153,7 +156,8 @@ function buildFooter() {
         </div>
         <div>
           <strong>Event</strong>
-          <p>October 10, 2026 &bull; 11:00 a.m.&ndash;4:00 p.m. Eastern time</p>
+          <p>October 10, 2026 &bull; 11:00 a.m.&ndash;4:00 p.m. Eastern time<br>Auburn Hills Community Center<br>3350 E. Seyburn Drive, Auburn Hills, Michigan 48326</p>
+          <p><a href="https://www.signupgenius.com/go/10C0444AAAA2FA1FDC25-64827609-attendee#/" target="_blank" rel="noopener noreferrer">Register free</a></p>
           <p><a href="https://www.ted.com/tedx/events/69999" target="_blank" rel="noopener noreferrer">View the official TED event page</a></p>
         </div>
         <div>
@@ -313,6 +317,7 @@ function setupRevealMotion() {
     ".logo-placeholder",
     ".timeline-item",
     ".side-card",
+    ".registration-callout-panel",
     ".faq-list details",
     ".signup-form"
   ];
@@ -382,7 +387,10 @@ function setupGlassStyling() {
     ".signup-form",
     ".notice",
     ".button"
-  ].join(",")).forEach(element => element.setAttribute("rt-liquid-glass", ""));
+  ].join(",")).forEach(element => {
+    if (element.closest(".registration-banner")) return;
+    element.setAttribute("rt-liquid-glass", "");
+  });
 }
 
 function setupStaticBackdrop() {
@@ -400,6 +408,30 @@ function setupSpeakerGrid() {
   grid.className = "speaker-grid-field";
   grid.setAttribute("aria-hidden", "true");
   section.prepend(grid);
+}
+
+function setupSpeakerProfileNavigation() {
+  const links = [...document.querySelectorAll('.speaker-directory-card[href^="#"]')];
+  if (!links.length) return;
+
+  const alignProfile = target => {
+    const scrollMargin = Number.parseFloat(window.getComputedStyle(target).scrollMarginTop) || 0;
+    const top = window.scrollY + target.getBoundingClientRect().top - scrollMargin;
+    window.scrollTo({ top, behavior: "instant" });
+  };
+
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      const target = document.querySelector(link.getAttribute("href"));
+      if (!target) return;
+
+      window.requestAnimationFrame(() => {
+        window.requestAnimationFrame(() => alignProfile(target));
+      });
+      window.setTimeout(() => alignProfile(target), 240);
+      window.setTimeout(() => alignProfile(target), 720);
+    });
+  });
 }
 
 function setupScrollEffects() {
@@ -639,6 +671,38 @@ function setupPlaceholderUI() {
   });
 }
 
+function setupRegistrationBanner() {
+  const banner = document.querySelector("[data-registration-banner]");
+  const closeButton = banner?.querySelector("[data-registration-banner-close]");
+  if (!banner || !closeButton) return;
+
+  let dismissed = false;
+  try {
+    dismissed = window.sessionStorage.getItem("tedx-registration-banner-dismissed") === "true";
+  } catch {
+    dismissed = false;
+  }
+  if (dismissed) return;
+
+  const dismiss = () => {
+    banner.classList.remove("is-visible");
+    try {
+      window.sessionStorage.setItem("tedx-registration-banner-dismissed", "true");
+    } catch {
+      // The banner still dismisses when storage is unavailable.
+    }
+    window.setTimeout(() => {
+      banner.hidden = true;
+    }, 360);
+  };
+
+  closeButton.addEventListener("click", dismiss);
+  window.setTimeout(() => {
+    banner.hidden = false;
+    window.requestAnimationFrame(() => banner.classList.add("is-visible"));
+  }, 6500);
+}
+
 buildHeader();
 buildSidebar();
 buildFooter();
@@ -652,11 +716,13 @@ setupSectionRendering();
 setupGlassStyling();
 setupStaticBackdrop();
 setupSpeakerGrid();
+setupSpeakerProfileNavigation();
 setupPointerAtmosphere();
 setupScrollEffects();
 setupScheduleThread();
 setupPageTransitions();
 setupPlaceholderUI();
+setupRegistrationBanner();
 
 window.addEventListener("DOMContentLoaded", () => {
   window.requestAnimationFrame(() => {

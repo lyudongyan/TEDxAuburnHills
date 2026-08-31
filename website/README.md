@@ -35,7 +35,7 @@ required.
 ## Content status
 
 This version is for layout review. Confirmed event details, the official TED
-listing, the speaker application, eleven speaker profiles, the draft program,
+listing, the speaker application, twelve speaker profiles, the draft program,
 and accessibility information are included.
 
 The registration service, livestream URL, contact email and delivery service,

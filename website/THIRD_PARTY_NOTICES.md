@@ -28,8 +28,6 @@ profiles for layout review:
 
 - Arina Bokas: https://www.oakland.edu/secs/directory/index
   (`assets/images/arina-bokas-official.jpg`)
-- Kefei Duan: https://chesleyfamilydental.com/meet-our-team
-  (`assets/images/kefei-duan-official.jpg`)
 - Janilla Lee: https://asiancentersemi.org/about-us/board-of-directors/
   (`assets/images/janilla-lee-official.jpg`)
 - Ahmad Tafti: https://www.shrs.pitt.edu/person/ahmad-tafti/
