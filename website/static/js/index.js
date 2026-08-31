@@ -386,6 +386,7 @@ function setupGlassStyling() {
     ".faq-list details",
     ".signup-form",
     ".notice",
+    ".theme-quote",
     ".button"
   ].join(",")).forEach(element => {
     if (element.closest(".registration-banner")) return;

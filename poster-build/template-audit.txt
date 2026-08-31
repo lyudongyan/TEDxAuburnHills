@@ -1,0 +1,6 @@
+Source: Example Poster.pptx, one portrait A-series poster slide on the Blank layout.
+Reusable structure: split title masthead, two-column information body, timeline block, two-QR link block, attendance callout, and a separate footer banner.
+Typography: Arial/Arial Bold for most copy; the source title uses a bold display face. The edit keeps the source sizing hierarchy and uses Arial throughout for reliability and the TEDx wordmark.
+Brand/assets: source blue and yellow are intentionally replaced with TEDxAuburnHills website colors. Website Rochester Hills photography replaces the body image. The website flow artwork replaces the top-right art. The source conference logo is replaced with the TEDxAuburnHills wordmark rendered from the website's current HTML/CSS treatment.
+Insertion contract: duplicate source slide 1, edit or replace mapped slide-local elements, remove the university-logo footer content, and leave the footer banner blank.
+Placeholders: the source slide uses the Blank layout and has no slide-local content placeholders. Invisible date/footer/slide-number layout placeholders remain non-content layout furniture and do not render on the slide.

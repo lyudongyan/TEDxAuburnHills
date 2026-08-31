@@ -1,0 +1,5141 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/y90nupkv",
+    "id": "y90nupkv",
+    "slide": 1,
+    "layoutId": "/ppt/slideLayouts/slideLayout7.xml",
+    "layoutName": "Blank",
+    "layoutType": "blank",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 2244,
+      "height": 3178.67
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Office",
+    "colors": {
+      "accent1": "#4F81BD",
+      "accent2": "#C0504D",
+      "accent3": "#9BBB59",
+      "accent4": "#8064A2",
+      "accent5": "#4BACC6",
+      "accent6": "#F79646",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#1F497D",
+      "lt2": "#EEECE1",
+      "hlink": "#0000FF",
+      "folHlink": "#800080"
+    },
+    "fontScheme": {
+      "name": "Office",
+      "majorFont": {
+        "latinTypeface": "Calibri"
+      },
+      "minorFont": {
+        "latinTypeface": "Calibri"
+      }
+    },
+    "typefaces": [
+      "Arial",
+      "Arial Bold",
+      "Calibri",
+      "Georgia Bold"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout7.xml",
+      "name": "Blank",
+      "type": "blank",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout7.xml/2",
+          "id": "2",
+          "name": "Date Placeholder 1",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": "8/1/2011",
+          "textPreview": "8/1/2011",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "8/1/2011",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "8/1/2011"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout7.xml/3",
+          "id": "3",
+          "name": "Footer Placeholder 2",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout7.xml/4",
+          "id": "4",
+          "name": "Slide Number Placeholder 3",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": "‹#›",
+          "textPreview": "‹#›",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "‹#›",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "‹#›"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster1.xml",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster1.xml/2",
+          "id": "2",
+          "name": "Title Placeholder 1",
+          "bbox": [
+            48,
+            28.83,
+            864,
+            120
+          ],
+          "geometry": "rect",
+          "text": "Click to edit Master title style",
+          "textPreview": "Click to edit Master title style",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Click to edit Master title style",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Click to edit Master title style"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster1.xml/3",
+          "id": "3",
+          "name": "Text Placeholder 2",
+          "bbox": [
+            48,
+            168,
+            864,
+            475.17
+          ],
+          "geometry": "rect",
+          "text": "Click to edit Master text styles\nSecond level\nThird level\nFourth level\nFifth level",
+          "textPreview": "Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level",
+          "resolvedTextStyle": {
+            "vertical": 1,
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Click to edit Master text styles",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Click to edit Master text styles"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "Second level",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Second level"
+                }
+              ]
+            },
+            {
+              "index": 3,
+              "text": "Third level",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Third level"
+                }
+              ]
+            },
+            {
+              "index": 4,
+              "text": "Fourth level",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Fourth level"
+                }
+              ]
+            },
+            {
+              "index": 5,
+              "text": "Fifth level",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Fifth level"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster1.xml/4",
+          "id": "4",
+          "name": "Date Placeholder 3",
+          "bbox": [
+            48,
+            667.33,
+            224,
+            38.33
+          ],
+          "geometry": "rect",
+          "text": "8/1/2011",
+          "textPreview": "8/1/2011",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "8/1/2011",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "8/1/2011"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster1.xml/5",
+          "id": "5",
+          "name": "Footer Placeholder 4",
+          "bbox": [
+            328,
+            667.33,
+            304,
+            38.33
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 5,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster1.xml/6",
+          "id": "6",
+          "name": "Slide Number Placeholder 5",
+          "bbox": [
+            688,
+            667.33,
+            224,
+            38.33
+          ],
+          "geometry": "rect",
+          "text": "‹#›",
+          "textPreview": "‹#›",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "‹#›",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "‹#›"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/547294r6",
+      "id": "2",
+      "name": "Freeform 2",
+      "bbox": [
+        0,
+        206.87,
+        2246.83,
+        2758.72
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image1.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 4138151
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7qp4be9c",
+      "id": "4",
+      "name": "Freeform 4",
+      "bbox": [
+        0,
+        0,
+        2246.83,
+        656.5
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image2.png",
+        "contentType": "image/png",
+        "byteLength": 2080885
+      }
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ts7md4r2",
+      "id": "6",
+      "name": "Freeform 6",
+      "bbox": [
+        0,
+        0,
+        1273.39,
+        656.5
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#001F3F"
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fu94fe98",
+      "id": "8",
+      "name": "Freeform 8",
+      "bbox": [
+        0,
+        645.18,
+        2246.83,
+        11.32
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#FFB81C"
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wn6dc7eh",
+      "id": "10",
+      "name": "Freeform 10",
+      "bbox": [
+        96.21,
+        70.74,
+        401.83,
+        79.24
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#FFB81C"
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ul4vaxgb",
+      "id": "12",
+      "name": "Freeform 12",
+      "bbox": [
+        96.21,
+        70.74,
+        401.83,
+        79.23
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image3.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 21932
+      }
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vmdcj2xw",
+      "id": "13",
+      "name": "TextBox 13",
+      "bbox": [
+        96.21,
+        69.99,
+        401.83,
+        79.98
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Call for Papers",
+      "textPreview": "Call for Papers",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Call for Papers"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Call for Papers",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Call for Papers",
+              "fontSize": 36.79,
+              "typeface": "Georgia Bold",
+              "color": "#001F3F",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5sfepcfe",
+      "id": "15",
+      "name": "Freeform 15",
+      "bbox": [
+        96.21,
+        159.97,
+        1103.61,
+        189.59
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image3.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 21932
+      }
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ipovexwn",
+      "id": "16",
+      "name": "TextBox 16",
+      "bbox": [
+        96.21,
+        159.22,
+        1103.61,
+        190.34
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "REED-AI",
+      "textPreview": "REED-AI",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "REED-AI"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "REED-AI",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "REED-AI",
+              "fontSize": 155.63,
+              "typeface": "Georgia Bold",
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sfqdkrep",
+      "id": "18",
+      "name": "Freeform 18",
+      "bbox": [
+        101.87,
+        551.8,
+        1126.24,
+        57.29
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image3.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 21932
+      }
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dgzetcfa",
+      "id": "19",
+      "name": "TextBox 19",
+      "bbox": [
+        101.87,
+        551.05,
+        1126.25,
+        58.04
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Emerging Area Track  •  ACM TRUST 2027",
+      "textPreview": "Emerging Area Track  •  ACM TRUST 2027",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Emerging Area Track  •  ACM TRUST 2027"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Emerging Area Track  •  ACM TRUST 2027",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Emerging Area Track  •  ACM TRUST 2027",
+              "fontSize": 35.39,
+              "typeface": "Arial Bold",
+              "color": "#FFB81C",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0bmd476t",
+      "id": "21",
+      "name": "Freeform 21",
+      "bbox": [
+        1493,
+        475.19,
+        553.82,
+        136.38
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#FFFFFF"
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e94v2hon",
+      "id": "23",
+      "name": "Freeform 23",
+      "bbox": [
+        1407.69,
+        487.23,
+        724.42,
+        112.31
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image3.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 21932
+      }
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/90ve1w7q",
+      "id": "24",
+      "name": "TextBox 24",
+      "bbox": [
+        1407.69,
+        485.73,
+        724.42,
+        113.81
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "March 7-9, 2027\nWashington, DC, USA",
+      "textPreview": "March 7-9, 2027 | Washington, DC, USA",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "March 7-9, 2027"
+          },
+          {
+            "index": 2,
+            "text": "Washington, DC, USA"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "March 7-9, 2027",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "March 7-9, 2027",
+              "fontSize": 44.72,
+              "typeface": "Arial Bold",
+              "color": "#001F3F",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Washington, DC, USA",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Washington, DC, USA",
+              "fontSize": 35.39,
+              "typeface": "Arial Bold",
+              "color": "#001F3F",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mx4v6hoz",
+      "id": "27",
+      "name": "Freeform 27",
+      "bbox": [
+        83.08,
+        1537.75,
+        14.14,
+        59.42
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#FFB81C"
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/432dwn6l",
+      "id": "29",
+      "name": "Freeform 29",
+      "bbox": [
+        119.86,
+        1529.26,
+        625.38,
+        82.06
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image3.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 21932
+      }
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/uxgjq907",
+      "id": "30",
+      "name": "TextBox 30",
+      "bbox": [
+        119.86,
+        1528.51,
+        625.38,
+        82.81
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Important Dates",
+      "textPreview": "Important Dates",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Important Dates"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Important Dates",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Important Dates",
+              "fontSize": 56.59,
+              "typeface": "Georgia Bold",
+              "color": "#003594",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wzy1szid",
+      "id": "32",
+      "name": "Freeform 32",
+      "bbox": [
+        119.86,
+        1605.66,
+        625.38,
+        4.24
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#D5DFEA"
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i1gje90j",
+      "id": "34",
+      "name": "Freeform 34",
+      "bbox": [
+        83.08,
+        1631.27,
+        749.68,
+        650.84
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#001F3F"
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/43y1gji9",
+      "id": "36",
+      "name": "Freeform 36",
+      "bbox": [
+        147.15,
+        1724.65,
+        6.41,
+        469.74
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#FFB81C"
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y5wjip0z",
+      "id": "38",
+      "name": "Freeform 38",
+      "bbox": [
+        124.73,
+        1710.5,
+        51.26,
+        45.28
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#FFB81C",
+      "lineWidth": 5.66
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/z2xgf6to",
+      "id": "40",
+      "name": "Freeform 40",
+      "bbox": [
+        124.73,
+        1823.69,
+        51.26,
+        45.28
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#FFB81C",
+      "lineWidth": 5.66
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/14fyhgbe",
+      "id": "42",
+      "name": "Freeform 42",
+      "bbox": [
+        124.73,
+        1936.88,
+        51.26,
+        45.28
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#FFB81C",
+      "lineWidth": 5.66
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nqxgjqtk",
+      "id": "44",
+      "name": "Freeform 44",
+      "bbox": [
+        124.73,
+        2050.07,
+        51.26,
+        45.28
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#FFB81C",
+      "lineWidth": 5.66
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9sfylgbq",
+      "id": "46",
+      "name": "Freeform 46",
+      "bbox": [
+        124.73,
+        2163.26,
+        51.26,
+        45.28
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#FFB81C",
+      "lineWidth": 5.66
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/or6hcvu5",
+      "id": "47",
+      "name": "TextBox 47",
+      "bbox": [
+        204.82,
+        1680.7,
+        570.27,
+        43.5
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Oct 24, 2026",
+      "textPreview": "Oct 24, 2026",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Oct 24, 2026"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Oct 24, 2026",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Oct 24, 2026",
+              "fontSize": 35.65,
+              "typeface": "Georgia Bold",
+              "color": "#FFB81C",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 27,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/buh0nqtg",
+      "id": "48",
+      "name": "TextBox 48",
+      "bbox": [
+        204.82,
+        1728.81,
+        570.27,
+        39.5
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Abstract registration",
+      "textPreview": "Abstract registration",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Abstract registration"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Abstract registration",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Abstract registration",
+              "fontSize": 32.25,
+              "typeface": "Arial",
+              "color": "#FFFFFF"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 28,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/at8zelcb",
+      "id": "49",
+      "name": "TextBox 49",
+      "bbox": [
+        204.82,
+        1793.89,
+        570.27,
+        43.5
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Oct 31, 2026",
+      "textPreview": "Oct 31, 2026",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Oct 31, 2026"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Oct 31, 2026",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Oct 31, 2026",
+              "fontSize": 35.65,
+              "typeface": "Georgia Bold",
+              "color": "#FFB81C",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 29,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8zqx4vq9",
+      "id": "50",
+      "name": "TextBox 50",
+      "bbox": [
+        204.82,
+        1842,
+        570.27,
+        39.5
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Paper submission",
+      "textPreview": "Paper submission",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Paper submission"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Paper submission",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Paper submission",
+              "fontSize": 32.25,
+              "typeface": "Arial",
+              "color": "#FFFFFF"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 30,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/t0jyd0ru",
+      "id": "51",
+      "name": "TextBox 51",
+      "bbox": [
+        204.82,
+        1907.08,
+        570.27,
+        43.5
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Dec 31, 2026",
+      "textPreview": "Dec 31, 2026",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Dec 31, 2026"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Dec 31, 2026",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Dec 31, 2026",
+              "fontSize": 35.65,
+              "typeface": "Georgia Bold",
+              "color": "#FFB81C",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 31,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6x8f2583",
+      "id": "52",
+      "name": "TextBox 52",
+      "bbox": [
+        204.82,
+        1955.19,
+        570.27,
+        39.5
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Acceptance notification",
+      "textPreview": "Acceptance notification",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Acceptance notification"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Acceptance notification",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Acceptance notification",
+              "fontSize": 32.25,
+              "typeface": "Arial",
+              "color": "#FFFFFF"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 32,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7yhgbq9o",
+      "id": "53",
+      "name": "TextBox 53",
+      "bbox": [
+        204.82,
+        2020.27,
+        570.27,
+        43.5
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Feb 28, 2027",
+      "textPreview": "Feb 28, 2027",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Feb 28, 2027"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Feb 28, 2027",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Feb 28, 2027",
+              "fontSize": 35.65,
+              "typeface": "Georgia Bold",
+              "color": "#FFB81C",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 33,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kvqx0vqd",
+      "id": "54",
+      "name": "TextBox 54",
+      "bbox": [
+        204.82,
+        2068.38,
+        570.27,
+        39.5
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Camera-ready manuscript",
+      "textPreview": "Camera-ready manuscript",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Camera-ready manuscript"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Camera-ready manuscript",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Camera-ready manuscript",
+              "fontSize": 32.25,
+              "typeface": "Arial",
+              "color": "#FFFFFF"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 34,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lwzy90ry",
+      "id": "55",
+      "name": "TextBox 55",
+      "bbox": [
+        204.82,
+        2133.46,
+        570.27,
+        43.5
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Mar 7-9, 2027",
+      "textPreview": "Mar 7-9, 2027",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Mar 7-9, 2027"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Mar 7-9, 2027",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Mar 7-9, 2027",
+              "fontSize": 35.65,
+              "typeface": "Georgia Bold",
+              "color": "#FFB81C",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 35,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yt8fyl87",
+      "id": "56",
+      "name": "TextBox 56",
+      "bbox": [
+        204.82,
+        2181.57,
+        570.27,
+        39.5
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Conference • Washington, DC",
+      "textPreview": "Conference • Washington, DC",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Conference • Washington, DC"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Conference • Washington, DC",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Conference • Washington, DC",
+              "fontSize": 32.25,
+              "typeface": "Arial",
+              "color": "#FFFFFF"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 36,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xsfy5grm",
+      "id": "59",
+      "name": "Freeform 59",
+      "bbox": [
+        88.05,
+        710.99,
+        12.85,
+        59.42
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#FFB81C"
+    },
+    {
+      "order": 37,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cby5k3yt",
+      "id": "61",
+      "name": "Freeform 61",
+      "bbox": [
+        121.48,
+        702.5,
+        568.28,
+        83.86
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image3.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 21932
+      }
+    },
+    {
+      "order": 38,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ra54bix8",
+      "id": "62",
+      "name": "TextBox 62",
+      "bbox": [
+        121.48,
+        701.75,
+        568.28,
+        84.61
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Track Chairs",
+      "textPreview": "Track Chairs",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Track Chairs"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Track Chairs",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Track Chairs",
+              "fontSize": 56.59,
+              "typeface": "Georgia Bold",
+              "color": "#003594",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 39,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5onm98f2",
+      "id": "64",
+      "name": "Freeform 64",
+      "bbox": [
+        121.48,
+        778.91,
+        568.29,
+        4.24
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#D5DFEA"
+    },
+    {
+      "order": 40,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4ne5g3yh",
+      "id": "65",
+      "name": "TextBox 65",
+      "bbox": [
+        83.08,
+        798.86,
+        749.69,
+        46.35
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Ahmad P. Tafti, PhD, FAMIA",
+      "textPreview": "Ahmad P. Tafti, PhD, FAMIA",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Ahmad P. Tafti, PhD, FAMIA"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Ahmad P. Tafti, PhD, FAMIA",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Ahmad P. Tafti, PhD, FAMIA",
+              "fontSize": 38.07,
+              "typeface": "Arial Bold",
+              "color": "#17233A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 41,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3m547yxw",
+      "id": "66",
+      "name": "TextBox 66",
+      "bbox": [
+        83.08,
+        845.44,
+        749.69,
+        39.37
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "University of Pittsburgh · tafti.ahmad@pitt.edu",
+      "textPreview": "University of Pittsburgh · tafti.ahmad@pitt.edu",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "University of Pittsburgh · tafti.ahmad@pitt.edu"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "University of Pittsburgh · tafti.ahmad@pitt.edu",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "University of Pittsburgh · tafti.ahmad@pitt.edu",
+              "fontSize": 32.43,
+              "typeface": "Arial",
+              "color": "#54647A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 42,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ilw3etgr",
+      "id": "67",
+      "name": "TextBox 67",
+      "bbox": [
+        83.08,
+        918.03,
+        749.69,
+        46.35
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Yanshan Wang, PhD, FAMIA",
+      "textPreview": "Yanshan Wang, PhD, FAMIA",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Yanshan Wang, PhD, FAMIA"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Yanshan Wang, PhD, FAMIA",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Yanshan Wang, PhD, FAMIA",
+              "fontSize": 38.07,
+              "typeface": "Arial Bold",
+              "color": "#17233A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 43,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9kr6lsfm",
+      "id": "68",
+      "name": "TextBox 68",
+      "bbox": [
+        83.08,
+        964.61,
+        749.69,
+        39.37
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "University of Pittsburgh · yanshan.wang@pitt.edu",
+      "textPreview": "University of Pittsburgh · yanshan.wang@pitt.edu",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "University of Pittsburgh · yanshan.wang@pitt.edu"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "University of Pittsburgh · yanshan.wang@pitt.edu",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "University of Pittsburgh · yanshan.wang@pitt.edu",
+              "fontSize": 32.43,
+              "typeface": "Arial",
+              "color": "#54647A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 44,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/oji5sne1",
+      "id": "69",
+      "name": "TextBox 69",
+      "bbox": [
+        83.08,
+        1037.19,
+        749.69,
+        46.35
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Shyam Visweswaran, MD, PhD",
+      "textPreview": "Shyam Visweswaran, MD, PhD",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Shyam Visweswaran, MD, PhD"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Shyam Visweswaran, MD, PhD",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Shyam Visweswaran, MD, PhD",
+              "fontSize": 38.07,
+              "typeface": "Arial Bold",
+              "color": "#17233A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 45,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6psjmpwj",
+      "id": "70",
+      "name": "TextBox 70",
+      "bbox": [
+        83.08,
+        1083.78,
+        749.69,
+        39.37
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "University of Pittsburgh · shv3@pitt.edu",
+      "textPreview": "University of Pittsburgh · shv3@pitt.edu",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "University of Pittsburgh · shv3@pitt.edu"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "University of Pittsburgh · shv3@pitt.edu",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "University of Pittsburgh · shv3@pitt.edu",
+              "fontSize": 32.43,
+              "typeface": "Arial",
+              "color": "#54647A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 46,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7q1kfudo",
+      "id": "71",
+      "name": "TextBox 71",
+      "bbox": [
+        83.08,
+        1156.36,
+        749.69,
+        46.35
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Armaghan Moemeni, PhD, SFHEA",
+      "textPreview": "Armaghan Moemeni, PhD, SFHEA",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Armaghan Moemeni, PhD, SFHEA"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Armaghan Moemeni, PhD, SFHEA",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Armaghan Moemeni, PhD, SFHEA",
+              "fontSize": 38.07,
+              "typeface": "Arial Bold",
+              "color": "#17233A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 47,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8ra1oze9",
+      "id": "72",
+      "name": "TextBox 72",
+      "bbox": [
+        83.08,
+        1202.95,
+        749.69,
+        30.75
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "University of Nottingham · armaghan.moemeni@nottingham.ac.uk",
+      "textPreview": "University of Nottingham · armaghan.moemeni@nottingham.ac.uk",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "University of Nottingham · armaghan.moemeni@nottingham.ac.uk"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "University of Nottingham · armaghan.moemeni@nottingham.ac.uk",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "University of Nottingham · armaghan.moemeni@nottingham.ac.uk",
+              "fontSize": 25.33,
+              "typeface": "Arial",
+              "color": "#54647A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 48,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ts32h4vu",
+      "id": "73",
+      "name": "TextBox 73",
+      "bbox": [
+        83.08,
+        1273.14,
+        749.69,
+        46.35
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Prashnna K. Gyawali, PhD",
+      "textPreview": "Prashnna K. Gyawali, PhD",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Prashnna K. Gyawali, PhD"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Prashnna K. Gyawali, PhD",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Prashnna K. Gyawali, PhD",
+              "fontSize": 38.07,
+              "typeface": "Arial Bold",
+              "color": "#17233A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 49,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ylsjipw7",
+      "id": "74",
+      "name": "TextBox 74",
+      "bbox": [
+        83.08,
+        1319.72,
+        749.69,
+        32.75
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "West Virginia University · prashnna.gyawali@mail.wvu.edu",
+      "textPreview": "West Virginia University · prashnna.gyawali@mail.wvu.edu",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "West Virginia University · prashnna.gyawali@mail.wvu.edu"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "West Virginia University · prashnna.gyawali@mail.wvu.edu",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "West Virginia University · prashnna.gyawali@mail.wvu.edu",
+              "fontSize": 27.39,
+              "typeface": "Arial",
+              "color": "#54647A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 50,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jm1kbuds",
+      "id": "75",
+      "name": "TextBox 75",
+      "bbox": [
+        83.08,
+        1392.3,
+        749.69,
+        46.35
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Michael Strange, PhD",
+      "textPreview": "Michael Strange, PhD",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Michael Strange, PhD"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Michael Strange, PhD",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Michael Strange, PhD",
+              "fontSize": 38.07,
+              "typeface": "Arial Bold",
+              "color": "#17233A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 51,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kna1kzed",
+      "id": "76",
+      "name": "TextBox 76",
+      "bbox": [
+        83.08,
+        1438.89,
+        749.69,
+        39.37
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Malmö University · michael.strange@mau.se",
+      "textPreview": "Malmö University · michael.strange@mau.se",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Malmö University · michael.strange@mau.se"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Malmö University · michael.strange@mau.se",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Malmö University · michael.strange@mau.se",
+              "fontSize": 32.43,
+              "typeface": "Arial",
+              "color": "#54647A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 52,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ihc3u9cr",
+      "id": "78",
+      "name": "Freeform 78",
+      "bbox": [
+        0,
+        2965.59,
+        2246.83,
+        5.66
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#FFB81C"
+    },
+    {
+      "order": 53,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rehk7e50",
+      "id": "80",
+      "name": "Freeform 80",
+      "bbox": [
+        83.08,
+        2321.13,
+        749.69,
+        567.37
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#003594"
+    },
+    {
+      "order": 54,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qd8jy94v",
+      "id": "81",
+      "name": "TextBox 81",
+      "bbox": [
+        83.08,
+        2313.23,
+        749.69,
+        575.26
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 5.33,
+          "right": 5.33,
+          "bottom": 5.33,
+          "left": 5.33
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 55,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cfa10jml",
+      "id": "83",
+      "name": "Freeform 83",
+      "bbox": [
+        151.44,
+        2416.52,
+        661.5,
+        4.99
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#FFB81C"
+    },
+    {
+      "order": 56,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/298ju94j",
+      "id": "85",
+      "name": "Freeform 85",
+      "bbox": [
+        151.08,
+        2333.93,
+        619.44,
+        83.86
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image3.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 21932
+      }
+    },
+    {
+      "order": 57,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pcz254na",
+      "id": "86",
+      "name": "TextBox 86",
+      "bbox": [
+        151.08,
+        2333.18,
+        619.44,
+        84.61
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Important Links",
+      "textPreview": "Important Links",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Important Links"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Important Links",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Important Links",
+              "fontSize": 56.59,
+              "typeface": "Georgia Bold",
+              "color": "#EAF1FB",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 58,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/f6x0zu58",
+      "id": "88",
+      "name": "Freeform 88",
+      "bbox": [
+        117.08,
+        2346.14,
+        14.14,
+        59.42
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#FFB81C"
+    },
+    {
+      "order": 59,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kbmh0v25",
+      "id": "90",
+      "name": "Freeform 90",
+      "bbox": [
+        132.71,
+        2429.75,
+        288.64,
+        124.51
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image3.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 21932
+      }
+    },
+    {
+      "order": 60,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5cvy903q",
+      "id": "91",
+      "name": "TextBox 91",
+      "bbox": [
+        132.71,
+        2429,
+        288.64,
+        125.26
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "REED-AI\nCall for Papers",
+      "textPreview": "REED-AI | Call for Papers",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "REED-AI"
+          },
+          {
+            "index": 2,
+            "text": "Call for Papers"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "REED-AI",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "REED-AI",
+              "fontSize": 36.79,
+              "typeface": "Georgia Bold",
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Call for Papers",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Call for ",
+              "fontSize": 36.79,
+              "typeface": "Georgia Bold",
+              "color": "#FFFFFF",
+              "bold": true
+            },
+            {
+              "index": 2,
+              "text": "Papers",
+              "fontSize": 36.79,
+              "typeface": "Georgia Bold",
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 61,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jadg7ql0",
+      "id": "93",
+      "name": "Freeform 93",
+      "bbox": [
+        494,
+        2429.75,
+        288.64,
+        124.51
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image3.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 21932
+      }
+    },
+    {
+      "order": 62,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sf6h4v2h",
+      "id": "94",
+      "name": "TextBox 94",
+      "bbox": [
+        494,
+        2429,
+        288.64,
+        125.26
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Submission Portal",
+      "textPreview": "Submission Portal",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Submission Portal"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Submission Portal",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Submission Portal",
+              "fontSize": 36.79,
+              "typeface": "Georgia Bold",
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 63,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6d4z25kb",
+      "id": "96",
+      "name": "Freeform 96",
+      "bbox": [
+        96.21,
+        3007.51,
+        355.61,
+        127.61
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image4.png",
+        "contentType": "image/png",
+        "byteLength": 79003
+      }
+    },
+    {
+      "order": 64,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7edgbalw",
+      "id": "97",
+      "name": "Freeform 97",
+      "bbox": [
+        506,
+        2985.67,
+        360.38,
+        187.17
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image5.png",
+        "contentType": "image/png",
+        "byteLength": 31134
+      }
+    },
+    {
+      "order": 65,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8j2xsbmd",
+      "id": "98",
+      "name": "Freeform 98",
+      "bbox": [
+        920.56,
+        2985.67,
+        322.76,
+        186.38
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image6.png",
+        "contentType": "image/png",
+        "byteLength": 81148
+      }
+    },
+    {
+      "order": 66,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9kby1g3i",
+      "id": "99",
+      "name": "Freeform 99",
+      "bbox": [
+        1289.93,
+        2971.25,
+        368.48,
+        215.23
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image7.png",
+        "contentType": "image/png",
+        "byteLength": 26946
+      }
+    },
+    {
+      "order": 67,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jitg36dg",
+      "id": "101",
+      "name": "Freeform 101",
+      "bbox": [
+        877.31,
+        710.99,
+        14.14,
+        59.42
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#FFB81C"
+    },
+    {
+      "order": 68,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l4by5wv6",
+      "id": "103",
+      "name": "Freeform 103",
+      "bbox": [
+        914.1,
+        702.5,
+        1287.54,
+        82.06
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image3.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 21932
+      }
+    },
+    {
+      "order": 69,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/654ze1wr",
+      "id": "104",
+      "name": "TextBox 104",
+      "bbox": [
+        914.1,
+        701.75,
+        1287.54,
+        82.81
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Description",
+      "textPreview": "Description",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Description"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Description",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Description",
+              "fontSize": 56.59,
+              "typeface": "Georgia Bold",
+              "color": "#003594",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 70,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/87mhgbex",
+      "id": "106",
+      "name": "Freeform 106",
+      "bbox": [
+        914.1,
+        778.91,
+        1287.54,
+        4.24
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#D5DFEA"
+    },
+    {
+      "order": 71,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m90f2hwn",
+      "id": "108",
+      "name": "Freeform 108",
+      "bbox": [
+        877.31,
+        1123.52,
+        14.14,
+        59.42
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#FFB81C"
+    },
+    {
+      "order": 72,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pgzax4jm",
+      "id": "110",
+      "name": "Freeform 110",
+      "bbox": [
+        914.1,
+        1115.03,
+        1287.54,
+        82.06
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image3.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 21932
+      }
+    },
+    {
+      "order": 73,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ofqtoj2h",
+      "id": "111",
+      "name": "TextBox 111",
+      "bbox": [
+        914.1,
+        1114.29,
+        1287.54,
+        82.81
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Track Topics",
+      "textPreview": "Track Topics",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Track Topics"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Track Topics",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Track Topics",
+              "fontSize": 56.59,
+              "typeface": "Georgia Bold",
+              "color": "#003594",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 74,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2d8rm9kb",
+      "id": "113",
+      "name": "Freeform 113",
+      "bbox": [
+        914.1,
+        1191.44,
+        1287.54,
+        4.24
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#D5DFEA"
+    },
+    {
+      "order": 75,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cjatsj2d",
+      "id": "115",
+      "name": "Freeform 115",
+      "bbox": [
+        911.27,
+        2631.9,
+        288.64,
+        96.21
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image3.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 21932
+      }
+    },
+    {
+      "order": 76,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bi1sze1s",
+      "id": "116",
+      "name": "TextBox 116",
+      "bbox": [
+        911.27,
+        2630.4,
+        288.64,
+        97.71
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Double-blind\nvia Microsoft CMT",
+      "textPreview": "Double-blind | via Microsoft CMT",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Double-blind"
+          },
+          {
+            "index": 2,
+            "text": "via Microsoft CMT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Double-blind",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Double-blind",
+              "fontSize": 31.12,
+              "typeface": "Arial",
+              "color": "#FFFFFF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "via Microsoft CMT",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "via Microsoft CMT",
+              "fontSize": 31.12,
+              "typeface": "Arial",
+              "color": "#FFFFFF"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 77,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sn69gf29",
+      "id": "119",
+      "name": "Freeform 119",
+      "bbox": [
+        914.1,
+        2210.77,
+        1287.54,
+        82.06
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image3.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 21932
+      }
+    },
+    {
+      "order": 78,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kratwza5",
+      "id": "120",
+      "name": "TextBox 120",
+      "bbox": [
+        914.1,
+        2210.02,
+        1287.54,
+        82.81
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Submission Information & Instructions",
+      "textPreview": "Submission Information & Instructions",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Submission Information & Instructions"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Submission Information & Instructions",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Submission Information & Instructions",
+              "fontSize": 56.59,
+              "typeface": "Georgia Bold",
+              "color": "#003594",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 79,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ypsbupsz",
+      "id": "122",
+      "name": "Freeform 122",
+      "bbox": [
+        914.1,
+        2287.17,
+        1287.54,
+        4.24
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#D5DFEA"
+    },
+    {
+      "order": 80,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/svut0za1",
+      "id": "124",
+      "name": "Freeform 124",
+      "bbox": [
+        877.31,
+        2219.26,
+        14.14,
+        59.42
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#FFB81C"
+    },
+    {
+      "order": 81,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6tsbypsv",
+      "id": "126",
+      "name": "Freeform 126",
+      "bbox": [
+        877.31,
+        2319.71,
+        1297.61,
+        568.78
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#EAF1FB",
+      "lineColor": "#D5DFEA",
+      "lineWidth": 2.83
+    },
+    {
+      "order": 82,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gzut4jax",
+      "id": "128",
+      "name": "Freeform 128",
+      "bbox": [
+        877.31,
+        2321.13,
+        356.55,
+        565.95
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#003594"
+    },
+    {
+      "order": 83,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/repw3it0",
+      "id": "130",
+      "name": "Freeform 130",
+      "bbox": [
+        911.27,
+        2377.72,
+        288.64,
+        124.51
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image3.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 21932
+      }
+    },
+    {
+      "order": 84,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qtwvadcf",
+      "id": "131",
+      "name": "TextBox 131",
+      "bbox": [
+        911.27,
+        2376.97,
+        288.64,
+        125.26
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Paper\nSubmission",
+      "textPreview": "Paper | Submission",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Paper"
+          },
+          {
+            "index": 2,
+            "text": "Submission"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Paper",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Paper",
+              "fontSize": 36.79,
+              "typeface": "Georgia Bold",
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Submission",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Submission",
+              "fontSize": 36.79,
+              "typeface": "Georgia Bold",
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 85,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cfydcnu5",
+      "id": "133",
+      "name": "Freeform 133",
+      "bbox": [
+        905.61,
+        2530.53,
+        299.95,
+        175.45
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image3.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 21932
+      }
+    },
+    {
+      "order": 86,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3q5czyto",
+      "id": "134",
+      "name": "TextBox 134",
+      "bbox": [
+        905.61,
+        2535.03,
+        299.95,
+        170.94
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Oct 31\n2026",
+      "textPreview": "Oct 31 | 2026",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Oct 31"
+          },
+          {
+            "index": 2,
+            "text": "2026"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Oct 31",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Oct 31",
+              "fontSize": 79.23,
+              "typeface": "Georgia Bold",
+              "color": "#FFB81C",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "2026",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2026",
+              "fontSize": 79.23,
+              "typeface": "Georgia Bold",
+              "color": "#FFB81C",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 87,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2pwv6tc3",
+      "id": "135",
+      "name": "TextBox 135",
+      "bbox": [
+        1279.14,
+        2365.65,
+        871.57,
+        468.75
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "- Format: PDF, 2-column ACM sigconf template\n\n- Length: up to 9 pages, including appendix\n\n- Unlimited additional pages for references and the required GenAI Usage Disclosure\n\n- Remove author names, affiliations, identifying metadata, and obvious self-references\n\n- Accepted papers: ACM Digital Library; indexed in EI Compendex and Scopus",
+      "textPreview": "- Format: PDF, 2-column ACM sigconf template |  | - Length: up to 9 pages, including appendix |  | - Unlimited additional pages for refer...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 12,
+        "lines": [
+          {
+            "index": 1,
+            "text": "- Format: PDF, 2-column ACM sigconf template"
+          },
+          {
+            "index": 2,
+            "text": ""
+          },
+          {
+            "index": 3,
+            "text": "- Length: up to 9 pages, including appendix"
+          },
+          {
+            "index": 4,
+            "text": ""
+          },
+          {
+            "index": 5,
+            "text": "- Unlimited additional pages for references and the required"
+          },
+          {
+            "index": 6,
+            "text": "GenAI Usage Disclosure"
+          },
+          {
+            "index": 7,
+            "text": ""
+          },
+          {
+            "index": 8,
+            "text": "- Remove author names, affiliations, identifying metadata,"
+          },
+          {
+            "index": 9,
+            "text": "and obvious self-references"
+          },
+          {
+            "index": 10,
+            "text": ""
+          },
+          {
+            "index": 11,
+            "text": "- Accepted papers: ACM Digital Library; indexed in EI"
+          },
+          {
+            "index": 12,
+            "text": "Compendex and Scopus"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "- Format: PDF, 2-column ACM sigconf template",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- Format: ",
+              "fontSize": 32.64,
+              "typeface": "Arial Bold",
+              "color": "#17233A",
+              "bold": true
+            },
+            {
+              "index": 2,
+              "text": "PDF, 2-column ACM sigconf template",
+              "fontSize": 32.64,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "- Length: up to 9 pages, including appendix",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- Length: ",
+              "fontSize": 32.64,
+              "typeface": "Arial Bold",
+              "color": "#17233A",
+              "bold": true
+            },
+            {
+              "index": 2,
+              "text": "up to 9 pages, including appendix",
+              "fontSize": 32.64,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "- Unlimited additional pages for references and the required GenAI Usage Disclosure",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- ",
+              "fontSize": 32.64,
+              "typeface": "Arial Bold",
+              "color": "#17233A",
+              "bold": true
+            },
+            {
+              "index": 2,
+              "text": "Unlimited additional pages for references and the required GenAI Usage Disclosure",
+              "fontSize": 32.64,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 7,
+          "text": "- Remove author names, affiliations, identifying metadata, and obvious self-references",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- ",
+              "fontSize": 32.64,
+              "typeface": "Arial Bold",
+              "color": "#17233A",
+              "bold": true
+            },
+            {
+              "index": 2,
+              "text": "Remove author names, affiliations, identifying metadata, and obvious self-references",
+              "fontSize": 32.64,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 9,
+          "text": "- Accepted papers: ACM Digital Library; indexed in EI Compendex and Scopus",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- ",
+              "fontSize": 32.64,
+              "typeface": "Arial Bold",
+              "color": "#17233A",
+              "bold": true
+            },
+            {
+              "index": 2,
+              "text": "Accepted papers: ACM Digital Library; indexed in EI Compendex and Scopus",
+              "fontSize": 32.64,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 88,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/psne18bu",
+      "id": "136",
+      "name": "TextBox 136",
+      "bbox": [
+        1279.14,
+        2704.47,
+        871.57,
+        37.77
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 89,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ml0v2xcn",
+      "id": "139",
+      "name": "Freeform 139",
+      "bbox": [
+        1582.06,
+        36.48,
+        707.11,
+        136.38
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillColor": "#FFFFFF"
+    },
+    {
+      "order": 90,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/atgz6h8r",
+      "id": "140",
+      "name": "TextBox 140",
+      "bbox": [
+        1582.06,
+        20.7,
+        707.11,
+        152.17
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 5.33,
+          "right": 5.33,
+          "bottom": 5.33,
+          "left": 5.33
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 91,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vupgzmpc",
+      "id": "141",
+      "name": "Freeform 141",
+      "bbox": [
+        1586.41,
+        49.18,
+        643.41,
+        110.99
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image8.png",
+        "contentType": "image/png",
+        "byteLength": 102640
+      }
+    },
+    {
+      "order": 92,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wvyh8rqx",
+      "id": "142",
+      "name": "Freeform 142",
+      "bbox": [
+        124.8,
+        2536.92,
+        318.93,
+        318.93
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image9.png",
+        "contentType": "image/png",
+        "byteLength": 1094
+      }
+    },
+    {
+      "order": 93,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xw7i1w7i",
+      "id": "143",
+      "name": "Freeform 143",
+      "bbox": [
+        478.85,
+        2536.92,
+        318.93,
+        318.93
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image10.png",
+        "contentType": "image/png",
+        "byteLength": 1087
+      }
+    },
+    {
+      "order": 94,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m5wz2h8v",
+      "id": "144",
+      "name": "Freeform 144",
+      "bbox": [
+        124.8,
+        2536.92,
+        318.93,
+        318.93
+      ],
+      "rotation": 0,
+      "geometry": "custom",
+      "fillImage": {
+        "assetId": "/ppt/media/image11.png",
+        "contentType": "image/png",
+        "byteLength": 912
+      }
+    },
+    {
+      "order": 95,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/n65gvmp0",
+      "id": "145",
+      "name": "TextBox 145",
+      "bbox": [
+        1526.86,
+        1225.1,
+        657.81,
+        939.23
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Human Factors and User-Centered Design for Healthcare AI\n\nPost-Deployment Monitoring and Lifecycle Management of AI Systems\n\nPrivacy-Preserving and Federated Learning in Healthcare\n\nReal-World Deployment, Implementation Science, and Clinical Translation\n\nRobustness, Reliability, Privacy, and Safety of Clinical AI Systems\n\nSynthetic Data and Responsible Generative Methods in Healthcare\n\nTransparency, Accountability, and Auditable AI Systems\n\nTrust Calibration and Human-AI Collaboration in Healthcare\n\nTrustworthy AI for Digital Health and Remote Patient Monitoring\n\nUncertainty Quantification and Confidence-Aware Clinical AI\n\nVision-Language and Multimodal AI for Clinical Applications",
+      "textPreview": "Human Factors and User-Centered Design for Healthcare AI |  | Post-Deployment Monitoring and Lifecycle Management of AI Systems |  | Priv...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 32,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• Human Factors and User-Centered"
+          },
+          {
+            "index": 2,
+            "text": "Design for Healthcare AI"
+          },
+          {
+            "index": 3,
+            "text": ""
+          },
+          {
+            "index": 4,
+            "text": "• Post-Deployment Monitoring and"
+          },
+          {
+            "index": 5,
+            "text": "Lifecycle Management of AI Systems"
+          },
+          {
+            "index": 6,
+            "text": ""
+          },
+          {
+            "index": 7,
+            "text": "• Privacy-Preserving and Federated"
+          },
+          {
+            "index": 8,
+            "text": "Learning in Healthcare"
+          },
+          {
+            "index": 9,
+            "text": ""
+          },
+          {
+            "index": 10,
+            "text": "• Real-World Deployment, Implementation"
+          },
+          {
+            "index": 11,
+            "text": "Science, and Clinical Translation"
+          },
+          {
+            "index": 12,
+            "text": ""
+          },
+          {
+            "index": 13,
+            "text": "• Robustness, Reliability, Privacy, and"
+          },
+          {
+            "index": 14,
+            "text": "Safety of Clinical AI Systems"
+          },
+          {
+            "index": 15,
+            "text": ""
+          },
+          {
+            "index": 16,
+            "text": "• Synthetic Data and Responsible"
+          },
+          {
+            "index": 17,
+            "text": "Generative Methods in Healthcare"
+          },
+          {
+            "index": 18,
+            "text": ""
+          },
+          {
+            "index": 19,
+            "text": "• Transparency, Accountability, and"
+          },
+          {
+            "index": 20,
+            "text": "Auditable AI Systems"
+          },
+          {
+            "index": 21,
+            "text": ""
+          },
+          {
+            "index": 22,
+            "text": "• Trust Calibration and Human-AI"
+          },
+          {
+            "index": 23,
+            "text": "Collaboration in Healthcare"
+          },
+          {
+            "index": 24,
+            "text": ""
+          },
+          {
+            "index": 25,
+            "text": "• Trustworthy AI for Digital Health and"
+          },
+          {
+            "index": 26,
+            "text": "Remote Patient Monitoring"
+          },
+          {
+            "index": 27,
+            "text": ""
+          },
+          {
+            "index": 28,
+            "text": "• Uncertainty Quantification and"
+          },
+          {
+            "index": 29,
+            "text": "Confidence-Aware Clinical AI"
+          },
+          {
+            "index": 30,
+            "text": ""
+          },
+          {
+            "index": 31,
+            "text": "• Vision-Language and Multimodal AI for"
+          },
+          {
+            "index": 32,
+            "text": "Clinical Applications"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Human Factors and User-Centered Design for Healthcare AI",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Human Factors and User-Centered Design for Healthcare AI",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 457200
+        },
+        {
+          "index": 3,
+          "text": "Post-Deployment Monitoring and Lifecycle Management of AI Systems",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Post-Deployment Monitoring and Lifecycle Management of AI Systems",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "Privacy-Preserving and Federated Learning in Healthcare",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Privacy-Preserving and Federated Learning in Healthcare",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 457200
+        },
+        {
+          "index": 7,
+          "text": "Real-World Deployment, Implementation Science, and Clinical Translation",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Real-World Deployment, Implementation Science, and Clinical Translation",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 9,
+          "text": "Robustness, Reliability, Privacy, and Safety of Clinical AI Systems",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Robustness, Reliability, Privacy, and Safety of Clinical AI Systems",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 457200
+        },
+        {
+          "index": 11,
+          "text": "Synthetic Data and Responsible Generative Methods in Healthcare",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Synthetic Data and Responsible Generative Methods in Healthcare",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 13,
+          "text": "Transparency, Accountability, and Auditable AI Systems",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Transparency, Accountability, and Auditable AI Systems",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 457200
+        },
+        {
+          "index": 15,
+          "text": "Trust Calibration and Human-AI Collaboration in Healthcare",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Trust Calibration and Human-AI Collaboration in Healthcare",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 17,
+          "text": "Trustworthy AI for Digital Health and Remote Patient Monitoring",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Trustworthy AI for Digital Health and Remote Patient Monitoring",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 457200
+        },
+        {
+          "index": 19,
+          "text": "Uncertainty Quantification and Confidence-Aware Clinical AI",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Uncert",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            },
+            {
+              "index": 2,
+              "text": "ainty Quantification and Confidence-Aware Clinical AI",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 21,
+          "text": "Vision-Language and Multimodal AI for Clinical Applications",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Vision-Language and Multimodal AI for Clinical Applications",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 457200
+        }
+      ]
+    },
+    {
+      "order": 96,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8reh4rql",
+      "id": "146",
+      "name": "TextBox 146",
+      "bbox": [
+        877.31,
+        806.03,
+        1324.33,
+        258
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "REED-AI advances trustworthy AI methods and deployment frameworks for healthcare. We invite original research, position papers, and case studies on transparent, robust, accountable, safe, and ethically aligned clinical AI. The track emphasizes real-world translation, including generalizability, reliability, clinician trust, workflow integration, regulatory readiness, and societal impact, and connects researchers, clinicians, industry, policymakers, and regulators.",
+      "textPreview": "REED-AI advances trustworthy AI methods and deployment frameworks for healthcare. We invite original research, position papers, and case ...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 6,
+        "lines": [
+          {
+            "index": 1,
+            "text": "REED-AI advances trustworthy AI methods and deployment frameworks for healthcare."
+          },
+          {
+            "index": 2,
+            "text": "We invite original research, position papers, and case studies on transparent, robust,"
+          },
+          {
+            "index": 3,
+            "text": "accountable, safe, and ethically aligned clinical AI. The track emphasizes real-world"
+          },
+          {
+            "index": 4,
+            "text": "translation, including generalizability, reliability, clinician trust, workflow integration,"
+          },
+          {
+            "index": 5,
+            "text": "regulatory readiness, and societal impact, and connects researchers, clinicians, industry,"
+          },
+          {
+            "index": 6,
+            "text": "policymakers, and regulators."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "REED-AI advances trustworthy AI methods and deployment frameworks for healthcare. We invite original research, position papers, and case studies on transparent, robust, accountable, safe, and ethically aligned clinical AI. The track emphasizes real-world translation, including generalizability, reliability, clinician trust, workflow integration, regulatory readiness, and societal impact, and connects researchers, clinicians, industry, policymakers, and regulators.",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "REED-AI advances trustworthy AI methods and deployment frameworks for healthcare. We invite original research, position papers, and case studies on transparent, robust, accountable, safe, and ethically aligned clinical AI. The track emphasizes real-world translation, including generalizability, reliability, clinician trust, workflow integration, regulatory readiness, and societal impact, and connects researchers, clinicians, industry, policymakers, and regulators.",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 97,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9s7yxw76",
+      "id": "147",
+      "name": "TextBox 147",
+      "bbox": [
+        877.31,
+        1225.1,
+        648.81,
+        853
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "AI for Precision Medicine and Personalized Care\n\nAI Governance, Regulation, and Compliance in Clinical Environments\n\nBenchmarking, Validation, and Reproducibility of Clinical AI\n\nClinical Natural Language Processing and Large Language Models\n\nEthical-by-Design AI Methodologies and Frameworks\n\nExplainable AI for Medical Imaging and Computer-Assisted Diagnosis\n\nExplainable and Interpretable AI for Clinical Decision Support\n\nFairness, Bias Detection, Bias Mitigation, and Equity-Aware AI\n\nFoundation Models and Generative AI for Healthcare\n\nGeneralizable AI Across Institutions, Populations, and Care Settings",
+      "textPreview": "AI for Precision Medicine and Personalized Care |  | AI Governance, Regulation, and Compliance in Clinical Environments |  | Benchmarking...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 29,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• AI for Precision Medicine and"
+          },
+          {
+            "index": 2,
+            "text": "Personalized Care"
+          },
+          {
+            "index": 3,
+            "text": ""
+          },
+          {
+            "index": 4,
+            "text": "• AI Governance, Regulation, and"
+          },
+          {
+            "index": 5,
+            "text": "Compliance in Clinical Environments"
+          },
+          {
+            "index": 6,
+            "text": ""
+          },
+          {
+            "index": 7,
+            "text": "• Benchmarking, Validation, and"
+          },
+          {
+            "index": 8,
+            "text": "Reproducibility of Clinical AI"
+          },
+          {
+            "index": 9,
+            "text": ""
+          },
+          {
+            "index": 10,
+            "text": "• Clinical Natural Language Processing"
+          },
+          {
+            "index": 11,
+            "text": "and Large Language Models"
+          },
+          {
+            "index": 12,
+            "text": ""
+          },
+          {
+            "index": 13,
+            "text": "• Ethical-by-Design AI Methodologies"
+          },
+          {
+            "index": 14,
+            "text": "and Frameworks"
+          },
+          {
+            "index": 15,
+            "text": ""
+          },
+          {
+            "index": 16,
+            "text": "• Explainable AI for Medical Imaging and"
+          },
+          {
+            "index": 17,
+            "text": "Computer-Assisted Diagnosis"
+          },
+          {
+            "index": 18,
+            "text": ""
+          },
+          {
+            "index": 19,
+            "text": "• Explainable and Interpretable AI for"
+          },
+          {
+            "index": 20,
+            "text": "Clinical Decision Support"
+          },
+          {
+            "index": 21,
+            "text": ""
+          },
+          {
+            "index": 22,
+            "text": "• Fairness, Bias Detection, Bias"
+          },
+          {
+            "index": 23,
+            "text": "Mitigation, and Equity-Aware AI"
+          },
+          {
+            "index": 24,
+            "text": ""
+          },
+          {
+            "index": 25,
+            "text": "• Foundation Models and Generative AI"
+          },
+          {
+            "index": 26,
+            "text": "for Healthcare"
+          },
+          {
+            "index": 27,
+            "text": ""
+          },
+          {
+            "index": 28,
+            "text": "• Generalizable AI Across Institutions,"
+          },
+          {
+            "index": 29,
+            "text": "Populations, and Care Settings"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "AI for Precision Medicine and Personalized Care",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "AI for Precision Medicine and Personalized Care",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 457200
+        },
+        {
+          "index": 3,
+          "text": "AI Governance, Regulation, and Compliance in Clinical Environments",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "AI Governance, Regulation, and Compliance in Clinical Environments",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "Benchmarking, Validation, and Reproducibility of Clinical AI",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Benchmarking, Validation, and Reproducibility of Clinical AI",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 457200
+        },
+        {
+          "index": 7,
+          "text": "Clinical Natural Language Processing and Large Language Models",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Clinical Natural Language Processing and Large Language Models",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 9,
+          "text": "Ethical-by-Design AI Methodologies and Frameworks",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Ethical-by-Design AI Methodologies and Frameworks",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 457200
+        },
+        {
+          "index": 11,
+          "text": "Explainable AI for Medical Imaging and Computer-Assisted Diagnosis",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Explainable AI for Medical Imaging and Computer-Assisted Diagnosis",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 13,
+          "text": "Explainable and Interpretable AI for Clinical Decision Support",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Explainable and Interpretable AI for Clinical Decision Support",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 457200
+        },
+        {
+          "index": 15,
+          "text": "Fairness, Bias Detection, Bias Mitigation, and Equity-Aware AI",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Fairness, Bias Detection, Bias Mitigation, and Equity-Aware AI",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 17,
+          "text": "Foundation Models and Generative AI for Healthcare",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Foundation Models and Generative AI for Healthcare",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 457200
+        },
+        {
+          "index": 19,
+          "text": "Generalizable AI Across Institutions, Populations, and Care Settings",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Generalizable AI Across Institutions, Populations, and Care Settings",
+              "fontSize": 33.32,
+              "typeface": "Arial",
+              "color": "#17233A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 98,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/610ze18z",
+      "id": "148",
+      "name": "TextBox 148",
+      "bbox": [
+        101.87,
+        333.24,
+        1148.88,
+        193.56
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Responsible, Explainable,\nand Ethical-by-Design Artificial Intelligence\nin Clinical Applications",
+      "textPreview": "Responsible, Explainable, | and Ethical-by-Design Artificial Intelligence | in Clinical Applications",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Responsible, Explainable,"
+          },
+          {
+            "index": 2,
+            "text": "and Ethical-by-Design Artificial Intelligence"
+          },
+          {
+            "index": 3,
+            "text": "in Clinical Applications"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Responsible, Explainable,",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Responsible, Explainable,",
+              "fontSize": 49.53,
+              "typeface": "Georgia Bold",
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "and Ethical-by-Design Artificial Intelligence",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "and Ethical-by-Design Artificial Intelligence",
+              "fontSize": 49.53,
+              "typeface": "Georgia Bold",
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "in Clinical Applications",
+          "resolvedTextStyle": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "in Clinical Applications",
+              "fontSize": 49.53,
+              "typeface": "Georgia Bold",
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 99,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1wb2xkrm",
+      "id": "150",
+      "name": "TextBox 150",
+      "bbox": [
+        1718.77,
+        3082.71,
+        469.74,
+        42.51
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "eigtrust.acm.org/trust2027",
+      "textPreview": "eigtrust.acm.org/trust2027",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "eigtrust.acm.org/trust2027"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "eigtrust.acm.org/trust2027",
+          "resolvedTextStyle": {
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "eigtrust.acm.org/trust2027",
+              "fontSize": 34.52,
+              "typeface": "Arial Bold",
+              "color": "#467886",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 100,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gv214fa1",
+      "id": "151",
+      "name": "TextBox 151",
+      "bbox": [
+        1724.43,
+        3028.75,
+        464.08,
+        44.5
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "Official Conference Website",
+      "textPreview": "Official Conference Website",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Official Conference Website"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Official Conference Website",
+          "resolvedTextStyle": {
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Official Conference Website",
+              "fontSize": 36.16,
+              "typeface": "Arial",
+              "color": "#54647A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

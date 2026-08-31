@@ -1,0 +1,158 @@
+{
+  "sourcePptx": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\Example Poster.pptx",
+  "workspace": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build",
+  "outDir": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build\\template-inspect",
+  "generatedAt": "2026-08-02T06:01:52.758Z",
+  "slideCount": 1,
+  "slideArtifacts": [
+    {
+      "slide": 1,
+      "previewPath": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build\\template-inspect\\source-slides\\source-slide-01.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-01.png",
+      "layoutPath": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build\\template-inspect\\layouts\\source-slide-01.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-01.layout.json"
+    }
+  ],
+  "inspectPath": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build\\template-inspect\\template-inspect.ndjson",
+  "inspectRelativePath": "template-inspect/template-inspect.ndjson",
+  "inspectTruncated": true,
+  "inspectMetadata": {
+    "revision": "o5moew",
+    "target": {
+      "id": "pr/dynv83"
+    },
+    "kind": {
+      "requested": "slide,textbox,shape,image,table,chart",
+      "tokens": [
+        "slide",
+        "textbox",
+        "shape",
+        "image",
+        "table",
+        "chart"
+      ]
+    },
+    "include": {
+      "tokens": []
+    },
+    "exclude": {
+      "tokens": []
+    },
+    "notices": []
+  },
+  "extractedMedia": [
+    {
+      "entry": "ppt/media/image1.jpeg",
+      "path": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build\\template-inspect\\assets\\ppt\\media\\image1.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image1.jpeg",
+      "bytes": 4138151
+    },
+    {
+      "entry": "ppt/media/image2.png",
+      "path": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build\\template-inspect\\assets\\ppt\\media\\image2.png",
+      "relativePath": "template-inspect/assets/ppt/media/image2.png",
+      "bytes": 2080885
+    },
+    {
+      "entry": "ppt/media/image3.jpeg",
+      "path": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build\\template-inspect\\assets\\ppt\\media\\image3.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image3.jpeg",
+      "bytes": 21932
+    },
+    {
+      "entry": "ppt/media/image4.png",
+      "path": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build\\template-inspect\\assets\\ppt\\media\\image4.png",
+      "relativePath": "template-inspect/assets/ppt/media/image4.png",
+      "bytes": 79003
+    },
+    {
+      "entry": "ppt/media/image5.png",
+      "path": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build\\template-inspect\\assets\\ppt\\media\\image5.png",
+      "relativePath": "template-inspect/assets/ppt/media/image5.png",
+      "bytes": 31134
+    },
+    {
+      "entry": "ppt/media/image6.png",
+      "path": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build\\template-inspect\\assets\\ppt\\media\\image6.png",
+      "relativePath": "template-inspect/assets/ppt/media/image6.png",
+      "bytes": 81148
+    },
+    {
+      "entry": "ppt/media/image7.png",
+      "path": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build\\template-inspect\\assets\\ppt\\media\\image7.png",
+      "relativePath": "template-inspect/assets/ppt/media/image7.png",
+      "bytes": 26946
+    },
+    {
+      "entry": "ppt/media/image8.png",
+      "path": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build\\template-inspect\\assets\\ppt\\media\\image8.png",
+      "relativePath": "template-inspect/assets/ppt/media/image8.png",
+      "bytes": 102640
+    },
+    {
+      "entry": "ppt/media/image9.png",
+      "path": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build\\template-inspect\\assets\\ppt\\media\\image9.png",
+      "relativePath": "template-inspect/assets/ppt/media/image9.png",
+      "bytes": 1094
+    },
+    {
+      "entry": "ppt/media/image10.png",
+      "path": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build\\template-inspect\\assets\\ppt\\media\\image10.png",
+      "relativePath": "template-inspect/assets/ppt/media/image10.png",
+      "bytes": 1087
+    },
+    {
+      "entry": "ppt/media/image11.png",
+      "path": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build\\template-inspect\\assets\\ppt\\media\\image11.png",
+      "relativePath": "template-inspect/assets/ppt/media/image11.png",
+      "bytes": 912
+    }
+  ],
+  "fonts": [
+    "+mj-cs",
+    "+mj-ea",
+    "+mj-lt",
+    "+mn-cs",
+    "+mn-ea",
+    "+mn-lt",
+    "Angsana New",
+    "Arial",
+    "Arial Bold",
+    "Calibri",
+    "Cordia New",
+    "DaunPenh",
+    "DokChampa",
+    "Estrangelo Edessa",
+    "Euphemia",
+    "Gautami",
+    "Georgia Bold",
+    "Iskoola Pota",
+    "Kalinga",
+    "Kartika",
+    "Latha",
+    "MV Boli",
+    "Mangal",
+    "Microsoft Himalaya",
+    "Microsoft Uighur",
+    "Microsoft Yi Baiti",
+    "Mongolian Baiti",
+    "MoolBoran",
+    "Nyala",
+    "Plantagenet Cherokee",
+    "Raavi",
+    "Shruti",
+    "Times New Roman",
+    "Tunga",
+    "Vrinda",
+    "宋体",
+    "新細明體",
+    "맑은 고딕",
+    "ＭＳ Ｐゴシック"
+  ],
+  "packageParts": {
+    "mediaCount": 11,
+    "slideXmlCount": 1,
+    "chartCount": 0,
+    "tableSlideCount": 0
+  }
+}

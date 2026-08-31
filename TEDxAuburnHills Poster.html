@@ -78,8 +78,8 @@
 
     .poster-grid {
       display: grid;
-      grid-template-rows: 390px 220px 850px 450px 17px;
-      gap: 16px;
+      grid-template-rows: 390px 230px 824px 450px 17px;
+      gap: 20px;
     }
 
     .glass {
@@ -156,7 +156,7 @@
       position: relative;
       z-index: 2;
       height: 100%;
-      padding: 28px 38px 32px;
+      padding: 30px 44px 34px;
     }
 
     .hero-top {
@@ -175,7 +175,8 @@
       font-family: var(--display);
       font-size: 24px;
       font-weight: 750;
-      letter-spacing: .09em;
+      letter-spacing: .01em;
+      white-space: nowrap;
     }
 
     .brand {
@@ -237,25 +238,30 @@
     }
 
     .hero-context {
-      width: 810px;
-      margin: 14px 0 0;
+      position: absolute;
+      right: 44px;
+      bottom: 25px;
+      left: 44px;
+      width: auto;
+      margin: 0;
       color: rgba(255, 255, 255, .76);
       font-family: var(--body);
-      font-size: 30px;
-      line-height: 1.25;
+      font-size: 28px;
+      line-height: 1.15;
+      white-space: nowrap;
     }
 
     .date-panel {
       position: absolute;
-      right: 32px;
-      bottom: 28px;
-      width: 470px;
-      padding: 21px 26px 20px;
+      top: 152px;
+      right: 44px;
+      width: 480px;
+      padding: 22px 28px 21px;
       border: 1px solid rgba(255, 255, 255, .76);
       border-radius: 24px;
       color: var(--ink);
       background: rgba(255, 247, 246, .9);
-      box-shadow: 12px 12px 0 rgba(235, 0, 40, .86), 0 28px 80px -40px #000;
+      box-shadow: 8px 8px 0 rgba(235, 0, 40, .86), 0 28px 80px -40px #000;
       -webkit-backdrop-filter: blur(26px) saturate(125%);
       backdrop-filter: blur(26px) saturate(125%);
     }
@@ -278,37 +284,19 @@
     .intro-grid {
       display: grid;
       grid-template-columns: 1.7fr 1fr;
-      gap: 16px;
+      gap: 20px;
       height: 100%;
     }
 
     .theme-card,
     .fact-card {
-      padding: 25px 30px;
+      padding: 22px 34px;
     }
 
     .theme-card {
-      display: grid;
-      grid-template-columns: .95fr 1.05fr;
-      grid-template-rows: auto 1fr;
-      column-gap: 34px;
-      align-items: start;
-    }
-
-    .theme-card .eyebrow {
-      grid-column: 1;
-      grid-row: 1;
-    }
-
-    .theme-card h2 {
-      grid-column: 1;
-      grid-row: 2;
-    }
-
-    .theme-card p {
-      grid-column: 2;
-      grid-row: 1 / span 2;
-      align-self: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .eyebrow {
@@ -316,8 +304,7 @@
       font-family: var(--display);
       font-size: 24px;
       font-weight: 750;
-      letter-spacing: .13em;
-      text-transform: uppercase;
+      letter-spacing: .01em;
     }
 
     .theme-card h2,
@@ -333,22 +320,25 @@
 
     .theme-card h2 {
       max-width: 820px;
-      font-size: 44px;
+      margin-top: 8px;
+      font-size: 36px;
+      white-space: nowrap;
     }
 
     .theme-card p {
       max-width: 870px;
-      margin: 0;
+      margin: 14px 0 0;
       color: #373132;
-      font-size: 29px;
-      line-height: 1.22;
+      font-size: 26px;
+      line-height: 1.17;
     }
 
     .fact-card {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      align-content: center;
-      gap: 8px;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 0;
+      padding: 18px 28px;
       color: var(--white);
       background:
         radial-gradient(circle at 88% 12%, rgba(235, 0, 40, .38), transparent 30%),
@@ -356,8 +346,15 @@
     }
 
     .fact {
-      padding: 10px 14px;
-      border-left: 2px solid rgba(255, 154, 145, .72);
+      display: grid;
+      grid-template-columns: 108px 1fr;
+      align-items: center;
+      padding: 0 10px;
+      border-top: 1px solid rgba(255, 154, 145, .32);
+    }
+
+    .fact:first-child {
+      border-top: 0;
     }
 
     .fact strong {
@@ -371,7 +368,7 @@
 
     .fact span {
       display: block;
-      margin-top: 6px;
+      margin-top: 0;
       color: rgba(255, 255, 255, .78);
       font-family: var(--body);
       font-size: 25px;
@@ -382,7 +379,7 @@
       display: flex;
       min-height: 0;
       flex-direction: column;
-      padding: 24px 26px 26px;
+      padding: 28px 30px;
       background:
         radial-gradient(circle at 88% 10%, rgba(235, 0, 40, .24), transparent 27%),
         linear-gradient(128deg, rgba(16, 14, 15, .95), rgba(37, 34, 34, .94) 60%, rgba(101, 0, 19, .92));
@@ -393,7 +390,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 30px;
-      margin-bottom: 14px;
+      margin-bottom: 16px;
       padding: 0 4px;
     }
 
@@ -443,6 +440,10 @@
       backdrop-filter: blur(24px) saturate(145%);
     }
 
+    .speaker-card > div {
+      min-width: 0;
+    }
+
     .speaker-card::after {
       content: "";
       position: absolute;
@@ -481,10 +482,11 @@
       margin: 8px 0 0;
       color: #ffaaa2;
       font-family: var(--display);
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 650;
       line-height: 1.25;
-      letter-spacing: .025em;
+      letter-spacing: -.02em;
+      white-space: nowrap;
     }
 
     .speaker-description {
@@ -497,25 +499,34 @@
 
     .lower-grid {
       display: grid;
-      grid-template-columns: .82fr 1.38fr;
-      gap: 16px;
+      grid-template-columns: .77fr 1.43fr;
+      gap: 20px;
       height: 100%;
     }
 
     .schedule-card,
     .attend-card {
-      padding: 23px 25px;
+      padding: 28px 30px;
     }
 
     .lower-title {
       font-size: 44px;
     }
 
+    .schedule-card .lower-title,
+    .attend-card .lower-title {
+      margin-top: 0;
+    }
+
+    .schedule-card .lower-title {
+      color: var(--ink);
+    }
+
     .schedule-list {
       position: relative;
       display: grid;
       gap: 2px;
-      margin-top: 12px;
+      margin-top: 20px;
       padding-left: 25px;
     }
 
@@ -568,12 +579,13 @@
       color: #3f3738;
       font-size: 26px;
       font-weight: 600;
+      white-space: nowrap;
     }
 
     .attend-card {
       display: grid;
       grid-template-columns: 1fr auto;
-      gap: 20px;
+      gap: 24px;
       color: var(--white);
       background:
         radial-gradient(circle at 92% 12%, rgba(235, 0, 40, .36), transparent 24%),
@@ -584,45 +596,63 @@
       color: var(--white);
     }
 
+    .attend-card > div:first-child {
+      align-self: center;
+    }
+
     .attend-kicker {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
       margin-top: 18px;
-      padding: 9px 14px;
+      padding: 10px 16px;
       border-radius: 999px;
       color: var(--white);
       background: var(--red);
       font-family: var(--display);
       font-size: 24px;
       font-weight: 750;
-      letter-spacing: .06em;
+      line-height: 1;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+
+    .attend-subtopic {
+      margin: 10px 0 0;
+      color: #ffaaa2;
+      font-family: var(--display);
+      font-size: 26px;
+      font-weight: 650;
+      line-height: 1.15;
     }
 
     .attend-copy {
-      margin: 19px 0 0;
+      margin: 18px 0 0;
       color: rgba(255, 255, 255, .79);
       font-size: 28px;
       line-height: 1.2;
     }
 
     .attend-meta {
-      margin-top: 18px;
+      margin: 18px 0 0;
       color: #ffaaa2;
       font-family: var(--display);
       font-size: 24px;
       font-weight: 650;
-      line-height: 1.45;
-      letter-spacing: .025em;
+      line-height: 1.25;
+      letter-spacing: .005em;
     }
 
     .qr-grid {
       display: grid;
-      grid-template-columns: repeat(2, 242px);
+      grid-template-columns: repeat(2, 272px);
       gap: 16px;
       align-content: center;
     }
 
     .qr-item {
-      padding: 11px 11px 14px;
+      padding: 10px 10px 13px;
       border: 1px solid rgba(255, 255, 255, .38);
       border-radius: 20px;
       background: rgba(255, 255, 255, .1);
@@ -632,8 +662,8 @@
     }
 
     .qr-item img {
-      width: 220px;
-      height: 220px;
+      width: 250px;
+      height: 250px;
       border-radius: 10px;
       background: var(--white);
       object-fit: contain;
@@ -647,8 +677,7 @@
       font-family: var(--display);
       font-size: 24px;
       line-height: 1.15;
-      letter-spacing: .06em;
-      text-transform: uppercase;
+      letter-spacing: .005em;
     }
 
     .blank-footer {
@@ -676,7 +705,7 @@
     <header class="hero">
       <div class="hero-inner">
         <div class="hero-top">
-          <div class="event-pill">FREE PUBLIC EVENT</div>
+          <div class="event-pill">Free public event</div>
           <div class="brand" aria-label="TEDxAuburnHills">
             <div class="brand-line"><strong>TEDx</strong>AuburnHills</div>
             <small>x = independently organized TED event</small>
@@ -690,7 +719,7 @@
         </div>
 
         <div class="date-panel" aria-label="Event date and time">
-          <div class="date-main">SATURDAY · OCTOBER 10 · 2026</div>
+          <div class="date-main">Saturday · October 10 · 2026</div>
           <div class="date-sub">11:00 a.m.–4:00 p.m. Eastern time</div>
         </div>
       </div>
@@ -721,7 +750,7 @@
           <img class="speaker-photo kefei" src="website/assets/images/kefei-duan-official.jpg" alt="Kefei Duan" width="900" height="900">
           <div>
             <h3 class="speaker-name">Kefei Duan, DDS</h3>
-            <p class="speaker-role">GENERAL DENTIST · CHESLEY FAMILY DENTAL</p>
+            <p class="speaker-role">General dentist · Chesley Family Dental</p>
             <p class="speaker-description">Dentistry, trust, and compassionate care.</p>
           </div>
         </article>
@@ -730,7 +759,7 @@
           <img class="speaker-photo" src="website/assets/images/janilla-lee-official.jpg" alt="Janilla Lee" width="1024" height="1024">
           <div>
             <h3 class="speaker-name">Janilla Lee, PhD</h3>
-            <p class="speaker-role">EXECUTIVE DIRECTOR · ASIAN CENTER OF SOUTHEAST MICHIGAN</p>
+            <p class="speaker-role">Executive director · Asian Center of Southeast Michigan</p>
             <p class="speaker-description">Health advocacy, engineering, and community service.</p>
           </div>
         </article>
@@ -739,7 +768,7 @@
           <img class="speaker-photo shelly" src="website/assets/images/shelly-propson-lennon-official.jpg" alt="Shelly Propson Lennon" width="1200" height="1680">
           <div>
             <h3 class="speaker-name">Shelly Propson Lennon</h3>
-            <p class="speaker-role">EXECUTIVE DIRECTOR · PAINT A MIRACLE</p>
+            <p class="speaker-role">Executive director · Paint a Miracle</p>
             <p class="speaker-description">Inclusive art, disability, and community possibility.</p>
           </div>
         </article>
@@ -748,7 +777,7 @@
           <img class="speaker-photo" src="website/assets/images/khalid-mirza-official.jpg" alt="Khalid Mirza">
           <div>
             <h3 class="speaker-name">Khalid Mirza, PhD</h3>
-            <p class="speaker-role">ROBOTICS INSTRUCTOR + LAB DIRECTOR · OAKLAND UNIVERSITY</p>
+            <p class="speaker-role">Robotics instructor + lab director · Oakland University</p>
             <p class="speaker-description">Industrial robotics, machine vision, and Industry 4.0.</p>
           </div>
         </article>
@@ -757,7 +786,7 @@
           <img class="speaker-photo pavan" src="website/assets/images/pavan-muzumdar-official.jpg" alt="Pavan Muzumdar">
           <div>
             <h3 class="speaker-name">Pavan Muzumdar</h3>
-            <p class="speaker-role">COO · AUTOMATION ALLEY · CEO · PROJECT DIAMOnD</p>
+            <p class="speaker-role">COO · Automation Alley · CEO · Project DIAMOnD</p>
             <p class="speaker-description">Industry 4.0, digital transformation, and the future of work.</p>
           </div>
         </article>
@@ -766,7 +795,7 @@
           <img class="speaker-photo amartya" src="website/assets/images/amartya-sen-official.jpg" alt="Amartya Sen" width="616" height="956">
           <div>
             <h3 class="speaker-name">Amartya Sen, PhD</h3>
-            <p class="speaker-role">ASSOCIATE PROFESSOR · OAKLAND UNIVERSITY</p>
+            <p class="speaker-role">Associate professor · Oakland University</p>
             <p class="speaker-description">Cybersecurity, secure systems, and connected devices.</p>
           </div>
         </article>
@@ -775,7 +804,7 @@
           <img class="speaker-photo" src="website/assets/images/ahmad-tafti-official.jpg" alt="Ahmad Tafti" width="300" height="275">
           <div>
             <h3 class="speaker-name">Ahmad Tafti, PhD</h3>
-            <p class="speaker-role">DIRECTOR · PITT HexAI LAB · ASSISTANT PROFESSOR</p>
+            <p class="speaker-role">Pitt HexAI Lab director · assistant professor</p>
             <p class="speaker-description">Explainable artificial intelligence and health decisions.</p>
           </div>
         </article>
@@ -784,7 +813,7 @@
           <img class="speaker-photo" src="website/assets/images/kaiqi-zhao-official.jpg" alt="Kaiqi Zhao" width="512" height="512">
           <div>
             <h3 class="speaker-name">Kaiqi Zhao, PhD</h3>
-            <p class="speaker-role">DIRECTOR · EFFICIENT AI LAB · ASSISTANT PROFESSOR</p>
+            <p class="speaker-role">Efficient AI Lab director · assistant professor</p>
             <p class="speaker-description">Efficient AI, model compression, and edge computing.</p>
           </div>
         </article>
@@ -793,26 +822,25 @@
 
     <section class="lower-grid" aria-label="Schedule and attendance information">
       <article class="schedule-card glass">
-        <span class="eyebrow">The day at a glance</span>
-        <h2 class="lower-title">Built in chapters.</h2>
+        <h2 class="lower-title">The day at a glance</h2>
         <div class="schedule-list">
           <div class="schedule-row"><time datetime="2026-10-10T10:45:00-04:00">10:45 a.m.</time><span>Check-in begins</span></div>
           <div class="schedule-row"><time datetime="2026-10-10T11:00:00-04:00">11:00 a.m.</time><span>Opening remarks</span></div>
           <div class="schedule-row"><time datetime="2026-10-10T11:10:00-04:00">11:10 a.m.</time><span>Opening speaker session</span></div>
           <div class="schedule-row"><time datetime="2026-10-10T12:45:00-04:00">12:45 p.m.</time><span>Intermission</span></div>
           <div class="schedule-row"><time datetime="2026-10-10T13:35:00-04:00">1:35 p.m.</time><span>Closing speaker session</span></div>
-          <div class="schedule-row"><time datetime="2026-10-10T15:10:00-04:00">3:10 p.m.</time><span>Networking + photographs</span></div>
+          <div class="schedule-row"><time datetime="2026-10-10T15:10:00-04:00">3:10 p.m.</time><span>Networking + photos</span></div>
           <div class="schedule-row"><time datetime="2026-10-10T16:00:00-04:00">4:00 p.m.</time><span>Event close</span></div>
         </div>
       </article>
 
       <article class="attend-card glass dark-glass">
         <div>
-          <span class="eyebrow" style="color:#ff9a91">Attend in person</span>
           <h2 class="lower-title">Scan to join us.</h2>
-          <span class="attend-kicker">FREE · REGISTRATION REQUIRED</span>
+          <p class="attend-subtopic">Attend in person</p>
+          <span class="attend-kicker">Registration required</span>
           <p class="attend-copy">Join the full in-person program, or watch the free livestream online.</p>
-          <p class="attend-meta"><strong>LIVE CAPTIONS · FOOD + DRINKS AVAILABLE</strong></p>
+          <p class="attend-meta"><strong>Live captions · Food + drinks available</strong></p>
         </div>
 
         <div class="qr-grid" aria-label="Event QR codes">
@@ -822,7 +850,7 @@
           </div>
           <div class="qr-item">
             <img src="httpswww.signupgenius.comgo10C0444AAAA2FA1FDC25-64827609-attendee QR CODE.png" alt="QR code for free attendee registration" width="256" height="256">
-            <strong>Free registration</strong>
+            <strong>Registration</strong>
           </div>
         </div>
       </article>

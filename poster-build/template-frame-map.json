@@ -1,0 +1,47 @@
+{
+  "outputSlides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 1,
+      "narrativeRole": "public event poster",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "action": "replace",
+          "sourceElementIds": ["sh/547294r6", "sh/7qp4be9c", "sh/wvyh8rqx", "sh/xw7i1w7i", "sh/m5wz2h8v"]
+        },
+        {
+          "action": "rewrite-and-reposition",
+          "sourceElementIds": [
+            "sh/ts7md4r2", "sh/fu94fe98", "sh/wn6dc7eh", "sh/ul4vaxgb", "sh/vmdcj2xw",
+            "sh/5sfepcfe", "sh/ipovexwn", "sh/sfqdkrep", "sh/dgzetcfa", "sh/0bmd476t",
+            "sh/e94v2hon", "sh/90ve1w7q", "sh/mx4v6hoz", "sh/432dwn6l", "sh/uxgjq907",
+            "sh/wzy1szid", "sh/i1gje90j", "sh/43y1gji9", "sh/y5wjip0z", "sh/z2xgf6to",
+            "sh/14fyhgbe", "sh/nqxgjqtk", "sh/9sfylgbq", "sh/or6hcvu5", "sh/buh0nqtg",
+            "sh/at8zelcb", "sh/8zqx4vq9", "sh/t0jyd0ru", "sh/6x8f2583", "sh/7yhgbq9o",
+            "sh/kvqx0vqd", "sh/lwzy90ry", "sh/yt8fyl87", "sh/xsfy5grm", "sh/cby5k3yt",
+            "sh/ra54bix8", "sh/5onm98f2", "sh/4ne5g3yh", "sh/3m547yxw", "sh/ilw3etgr",
+            "sh/9kr6lsfm", "sh/oji5sne1", "sh/6psjmpwj", "sh/7q1kfudo", "sh/8ra1oze9",
+            "sh/ts32h4vu", "sh/ylsjipw7", "sh/jm1kbuds", "sh/kna1kzed", "sh/ihc3u9cr",
+            "sh/rehk7e50", "sh/qd8jy94v", "sh/cfa10jml", "sh/298ju94j", "sh/pcz254na",
+            "sh/f6x0zu58", "sh/kbmh0v25", "sh/5cvy903q", "sh/jadg7ql0", "sh/sf6h4v2h",
+            "sh/jitg36dg", "sh/l4by5wv6", "sh/654ze1wr", "sh/87mhgbex", "sh/m90f2hwn",
+            "sh/pgzax4jm", "sh/ofqtoj2h", "sh/2d8rm9kb", "sh/cjatsj2d", "sh/bi1sze1s",
+            "sh/sn69gf29", "sh/kratwza5", "sh/ypsbupsz", "sh/svut0za1", "sh/6tsbypsv",
+            "sh/gzut4jax", "sh/repw3it0", "sh/qtwvadcf", "sh/cfydcnu5", "sh/3q5czyto",
+            "sh/2pwv6tc3", "sh/psne18bu", "sh/ml0v2xcn", "sh/atgz6h8r", "sh/n65gvmp0",
+            "sh/8reh4rql", "sh/9s7yxw76", "sh/610ze18z"
+          ]
+        },
+        {
+          "action": "delete",
+          "sourceElementIds": [
+            "sh/6d4z25kb", "sh/7edgbalw", "sh/8j2xsbmd", "sh/9kby1g3i",
+            "sh/vupgzmpc", "sh/1wb2xkrm", "sh/gv214fa1"
+          ]
+        }
+      ]
+    }
+  ],
+  "omittedSourceSlides": []
+}

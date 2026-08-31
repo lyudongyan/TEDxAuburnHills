@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A minimal poster for TEDxAuburnHills: Retooling, October 10, 2026.">
+  <title>TEDxAuburnHills | Retooling Minimal Poster</title>
+  <link rel="icon" type="image/svg+xml" href="website/assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --red: #eb0028;
+      --red-deep: #ae001e;
+      --ink: #171717;
+      --paper: #f5eeee;
+      --white: #ffffff;
+      --display: "Inter", Helvetica, Arial, sans-serif;
+      --body: "EB Garamond", Garamond, "Times New Roman", serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      animation: none !important;
+      transition: none !important;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: #100d0e;
+    }
+
+    body {
+      color: var(--ink);
+      font-family: var(--body);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: geometricPrecision;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .poster {
+      position: relative;
+      isolation: isolate;
+      display: grid;
+      grid-template-rows: 570px 480px 790px 19px;
+      gap: 28px;
+      width: 1600px;
+      height: 2071px;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 64px;
+      background:
+        linear-gradient(180deg, rgba(9, 8, 9, .04) 0 28%, rgba(18, 10, 12, .2) 48%, rgba(12, 9, 10, .34) 100%),
+        url("website/assets/images/rochester-hills-spencer-park.jpg") center top / cover no-repeat;
+    }
+
+    .poster::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      background:
+        radial-gradient(circle at 72% 44%, rgba(235, 0, 40, .08), transparent 30%),
+        linear-gradient(180deg, transparent 0 28%, rgba(0, 0, 0, .05) 48%, rgba(0, 0, 0, .16) 100%);
+      pointer-events: none;
+    }
+
+    .glass {
+      position: relative;
+      overflow: hidden;
+      border: 1.5px solid rgba(255, 255, 255, .28);
+      border-radius: 38px;
+      background: rgba(10, 9, 10, .48);
+      box-shadow: 0 38px 96px -52px rgba(48, 3, 10, .78);
+      -webkit-backdrop-filter: blur(28px) saturate(125%);
+      backdrop-filter: blur(28px) saturate(125%);
+    }
+
+    .glass::before {
+      content: none;
+    }
+
+    .glass > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero {
+      padding: 28px 48px 32px;
+      color: var(--white);
+      background:
+        linear-gradient(90deg, rgba(12, 10, 11, .8) 0 47%, rgba(12, 10, 11, .58) 68%, rgba(12, 10, 11, .12) 100%),
+        url("website/assets/images/flow-background.jpg") center top / cover no-repeat,
+        #151314;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 10px;
+      background: linear-gradient(90deg, var(--red), #ff766b 68%, transparent);
+    }
+
+    .topline {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 34px;
+    }
+
+    .brand-lockup {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 7px;
+      text-align: right;
+    }
+
+    .brand {
+      padding: 10px 19px 9px;
+      border: 1.5px solid rgba(255, 255, 255, .78);
+      border-radius: 18px;
+      color: var(--ink);
+      background: rgba(255, 255, 255, .92);
+      text-align: center;
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
+    }
+
+    .brand-line {
+      font-family: var(--display);
+      font-size: 40px;
+      letter-spacing: -.055em;
+    }
+
+    .brand-line strong {
+      color: var(--red);
+      font-weight: 800;
+    }
+
+    .organizer-note {
+      color: rgba(255, 255, 255, .62);
+      font-family: var(--display);
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.1;
+    }
+
+    .event-note {
+      display: inline-flex;
+      align-items: center;
+      min-height: 58px;
+      padding: 13px 23px;
+      border: 1px solid rgba(255, 255, 255, .28);
+      border-radius: 999px;
+      background: linear-gradient(115deg, var(--red), var(--red-deep));
+      font-family: var(--display);
+      font-size: 30px;
+      font-weight: 650;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .hero-copy {
+      margin-top: 4px;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-family: var(--display);
+      font-size: 150px;
+      font-weight: 650;
+      line-height: .86;
+      letter-spacing: -.07em;
+    }
+
+    .tagline {
+      margin-top: 15px;
+      font-size: 56px;
+      font-weight: 650;
+      line-height: 1;
+    }
+
+    .feature-line {
+      max-width: 1360px;
+      margin-top: 18px;
+      color: rgba(255, 255, 255, .84);
+      font-size: 44px;
+      font-weight: 600;
+      line-height: 1.08;
+    }
+
+    .date-strip {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+      margin-top: 22px;
+      padding: 15px 24px 16px;
+      border: 1.5px solid rgba(255, 255, 255, .28);
+      border-radius: 24px;
+      color: var(--white);
+      background: rgba(8, 7, 8, .52);
+      box-shadow: 8px 8px 0 rgba(235, 0, 40, .86);
+      -webkit-backdrop-filter: blur(20px) saturate(120%);
+      backdrop-filter: blur(20px) saturate(120%);
+      font-family: var(--display);
+      font-size: 36px;
+      font-weight: 650;
+    }
+
+    .essentials {
+      display: grid;
+      grid-template-rows: 140px 316px;
+      gap: 24px;
+    }
+
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 22px 34px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 86% 10%, rgba(235, 0, 40, .34), transparent 32%),
+        linear-gradient(118deg, rgba(17, 15, 16, .76), rgba(70, 5, 17, .6));
+    }
+
+    .fact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      padding: 0 24px;
+      border-left: 1px solid rgba(255, 255, 255, .22);
+    }
+
+    .fact:first-child {
+      border-left: 0;
+    }
+
+    .fact strong {
+      color: #ff9a91;
+      font-family: var(--display);
+      font-size: 80px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -.055em;
+    }
+
+    .fact span {
+      max-width: 190px;
+      color: rgba(255, 255, 255, .85);
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 1.04;
+    }
+
+    .theme {
+      display: grid;
+      grid-template-columns: 230px 1fr;
+      align-items: center;
+      gap: 42px;
+      padding: 36px 46px;
+      color: var(--white);
+      background:
+        linear-gradient(128deg, rgba(16, 14, 15, .68), rgba(58, 17, 24, .52));
+    }
+
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: #ffaaa2;
+      font-family: var(--display);
+      font-size: 48px;
+      font-weight: 700;
+      line-height: .94;
+      letter-spacing: -.045em;
+    }
+
+    .section-label::after {
+      content: "";
+      width: 4px;
+      height: 174px;
+      flex: 0 0 4px;
+      border-radius: 999px;
+      background: rgba(255, 154, 145, .62);
+    }
+
+    .theme-copy {
+      position: relative;
+      isolation: isolate;
+      display: flex;
+      align-items: center;
+      min-height: 238px;
+    }
+
+    .theme-copy::before,
+    .theme-copy::after {
+      position: absolute;
+      z-index: -1;
+      color: rgba(255, 126, 116, .25);
+      font-family: Georgia, serif;
+      font-size: 270px;
+      font-weight: 700;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .theme-copy::before {
+      content: "\201C";
+      top: -60px;
+      left: -32px;
+    }
+
+    .theme-copy::after {
+      content: "\201D";
+      right: 22px;
+      bottom: -126px;
+    }
+
+    .theme-statement {
+      position: relative;
+      z-index: 1;
+      color: rgba(255, 255, 255, .92);
+      font-size: 49px;
+      font-weight: 600;
+      line-height: 1.08;
+    }
+
+    .action {
+      padding: 38px 50px 40px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 92% 8%, rgba(235, 0, 40, .32), transparent 30%),
+        linear-gradient(120deg, rgba(15, 13, 14, .78), rgba(40, 32, 34, .66) 56%, rgba(82, 3, 18, .56));
+    }
+
+    .action-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 42px;
+    }
+
+    .action h2 {
+      font-family: var(--display);
+      font-size: 66px;
+      font-weight: 650;
+      line-height: 1;
+      letter-spacing: -.05em;
+    }
+
+    .action-copy {
+      margin-top: 14px;
+      color: rgba(255, 255, 255, .78);
+      font-size: 36px;
+      line-height: 1.12;
+    }
+
+    .action-meta {
+      max-width: 560px;
+      color: #ffaaa2;
+      font-family: var(--display);
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 1.25;
+      text-align: right;
+    }
+
+    .qr-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 30px;
+      margin-top: 36px;
+    }
+
+    .qr-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 27px;
+      border: 1.5px solid rgba(255, 255, 255, .34);
+      border-radius: 30px;
+      background: rgba(5, 4, 5, .34);
+      box-shadow: 0 24px 60px -44px #000;
+      -webkit-backdrop-filter: blur(24px) saturate(145%);
+      backdrop-filter: blur(24px) saturate(145%);
+    }
+
+    .qr-item img {
+      width: 440px;
+      height: 440px;
+      border-radius: 18px;
+      background: var(--white);
+      object-fit: contain;
+      image-rendering: pixelated;
+    }
+
+    .qr-item strong {
+      display: block;
+      margin-top: 18px;
+      color: var(--white);
+      font-family: var(--display);
+      font-size: 37px;
+      font-weight: 650;
+      line-height: 1.08;
+    }
+
+    .footer-line {
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--red), #ff8177 70%, transparent);
+    }
+
+    @media (max-width: 900px) {
+      body {
+        background: #151112;
+      }
+
+      .poster {
+        display: block;
+        width: 100%;
+        height: auto;
+        min-height: 100svh;
+        padding: 18px;
+        background:
+          linear-gradient(180deg, rgba(12, 10, 11, .12), rgba(12, 9, 10, .4)),
+          url("website/assets/images/rochester-hills-spencer-park.jpg") center top / cover fixed;
+      }
+
+      .glass {
+        border-radius: 26px;
+      }
+
+      .hero,
+      .essentials,
+      .action {
+        margin-bottom: 16px;
+      }
+
+      .hero {
+        padding: 23px 22px 28px;
+      }
+
+      .topline {
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .brand-lockup {
+        flex: 0 1 58%;
+        gap: 5px;
+      }
+
+      .brand {
+        width: 100%;
+        min-width: 0;
+        padding: 10px 9px 9px;
+        border-radius: 17px;
+      }
+
+      .brand-line {
+        font-size: clamp(27px, 8.2vw, 38px);
+      }
+
+      .organizer-note {
+        max-width: 250px;
+        font-size: clamp(14px, 3.5vw, 17px);
+      }
+
+      .event-note {
+        min-height: 0;
+        padding: 11px 14px;
+        font-size: clamp(18px, 4.8vw, 23px);
+        white-space: normal;
+        text-align: center;
+      }
+
+      .hero-copy {
+        margin-top: 12px;
+      }
+
+      h1 {
+        font-size: clamp(74px, 24vw, 116px);
+        line-height: .88;
+      }
+
+      .tagline {
+        margin-top: 15px;
+        font-size: clamp(35px, 10.5vw, 52px);
+        line-height: 1.02;
+      }
+
+      .feature-line {
+        margin-top: 20px;
+        font-size: clamp(25px, 6.8vw, 34px);
+        line-height: 1.16;
+      }
+
+      .date-strip {
+        display: grid;
+        gap: 5px;
+        margin-top: 24px;
+        padding: 15px 17px 16px;
+        border-radius: 19px;
+        font-size: clamp(24px, 6.5vw, 32px);
+      }
+
+      .essentials {
+        display: block;
+      }
+
+      .facts {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        padding: 16px 10px;
+        border-radius: 24px;
+      }
+
+      .fact {
+        display: block;
+        padding: 2px 9px;
+        text-align: center;
+      }
+
+      .fact strong {
+        display: block;
+        font-size: clamp(41px, 12vw, 58px);
+      }
+
+      .fact span {
+        display: block;
+        margin-top: 5px;
+        font-size: clamp(19px, 4.8vw, 23px);
+        line-height: 1.08;
+      }
+
+      .theme {
+        display: block;
+        margin-top: 16px;
+        padding: 28px 22px 30px;
+        border-radius: 24px;
+      }
+
+      .section-label {
+        gap: 15px;
+        font-size: 36px;
+        line-height: .92;
+      }
+
+      .section-label::after {
+        width: 2px;
+        height: 72px;
+        flex-basis: 2px;
+      }
+
+      .theme-copy {
+        min-height: 0;
+        margin-top: 22px;
+      }
+
+      .theme-copy::before,
+      .theme-copy::after {
+        font-size: 175px;
+      }
+
+      .theme-copy::before {
+        top: -45px;
+        left: -17px;
+      }
+
+      .theme-copy::after {
+        right: 8px;
+        bottom: -86px;
+      }
+
+      .theme-statement {
+        margin-top: 9px;
+        font-size: clamp(29px, 7.8vw, 39px);
+        line-height: 1.1;
+      }
+
+      .action {
+        padding: 26px 22px 28px;
+      }
+
+      .action-head {
+        display: block;
+      }
+
+      .action h2 {
+        font-size: clamp(47px, 13vw, 64px);
+      }
+
+      .action-copy {
+        margin-top: 10px;
+        font-size: clamp(26px, 7vw, 34px);
+      }
+
+      .action-meta {
+        max-width: none;
+        margin-top: 17px;
+        font-size: clamp(22px, 5.4vw, 27px);
+        text-align: left;
+      }
+
+      .qr-grid {
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      .qr-item {
+        display: block;
+        padding: 9px 9px 13px;
+        border-radius: 19px;
+        text-align: center;
+      }
+
+      .qr-item img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+        border-radius: 11px;
+      }
+
+      .qr-item strong {
+        display: block;
+        margin-top: 10px;
+        font-size: clamp(20px, 5.2vw, 25px);
+      }
+
+      .footer-line {
+        height: 10px;
+      }
+    }
+
+    @media print {
+      @page {
+        size: letter portrait;
+        margin: 0;
+      }
+
+      html,
+      body {
+        width: 1600px;
+        background: transparent;
+      }
+
+      .poster {
+        width: 1600px;
+        height: 2071px;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="poster" aria-label="Minimal TEDxAuburnHills Retooling event poster">
+    <header class="hero glass">
+      <div class="topline">
+        <div class="event-note">Free public event</div>
+        <div class="brand-lockup">
+          <div class="brand" aria-label="TEDxAuburnHills">
+            <div class="brand-line"><strong>TEDx</strong>AuburnHills</div>
+          </div>
+          <p class="organizer-note">x = independently organized TED event</p>
+        </div>
+      </div>
+
+      <div class="hero-copy">
+        <h1>Retooling</h1>
+        <p class="tagline">Same hands, different tools.</p>
+        <p class="feature-line">How can we take on new tools to improve and thrive?</p>
+      </div>
+
+      <div class="date-strip" aria-label="Event date and time">
+        <span>Saturday &middot; October 10 &middot; 2026</span>
+        <span>11:00 a.m.&ndash;4:00 p.m. Eastern time</span>
+      </div>
+    </header>
+
+    <section class="essentials" aria-label="Event essentials">
+      <div class="facts glass">
+        <div class="fact"><strong>8+</strong><span>speakers</span></div>
+        <div class="fact"><strong>100</strong><span>in-person seats</span></div>
+        <div class="fact"><strong>Free</strong><span>admission + livestream</span></div>
+      </div>
+
+      <div class="theme glass">
+        <p class="section-label"><span>The<br>Theme</span></p>
+        <div class="theme-copy">
+          <p class="theme-statement">Find out how every member of our community can adopt new tools to thrive, with curated speakers across AI, medicine, cybersecurity, art, neuroscience, history, recreation, and more.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="action glass" aria-labelledby="action-title">
+      <div class="action-head">
+        <div>
+          <h2 id="action-title">Scan to join us.</h2>
+          <p class="action-copy">Attend in person or watch the free livestream.</p>
+        </div>
+        <p class="action-meta">Live captions &middot; Food + drinks available</p>
+      </div>
+
+      <div class="qr-grid" aria-label="Event QR codes">
+        <div class="qr-item">
+          <img src="httpslyudongyan.github.ioTEDxAuburnHills QR CODE.png" alt="QR code for the TEDxAuburnHills website" width="440" height="440">
+          <strong>Event website</strong>
+        </div>
+        <div class="qr-item">
+          <img src="httpswww.signupgenius.comgo10C0444AAAA2FA1FDC25-64827609-attendee QR CODE.png" alt="QR code for attendee registration" width="440" height="440">
+          <strong>Registration</strong>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-line" aria-hidden="true"></footer>
+  </main>
+</body>
+</html>

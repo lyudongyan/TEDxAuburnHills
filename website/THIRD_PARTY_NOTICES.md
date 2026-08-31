@@ -34,7 +34,7 @@ profiles for layout review:
   (`assets/images/ahmad-tafti-official.jpg`)
 - Amartya Sen: https://sites.google.com/oakland.edu/sen
   (`assets/images/amartya-sen-official.jpg`)
-- Khalid Mirza: https://www.ouarc.org/about
+- Khalid Mirza portrait supplied directly by the event organizer
   (`assets/images/khalid-mirza-official.jpg`)
 - Pavan Muzumdar: https://automationalley.com/our-team/
   (`assets/images/pavan-muzumdar-official.jpg`)

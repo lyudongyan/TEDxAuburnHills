@@ -1,0 +1,6 @@
+Slide 1: source navy/yellow palette changed to TEDx red, charcoal, paper, and muted gray at the user's request.
+Slide 1: source body background and top-right circuit artwork replaced with current website photography and flow artwork.
+Slide 1: source conference/track content replaced with TEDxAuburnHills event, speaker, theme, schedule, registration, and access information.
+Slide 1: source conference logo replaced with the current TEDxAuburnHills website wordmark treatment.
+Slide 1: source QR codes replaced with the two supplied QR files.
+Slide 1: university logos and footer website text removed; footer banner intentionally left blank.

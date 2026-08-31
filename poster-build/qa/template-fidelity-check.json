@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-08-02T06:22:46.729Z",
+  "workspace": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build",
+  "finalPptx": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\TEDxAuburnHills Poster.pptx",
+  "starterPptx": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build\\template-starter.pptx",
+  "mapPath": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build\\template-frame-map.json",
+  "starterLayoutDir": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build\\template-starter-layout",
+  "finalLayoutDir": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build\\final-layout",
+  "editDir": "C:\\Users\\Lyuwen Yan\\Documents\\TEDxAuburnHills\\poster-build",
+  "issueCount": 0,
+  "issues": []
+}
