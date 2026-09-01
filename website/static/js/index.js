@@ -315,6 +315,7 @@ function setupRevealMotion() {
     ".team-card",
     ".contact-card",
     ".logo-placeholder",
+    ".sponsor-card",
     ".timeline-item",
     ".side-card",
     ".registration-callout-panel",
@@ -361,6 +362,7 @@ function setupGlassStyling() {
     ".contact-card",
     ".timeline-item",
     ".logo-placeholder",
+    ".sponsor-card",
     ".faq-list details",
     ".notice"
   ].join(","));
@@ -383,6 +385,7 @@ function setupGlassStyling() {
     ".contact-card",
     ".timeline-item",
     ".logo-placeholder",
+    ".sponsor-card",
     ".faq-list details",
     ".signup-form",
     ".notice",

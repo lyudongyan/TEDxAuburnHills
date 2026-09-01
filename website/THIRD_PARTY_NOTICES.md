@@ -26,8 +26,13 @@
 The following images were downloaded from the speakers' public professional
 profiles for layout review:
 
-- Arina Bokas: https://www.oakland.edu/secs/directory/index
+- Arina Bokas portrait supplied directly by the event organizer
   (`assets/images/arina-bokas-official.jpg`)
+- Evan Monaghan portrait supplied directly by the event organizer
+  (`assets/images/evan-monaghan-official.jpg`)
+- Michigan State University Federal Credit Union logo:
+  https://media.msufcu.org/publicsites/publicsite/graphics/msufcu/msufcuLogo.svg
+  (`assets/images/msufcu-logo.svg`)
 - Janilla Lee: https://asiancentersemi.org/about-us/board-of-directors/
   (`assets/images/janilla-lee-official.jpg`)
 - Ahmad Tafti: https://www.shrs.pitt.edu/person/ahmad-tafti/

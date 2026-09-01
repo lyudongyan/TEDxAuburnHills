@@ -1468,6 +1468,46 @@ textarea:focus {
   text-transform: none;
 }
 
+.sponsor-logo-grid {
+  grid-template-columns: minmax(0, 360px);
+}
+
+.sponsor-card {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 34px;
+  color: #18453b;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, .72);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, .82);
+  box-shadow: 0 28px 70px -48px rgba(0, 0, 0, .72);
+}
+
+.sponsor-logo {
+  width: min(140px, 46%);
+  height: auto;
+  display: block;
+}
+
+.sponsor-card span {
+  max-width: 26ch;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.sponsor-card:hover,
+.sponsor-card:focus-visible {
+  color: #18453b;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1951,6 +1991,11 @@ textarea {
   grid-auto-rows: 1fr;
   gap: 16px;
   margin-top: 34px;
+}
+
+.sponsor-card.sponsor-card[rt-liquid-glass] {
+  color: #18453b;
+  background: rgba(255, 255, 255, .78);
 }
 
 .home-speaker-card {
