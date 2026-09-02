@@ -156,7 +156,7 @@ function buildFooter() {
         </div>
         <div>
           <strong>Event</strong>
-          <p>October 10, 2026 &bull; 11:00 a.m.&ndash;4:00 p.m. Eastern time<br>Auburn Hills Community Center<br>3350 E. Seyburn Drive, Auburn Hills, Michigan 48326</p>
+          <p>October 10, 2026 &bull; 11:00 a.m.&ndash;4:00 p.m. Eastern time<br>OU Pavilion<br>464 Golf View Lane, Rochester, Michigan 48309</p>
           <p><a href="https://www.signupgenius.com/go/10C0444AAAA2FA1FDC25-64827609-attendee#/" target="_blank" rel="noopener noreferrer">Register free</a></p>
           <p><a href="https://www.ted.com/tedx/events/69999" target="_blank" rel="noopener noreferrer">View the official TED event page</a></p>
         </div>
