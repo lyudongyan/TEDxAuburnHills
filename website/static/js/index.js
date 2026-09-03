@@ -2,13 +2,11 @@ document.documentElement.classList.add("js");
 
 const pages = [
   ["home", "Home", "index.html"],
-  ["about", "About", "about.html"],
   ["speakers", "Speakers", "speakers.html"],
   ["schedule", "Schedule", "schedule.html"],
   ["attend", "Attend", "attend.html"],
   ["partners", "Sponsors", "partners.html"],
-  ["team", "Organizers", "team.html"],
-  ["contact", "Contact", "contact.html"]
+  ["team", "Organizers", "team.html"]
 ];
 const visiblePages = pages;
 
@@ -18,17 +16,10 @@ const pageSections = {
     ["Register", "#register"],
     ["About Retooling", "#why-retooled"],
     ["Retooling in Practice", "#community"],
+    ["Venue Map", "#home-venue-map"],
     ["Speakers List", "#speakers-preview"],
     ["About TEDx", "#what-is-tedx"],
     ["Get Involved", "#participate"]
-  ],
-  about: [
-    ["Overview", "#about-top"],
-    ["About the Event", "#about-event"],
-    ["Theme", "#theme"],
-    ["TED and TEDx", "#about-tedx"],
-    ["Principles", "#principles"],
-    ["Experience", "#experience"]
   ],
   speakers: [
     ["Overview", "#speakers-top"],
@@ -44,20 +35,17 @@ const pageSections = {
     ["Ahmad Tafti", "#ahmad-tafti"],
     ["Darin Weiss", "#darin-weiss"],
     ["Debbie Wertz", "#debbie-wertz"],
-    ["Kaiqi Zhao", "#kaiqi-zhao"],
-    ["Program updates", "#speaker-note"]
+    ["Kaiqi Zhao", "#kaiqi-zhao"]
   ],
   schedule: [
     ["Overview", "#schedule-top"],
     ["Day at a Glance", "#day-at-a-glance"],
-    ["Session Format", "#session-format"],
     ["Plan Your Day", "#plan-your-day"]
   ],
   attend: [
     ["Overview", "#attend-top"],
+    ["Parking Guide", "#parking-guide"],
     ["Free Registration", "#tickets"],
-    ["Apply to Speak", "#speaker-application"],
-    ["Speaker Commitments", "#speaker-expectations"],
     ["Livestream", "#livestream"],
     ["Location & Access", "#access"]
   ],
@@ -71,15 +59,8 @@ const pageSections = {
   team: [
     ["Overview", "#team-top"],
     ["Organizing Team", "#organizing-team"],
-    ["Production", "#production"],
-    ["Volunteer", "#volunteer"]
-  ],
-  contact: [
-    ["Overview", "#contact-top"],
-    ["Contact the Team", "#contact-team"],
-    ["Send a Message", "#message"],
-    ["Questions", "#faq"],
-    ["Official Listing", "#official-event"]
+    ["Email Us", "#organizer-contact"],
+    ["Production", "#production"]
   ]
 };
 
@@ -159,6 +140,7 @@ function buildFooter() {
           <p>October 10, 2026 &bull; 11:00 a.m.&ndash;4:00 p.m. Eastern time<br>OU Pavilion<br>464 Golf View Lane, Rochester, Michigan 48309</p>
           <p><a href="https://www.signupgenius.com/go/10C0444AAAA2FA1FDC25-64827609-attendee#/" target="_blank" rel="noopener noreferrer">Register free</a></p>
           <p><a href="https://www.ted.com/tedx/events/69999" target="_blank" rel="noopener noreferrer">View the official TED event page</a></p>
+          <p><a href="mailto:lyudongyan@gmail.com">Email the organizers</a></p>
         </div>
         <div>
           <strong>Image credit</strong>
@@ -227,8 +209,6 @@ function prepareSectionVariants() {
     "what-is-tedx",
     "about-tedx",
     "speaker-intro",
-    "speaker-note",
-    "speaker-expectations",
     "contact-team",
     "why-partner",
     "organizing-team"
@@ -238,12 +218,10 @@ function prepareSectionVariants() {
     if (!section) return;
     section.classList.add("flow-background", "tone-dark");
     section.classList.remove("section-glass");
-    if (id !== "speaker-expectations") {
-      section.querySelector(":scope > .content-wrap")?.classList.remove("glass-panel");
-    }
+    section.querySelector(":scope > .content-wrap")?.classList.remove("glass-panel");
   });
 
-  ["theme", "message", "production", "opportunities", "speaker-application"].forEach(id => {
+  ["theme", "message", "production", "opportunities"].forEach(id => {
     document.getElementById(id)?.classList.add("ambient-zone");
   });
 }
@@ -654,26 +632,6 @@ function setupPageTransitions() {
   document.body.append(curtain);
 }
 
-function setupPlaceholderUI() {
-  document.querySelectorAll("[data-placeholder-form]").forEach(form => {
-    form.addEventListener("submit", event => {
-      event.preventDefault();
-      const status = form.querySelector(".form-status");
-      if (status) status.textContent = "This form layout is ready. Add the final submission service before launch.";
-    });
-  });
-
-  document.querySelectorAll("[data-placeholder-action]").forEach(button => {
-    const originalText = button.textContent;
-    button.addEventListener("click", () => {
-      button.textContent = `${button.dataset.placeholderAction} to be added`;
-      window.setTimeout(() => {
-        button.textContent = originalText;
-      }, 2200);
-    });
-  });
-}
-
 function setupRegistrationBanner() {
   const banner = document.querySelector("[data-registration-banner]");
   const closeButton = banner?.querySelector("[data-registration-banner-close]");
@@ -724,7 +682,6 @@ setupPointerAtmosphere();
 setupScrollEffects();
 setupScheduleThread();
 setupPageTransitions();
-setupPlaceholderUI();
 setupRegistrationBanner();
 
 window.addEventListener("DOMContentLoaded", () => {

@@ -6,13 +6,12 @@ different tools.**
 ## Current pages
 
 - Home
-- About
 - Speakers
 - Schedule
 - Attend
 - Sponsors
 - Organizers
-- Contact and FAQ
+- Organizer contact details
 
 Every page includes fixed site navigation and a same-page section navigator.
 On smaller screens, the section sidebar is removed and the visible page links
@@ -34,14 +33,10 @@ required.
 
 ## Content status
 
-This version is for layout review. Confirmed event details, the official TED
-listing, the speaker application, twelve speaker profiles, the draft program,
-and accessibility information are included.
-
-The registration service, livestream URL, contact email and delivery service,
-remaining team and speaker profiles, performer details, and partner agreements
-are still placeholders. The contact form is visual only until a delivery
-service is selected.
+The site includes confirmed event details, the official TED listing, twelve
+speaker profiles, the event schedule, organizer contact information,
+accessibility information, an interactive venue map, and downloadable parking
+instructions.
 
 The hero image is credited in the site footer. Sources for every local
 background and profile image are recorded in `THIRD_PARTY_NOTICES.md`.

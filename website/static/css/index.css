@@ -3843,10 +3843,6 @@ body {
   }
 
   .home-action-grid > .action-card {
-    grid-column: span 2;
-  }
-
-  .home-action-grid > .action-card:nth-last-child(-n + 2) {
     grid-column: span 3;
   }
 }
@@ -3949,5 +3945,82 @@ body {
 
   .venue-map-card {
     min-height: 0;
+  }
+}
+
+/* Parking guide */
+.parking-guide-section {
+  background:
+    radial-gradient(circle at 84% 12%, rgba(235, 0, 40, .26), transparent 34%),
+    linear-gradient(135deg, #171315 0%, #2b1116 52%, #121112 100%);
+}
+
+.parking-guide-panel {
+  overflow: hidden;
+}
+
+.parking-guide-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(28px, 5vw, 72px);
+  align-items: end;
+  margin-bottom: 38px;
+}
+
+.parking-guide-heading .section-heading,
+.parking-guide-heading .section-lead,
+.parking-guide-note {
+  color: var(--white);
+}
+
+.parking-guide-heading .section-lead {
+  max-width: 760px;
+  margin-bottom: 0;
+}
+
+.parking-download {
+  white-space: nowrap;
+}
+
+.parking-guide-image {
+  display: block;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, .5);
+  border-radius: 28px;
+  background: var(--white);
+  box-shadow: 0 32px 80px -45px rgba(0, 0, 0, .9);
+}
+
+.parking-guide-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.parking-guide-note {
+  margin: 18px 0 0;
+  color: rgba(255, 255, 255, .78);
+  font-size: 1rem;
+}
+
+@media (max-width: 820px) {
+  .parking-guide-heading {
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .parking-download {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .parking-guide-heading {
+    margin-bottom: 26px;
+  }
+
+  .parking-guide-image {
+    border-radius: 20px;
   }
 }
