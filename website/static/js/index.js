@@ -14,12 +14,12 @@ const pageSections = {
   home: [
     ["Home", "#home"],
     ["Register", "#register"],
-    ["About Retooling", "#why-retooled"],
     ["Retooling in Practice", "#community"],
     ["Venue Map", "#home-venue-map"],
     ["Speakers List", "#speakers-preview"],
     ["About TEDx", "#what-is-tedx"],
-    ["Get Involved", "#participate"]
+    ["Get Involved", "#participate"],
+    ["About Retooling", "#why-retooled"]
   ],
   speakers: [
     ["Overview", "#speakers-top"],

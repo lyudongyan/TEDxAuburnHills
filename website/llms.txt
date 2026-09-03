@@ -1,0 +1,17 @@
+# TEDxAuburnHills
+
+TEDxAuburnHills presents Retooling: Same hands, different tools, a public TEDx event on October 10, 2026, at the OU Pavilion in Rochester, Michigan. The event brings together twelve speakers across technology, medicine, art, history, recreation, and community change. In-person registration is free and limited to 100 guests, with a free livestream planned.
+
+## Official pages
+
+- [Event overview](https://lyudongyan.github.io/TEDxAuburnHills/)
+- [Speakers and biographies](https://lyudongyan.github.io/TEDxAuburnHills/speakers.html)
+- [Event schedule](https://lyudongyan.github.io/TEDxAuburnHills/schedule.html)
+- [Registration, venue, parking, accessibility, and livestream](https://lyudongyan.github.io/TEDxAuburnHills/attend.html)
+- [Sponsors and sponsorship information](https://lyudongyan.github.io/TEDxAuburnHills/partners.html)
+- [Organizers and contact information](https://lyudongyan.github.io/TEDxAuburnHills/team.html)
+- [Official TED event listing](https://www.ted.com/tedx/events/69999)
+
+## Contact
+
+Email the organizing team at lyudongyan@gmail.com.

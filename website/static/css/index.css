@@ -3539,8 +3539,9 @@ body {
   scroll-margin-top: calc(var(--header-h) + 28px);
   color: var(--white);
   background:
-    radial-gradient(circle at 82% 8%, rgba(235, 0, 40, .38), transparent 30%),
-    linear-gradient(118deg, #171315, #3e0711 62%, #170d10);
+    radial-gradient(circle at 82% 8%, rgba(235, 0, 40, .42), transparent 30%),
+    linear-gradient(112deg, rgba(15, 10, 12, .9), rgba(74, 4, 17, .66) 58%, rgba(15, 10, 12, .82)),
+    var(--photo-rochester-two) center 52% / cover no-repeat;
   border-top: 3px solid var(--red);
   border-bottom: 1px solid rgba(255, 255, 255, .16);
 }
