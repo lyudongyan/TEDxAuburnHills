@@ -3970,7 +3970,7 @@ body {
 .parking-guide-heading .section-heading,
 .parking-guide-heading .section-lead,
 .parking-guide-note {
-  color: var(--white);
+  color: #111;
 }
 
 .parking-guide-heading .section-lead {
@@ -3999,8 +3999,27 @@ body {
 
 .parking-guide-note {
   margin: 18px 0 0;
-  color: rgba(255, 255, 255, .78);
+  color: #111;
   font-size: 1rem;
+}
+
+/* Text on light glass must remain fully legible without hover. */
+.glass-tone-light[rt-liquid-glass] {
+  color: #111;
+}
+
+.glass-tone-light[rt-liquid-glass] :is(h1, h2, h3, h4, p, li, a:not(.button), time, strong, em, small, .card-kicker, .speaker-topic, .speaker-jump, .side-card-title),
+.parking-guide-panel[rt-liquid-glass] :is(h1, h2, h3, h4, p, li, a:not(.button), time, strong, em, small, .card-kicker, .speaker-topic, .speaker-jump, .side-card-title) {
+  color: #111;
+}
+
+.button.secondary[rt-liquid-glass] {
+  color: #111;
+}
+
+.glass-tone-light[rt-liquid-glass] .button.primary,
+.parking-guide-panel[rt-liquid-glass] .button.primary {
+  color: var(--white);
 }
 
 @media (max-width: 820px) {
