@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="static/css/index.css?v=20260902-home-order-photo">
+  <link rel="stylesheet" href="static/css/index.css?v=20260904-layout-consent">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -54,7 +54,7 @@
   <div id="site-sidebar"></div>
 
   <main class="site-main">
-    <section class="page-masthead" id="speakers-top">
+    <section class="page-masthead" id="speakers-top" data-backdrop="spencer">
       <div class="content-wrap">
         <div class="masthead-panel">
           <h1>Speakers</h1>
@@ -63,7 +63,7 @@
       </div>
     </section>
 
-    <section class="content-section ambient-zone" id="speaker-intro">
+    <section class="content-section speaker-list-section ambient-zone" id="speaker-intro" data-backdrop="speaker-grid">
       <div class="content-wrap glass-panel speaker-directory-panel">
         <h2 class="section-heading">Speakers List</h2>
         <p class="section-lead">Meet the twelve confirmed speakers bringing perspectives from technology, health, art, history, community service, and more.</p>
@@ -147,8 +147,8 @@
           </a>
           <a class="home-speaker-card speaker-directory-card" href="#darin-weiss" aria-label="View Darin Weiss's full profile">
             <picture class="home-speaker-picture">
-              <source srcset="assets/images/darin-weiss-official.webp" type="image/webp">
-              <img class="speaker-photo" src="assets/images/darin-weiss-official.jpg" alt="Darin Weiss" loading="lazy" decoding="async">
+              <source srcset="assets/images/darin-weiss-supplied.webp" type="image/webp">
+              <img class="speaker-photo" src="assets/images/darin-weiss-supplied.webp" alt="Darin Weiss" loading="lazy" decoding="async">
             </picture>
             <div class="speaker-copy">
               <h3>Darin Weiss</h3>
@@ -178,7 +178,7 @@
       </div>
     </section>
 
-    <section class="content-section speaker-profile profile-reverse" id="arina-bokas">
+    <section class="content-section image-band speaker-profile profile-reverse" id="arina-bokas" data-backdrop="rochester-one">
       <div class="content-wrap">
         <article class="profile-card glass-panel ambient-zone">
           <div class="profile-visual">
@@ -197,7 +197,7 @@
       </div>
     </section>
 
-    <section class="content-section speaker-profile" id="zelora-farmer">
+    <section class="content-section image-band speaker-profile" id="zelora-farmer" data-backdrop="rochester-two">
       <div class="content-wrap">
         <article class="profile-card glass-panel ambient-zone">
           <div class="profile-visual">
@@ -210,7 +210,7 @@
       </div>
     </section>
 
-    <section class="content-section speaker-profile profile-reverse image-band" id="janilla-lee">
+    <section class="content-section speaker-profile profile-reverse image-band" id="janilla-lee" data-backdrop="spencer">
       <div class="content-wrap">
         <article class="profile-card glass-panel ambient-zone">
           <div class="profile-visual">
@@ -230,7 +230,7 @@
       </div>
     </section>
 
-    <section class="content-section speaker-profile" id="shelly-propson-lennon">
+    <section class="content-section image-band speaker-profile" id="shelly-propson-lennon" data-backdrop="rochester-one">
       <div class="content-wrap">
         <article class="profile-card glass-panel ambient-zone">
           <div class="profile-visual">
@@ -248,7 +248,7 @@
       </div>
     </section>
 
-    <section class="content-section speaker-profile profile-reverse" id="khalid-mirza">
+    <section class="content-section image-band speaker-profile profile-reverse" id="khalid-mirza" data-backdrop="rochester-two">
       <div class="content-wrap">
         <article class="profile-card glass-panel ambient-zone">
           <div class="profile-visual">
@@ -267,7 +267,7 @@
       </div>
     </section>
 
-    <section class="content-section speaker-profile image-band" id="evan-monaghan">
+    <section class="content-section speaker-profile image-band" id="evan-monaghan" data-backdrop="spencer">
       <div class="content-wrap">
         <article class="profile-card glass-panel ambient-zone">
           <div class="profile-visual">
@@ -286,7 +286,7 @@
       </div>
     </section>
 
-    <section class="content-section speaker-profile profile-reverse" id="pavan-muzumdar">
+    <section class="content-section image-band speaker-profile profile-reverse" id="pavan-muzumdar" data-backdrop="rochester-one">
       <div class="content-wrap">
         <article class="profile-card glass-panel ambient-zone">
           <div class="profile-visual">
@@ -305,7 +305,7 @@
       </div>
     </section>
 
-    <section class="content-section speaker-profile" id="amartya-sen">
+    <section class="content-section image-band speaker-profile" id="amartya-sen" data-backdrop="rochester-two">
       <div class="content-wrap">
         <article class="profile-card glass-panel ambient-zone">
           <div class="profile-visual">
@@ -321,7 +321,7 @@
       </div>
     </section>
 
-    <section class="content-section speaker-profile profile-reverse" id="ahmad-tafti">
+    <section class="content-section image-band speaker-profile profile-reverse" id="ahmad-tafti" data-backdrop="spencer">
       <div class="content-wrap">
         <article class="profile-card glass-panel ambient-zone">
           <div class="profile-visual">
@@ -339,13 +339,13 @@
       </div>
     </section>
 
-    <section class="content-section speaker-profile" id="darin-weiss">
+    <section class="content-section image-band speaker-profile" id="darin-weiss" data-backdrop="rochester-one">
       <div class="content-wrap">
         <article class="profile-card glass-panel ambient-zone">
           <div class="profile-visual">
             <picture class="profile-picture">
-              <source srcset="assets/images/darin-weiss-official.webp" type="image/webp">
-              <img class="profile-photo" src="assets/images/darin-weiss-official.jpg" alt="Darin Weiss" loading="lazy" decoding="async">
+              <source srcset="assets/images/darin-weiss-supplied.webp" type="image/webp">
+              <img class="profile-photo" src="assets/images/darin-weiss-supplied.webp" alt="Darin Weiss" loading="lazy" decoding="async">
             </picture>
           </div>
           <div class="profile-copy">
@@ -357,7 +357,7 @@
       </div>
     </section>
 
-    <section class="content-section speaker-profile profile-reverse" id="debbie-wertz">
+    <section class="content-section image-band speaker-profile profile-reverse" id="debbie-wertz" data-backdrop="rochester-two">
       <div class="content-wrap">
         <article class="profile-card glass-panel ambient-zone">
           <div class="profile-visual">
@@ -375,7 +375,7 @@
       </div>
     </section>
 
-    <section class="content-section speaker-profile image-band" id="kaiqi-zhao">
+    <section class="content-section speaker-profile image-band" id="kaiqi-zhao" data-backdrop="spencer">
       <div class="content-wrap">
         <article class="profile-card glass-panel ambient-zone">
           <div class="profile-visual">
@@ -397,6 +397,6 @@
   </main>
 
   <div id="site-footer"></div>
-  <script src="static/js/index.js?v=20260902-home-order-photo"></script>
+  <script src="static/js/index.js?v=20260904-layout-consent"></script>
 </body>
 </html>

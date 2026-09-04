@@ -51,7 +51,6 @@ jobs:
                 "https://lyudongyan.github.io/TEDxAuburnHills/speakers.html",
                 "https://lyudongyan.github.io/TEDxAuburnHills/schedule.html",
                 "https://lyudongyan.github.io/TEDxAuburnHills/attend.html",
-                "https://lyudongyan.github.io/TEDxAuburnHills/partners.html",
                 "https://lyudongyan.github.io/TEDxAuburnHills/team.html"
               ]
             }' \

@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="static/css/index.css?v=20260902-home-order-photo">
+  <link rel="stylesheet" href="static/css/index.css?v=20260904-layout-consent">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -52,8 +52,8 @@
         "description": "A public TEDx event exploring how communities can adapt to change through ideas spanning technology, medicine, art, history, recreation, and more.",
         "url": "https://lyudongyan.github.io/TEDxAuburnHills/",
         "image": ["https://lyudongyan.github.io/TEDxAuburnHills/assets/images/rochester-hills-supplied-2.jpg"],
-        "startDate": "2026-10-10T11:00:00-04:00",
-        "endDate": "2026-10-10T16:00:00-04:00",
+        "startDate": "2026-10-10T10:00:00-04:00",
+        "endDate": "2026-10-10T15:00:00-04:00",
         "eventStatus": "https://schema.org/EventScheduled",
         "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
         "location": [
@@ -94,13 +94,13 @@
   <div id="site-sidebar"></div>
 
   <main class="site-main">
-    <section class="page-masthead home-hero" id="home">
+    <section class="page-masthead home-hero" id="home" data-backdrop="spencer">
       <div class="content-wrap">
         <div class="masthead-panel">
           <h1>Retooling</h1>
           <p class="subtitle">Same hands, different tools.</p>
-          <p class="hero-date">October 10, 2026 · 11:00 a.m.–4:00 p.m. Eastern time</p>
-          <p class="hero-context">Twelve speakers, live performances, and one public afternoon built around the ideas communities need when familiar methods no longer fit.</p>
+          <p class="hero-date">October 10, 2026 · 10:00 a.m.–3:00 p.m. Eastern time</p>
+          <p class="hero-context">Twelve speakers, live performances, and one public event built around the ideas communities need when familiar methods no longer fit.</p>
           <p class="hero-venue">OU Pavilion<br><span>464 Golf View Lane, Rochester, Michigan 48309</span></p>
           <div class="hero-actions" aria-label="Primary event actions">
             <a class="button primary" href="https://www.signupgenius.com/go/10C0444AAAA2FA1FDC25-64827609-attendee#/" target="_blank" rel="noopener noreferrer">Register free</a>
@@ -111,7 +111,15 @@
       <p class="photo-credit hero-credit">Spencer Park, Rochester Hills &bull; Photo: Olson.Sarah / CC BY-SA 4.0</p>
     </section>
 
-    <section class="registration-callout" id="register">
+    <section class="quote-interlude" id="why-retooled" aria-label="Retooling" data-scroll-quote data-backdrop="quote">
+      <div class="quote-stage">
+        <blockquote class="theme-quote">
+          <p>Find out how every member of our community can adopt new tools to thrive, with curated speakers across AI, medicine, cybersecurity, art, neuroscience, history, recreation, and more.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="registration-callout" id="register" data-backdrop="rochester-two">
       <div class="content-wrap registration-callout-panel">
         <div>
           <p class="registration-eyebrow">Free registration is open</p>
@@ -122,50 +130,7 @@
       </div>
     </section>
 
-    <section class="content-section image-band" id="community">
-      <div class="content-wrap glass-panel">
-        <h2 class="section-heading">Retooling in Practice</h2>
-        <div class="idea-grid">
-          <article class="info-card">
-            <h3>Reframe</h3>
-            <p>Look again at the assumptions shaping a problem and make room for perspectives that were previously missing.</p>
-          </article>
-          <article class="info-card">
-            <h3>Rebuild</h3>
-            <p>Turn insight into new practices, systems, and relationships that are more resilient than what came before.</p>
-          </article>
-          <article class="info-card">
-            <h3>Reconnect</h3>
-            <p>Adapt together by sharing knowledge, widening participation, and remembering that change is experienced locally.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section flow-background" id="home-venue-map">
-      <div class="content-wrap glass-panel venue-map-panel">
-        <h2 class="section-heading">Find the OU Pavilion</h2>
-        <p class="section-lead">Explore the venue area, open turn-by-turn directions, or review the parking and shuttle guide before the event.</p>
-        <div class="venue-map-layout">
-          <div class="venue-map-frame">
-            <iframe title="Map showing the OU Pavilion at 464 Golf View Lane in Rochester, Michigan" src="https://www.google.com/maps?q=464+Golf+View+Lane%2C+Rochester%2C+MI+48309&amp;output=embed" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
-          </div>
-          <aside class="side-card venue-map-card">
-            <span class="card-kicker">Event location</span>
-            <h3>OU Pavilion</h3>
-            <p>464 Golf View Lane<br>Rochester, Michigan 48309</p>
-            <p><strong>Audience check-in</strong><br>10:45–11:00 a.m.</p>
-            <div class="venue-map-actions">
-              <a class="button primary" href="https://www.google.com/maps/search/464+Golf+View+Lane+Rochester+MI+48309" target="_blank" rel="noopener noreferrer">Get directions</a>
-              <a class="button secondary" href="attend.html#parking-guide">Parking and shuttle guide</a>
-              <a class="text-link" href="https://www.signupgenius.com/go/10C0444AAAA2FA1FDC25-64827609-attendee#/" target="_blank" rel="noopener noreferrer">Register free <span aria-hidden="true">&nearr;&#xfe0e;</span></a>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section ambient-zone" id="speakers-preview">
+    <section class="content-section speaker-list-section ambient-zone" id="speakers-preview" data-backdrop="speaker-grid">
       <div class="content-wrap glass-panel">
         <div class="section-intro-row">
           <div>
@@ -238,8 +203,8 @@
           </article>
           <article class="home-speaker-card">
             <picture class="home-speaker-picture">
-              <source srcset="assets/images/darin-weiss-official.webp" type="image/webp">
-              <img class="speaker-photo" src="assets/images/darin-weiss-official.jpg" alt="Darin Weiss" loading="lazy" decoding="async">
+              <source srcset="assets/images/darin-weiss-supplied.webp" type="image/webp">
+              <img class="speaker-photo" src="assets/images/darin-weiss-supplied.webp" alt="Darin Weiss" loading="lazy" decoding="async">
             </picture>
             <div class="speaker-copy"><h3>Darin Weiss</h3><p>Recovery, accountability, and rebuilding lasting stability.</p></div>
           </article>
@@ -261,7 +226,52 @@
       </div>
     </section>
 
-    <section class="content-section section-glass tone-dark ambient-zone" id="what-is-tedx">
+    <section class="content-section image-band" id="community" data-backdrop="rochester-one">
+      <div class="content-wrap glass-panel">
+        <h2 class="section-heading">Retooling in Practice</h2>
+        <div class="idea-grid">
+          <article class="info-card">
+            <h3>Reframe</h3>
+            <p>Look again at the assumptions shaping a problem and make room for perspectives that were previously missing.</p>
+          </article>
+          <article class="info-card">
+            <h3>Rebuild</h3>
+            <p>Turn insight into new practices, systems, and relationships that are more resilient than what came before.</p>
+          </article>
+          <article class="info-card">
+            <h3>Reconnect</h3>
+            <p>Adapt together by sharing knowledge, widening participation, and remembering that change is experienced locally.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section flow-background" id="home-venue-map" data-backdrop="flow">
+      <div class="content-wrap glass-panel venue-map-panel">
+        <h2 class="section-heading">Find the OU Pavilion</h2>
+        <p class="section-lead">Explore the venue area, open turn-by-turn directions, or review the parking and shuttle guide before the event.</p>
+        <div class="venue-map-layout">
+          <div class="venue-map-frame">
+            <div class="map-consent-message" data-map-consent-message><p>Allow optional cookies to load the Google Maps embed, or open directions directly.</p><button class="cookie-settings" type="button" data-cookie-settings aria-controls="cookie-consent-banner">Cookie settings</button><a href="https://www.google.com/maps/search/464+Golf+View+Lane+Rochester+MI+48309" target="_blank" rel="noopener noreferrer">Open directions</a></div>
+            <iframe title="Map showing the OU Pavilion at 464 Golf View Lane in Rochester, Michigan" data-consent-src="https://www.google.com/maps?q=464+Golf+View+Lane%2C+Rochester%2C+MI+48309&amp;output=embed" hidden loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <aside class="side-card venue-map-card">
+            <span class="card-kicker">Event location</span>
+            <h3>OU Pavilion</h3>
+            <p>464 Golf View Lane<br>Rochester, Michigan 48309</p>
+            <p><strong>Audience check-in</strong><br>9:45–10:00 a.m.</p>
+            <p>The event ends at 3:00 p.m. Everyone must leave by 5:00 p.m.</p>
+            <div class="venue-map-actions">
+              <a class="button primary" href="https://www.google.com/maps/search/464+Golf+View+Lane+Rochester+MI+48309" target="_blank" rel="noopener noreferrer">Get directions</a>
+              <a class="button secondary" href="attend.html#parking-guide">Parking and shuttle guide</a>
+              <a class="text-link" href="https://www.signupgenius.com/go/10C0444AAAA2FA1FDC25-64827609-attendee#/" target="_blank" rel="noopener noreferrer">Register free <span aria-hidden="true">&nearr;&#xfe0e;</span></a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section tone-dark ambient-zone flow-background" id="what-is-tedx" data-backdrop="ted-stage">
       <div class="content-wrap">
         <h2 class="section-heading">About TEDx</h2>
         <div class="feature-split">
@@ -279,37 +289,19 @@
       </div>
     </section>
 
-    <section class="content-section image-band" id="participate">
+    <section class="content-section image-band" id="participate" data-backdrop="spencer">
       <div class="content-wrap glass-panel">
 
         <h2 class="section-heading">Get Involved</h2>
         <div class="action-grid home-action-grid">
           <article class="action-card"><h3>Attend</h3><p>Admission is free, registration is open, and seating is limited to 100 in-person guests at the OU Pavilion.</p><a class="button primary" href="https://www.signupgenius.com/go/10C0444AAAA2FA1FDC25-64827609-attendee#/" target="_blank" rel="noopener noreferrer">Sign up now</a></article>
           <article class="action-card"><h3>Watch online</h3><p>The event will be livestreamed free for the online audience.</p><a class="button secondary" href="attend.html#livestream">Livestream details</a></article>
-          <article class="action-card"><h3>Sponsor</h3><p>Support accessibility, production, hospitality, and outreach while the program remains independently curated.</p><a class="button secondary" href="partners.html">Sponsorship details</a></article>
+          <article class="action-card"><h3>Sponsor</h3><p>Support accessibility, production, hospitality, and outreach while the program remains independently curated.</p><a class="button secondary" href="mailto:lyudongyan@gmail.com?subject=TEDxAuburnHills%20sponsorship">Email about sponsorship</a></article>
           <article class="action-card"><h3>Meet the organizers</h3><p>See the volunteer team shaping the speakers, production, partnerships, and audience experience.</p><a class="button secondary" href="team.html">Meet the organizers</a></article>
         </div>
       </div>
     </section>
 
-    <section class="content-section section-glass" id="why-retooled">
-      <div class="content-wrap">
-        <h2 class="section-heading">About Retooling</h2>
-        <blockquote class="theme-quote">
-          <p>Find out how every member of our community can adopt new tools to thrive, with curated speakers across AI, medicine, cybersecurity, art, neuroscience, history, recreation, and more.</p>
-        </blockquote>
-        <div class="feature-split">
-          <div class="prose">
-            <p>Retooling begins with a simple recognition: the people doing the work may remain the same even when the methods around them must change. Our tools can be physical, technical, social, or cultural. They include the habits, systems, and stories we rely on every day.</p>
-            <p>On October 10, TEDxAuburnHills will bring together voices from across disciplines to examine what deserves to be kept, what needs to be rebuilt, and what communities can create next.</p>
-          </div>
-          <aside class="side-card">
-            <span class="card-kicker">A central question</span>
-            <h3>What should we keep, rebuild, or invent next?</h3>
-          </aside>
-        </div>
-      </div>
-    </section>
   </main>
 
   <aside class="registration-banner" data-registration-banner hidden aria-label="Registration reminder" rt-liquid-glass rt-liquid-glass-blur="16" rt-liquid-glass-scale="30" rt-liquid-glass-map="512" rt-liquid-glass-tint="rgba(20,14,16,.5)" rt-liquid-glass-fallback-blur="22">
@@ -322,6 +314,6 @@
   </aside>
 
   <div id="site-footer"></div>
-  <script src="static/js/index.js?v=20260902-home-order-photo"></script>
+  <script src="static/js/index.js?v=20260904-layout-consent"></script>
 </body>
 </html>

@@ -5,7 +5,6 @@ const pages = [
   ["speakers", "Speakers", "speakers.html"],
   ["schedule", "Schedule", "schedule.html"],
   ["attend", "Attend", "attend.html"],
-  ["partners", "Sponsors", "partners.html"],
   ["team", "Organizers", "team.html"]
 ];
 const visiblePages = pages;
@@ -13,13 +12,13 @@ const visiblePages = pages;
 const pageSections = {
   home: [
     ["Home", "#home"],
+    ["Retooling", "#why-retooled"],
     ["Register", "#register"],
+    ["Speakers List", "#speakers-preview"],
     ["Retooling in Practice", "#community"],
     ["Venue Map", "#home-venue-map"],
-    ["Speakers List", "#speakers-preview"],
     ["About TEDx", "#what-is-tedx"],
-    ["Get Involved", "#participate"],
-    ["About Retooling", "#why-retooled"]
+    ["Get Involved", "#participate"]
   ],
   speakers: [
     ["Overview", "#speakers-top"],
@@ -49,13 +48,6 @@ const pageSections = {
     ["Livestream", "#livestream"],
     ["Location & Access", "#access"]
   ],
-  partners: [
-    ["Overview", "#partners-top"],
-    ["Why Sponsor", "#why-partner"],
-    ["Opportunities", "#opportunities"],
-    ["Sponsors", "#partner-grid"],
-    ["Contact", "#partner-contact"]
-  ],
   team: [
     ["Overview", "#team-top"],
     ["Organizing Team", "#organizing-team"],
@@ -84,7 +76,7 @@ function buildHeader() {
       <div class="utility-bar">
         <strong>TEDxAuburnHills &bull; Retooling</strong>
         <div class="utility-links">
-          <span>October 10, 2026 &bull; 11:00 a.m.&ndash;4:00 p.m. Eastern time</span>
+          <span>October 10, 2026 &bull; 10:00 a.m.&ndash;3:00 p.m. Eastern time</span>
           <a href="https://www.signupgenius.com/go/10C0444AAAA2FA1FDC25-64827609-attendee#/" target="_blank" rel="noopener noreferrer">Register free</a>
           <a href="https://www.ted.com/tedx/events/69999" target="_blank" rel="noopener noreferrer">Official TED event page</a>
         </div>
@@ -137,10 +129,11 @@ function buildFooter() {
         </div>
         <div>
           <strong>Event</strong>
-          <p>October 10, 2026 &bull; 11:00 a.m.&ndash;4:00 p.m. Eastern time<br>OU Pavilion<br>464 Golf View Lane, Rochester, Michigan 48309</p>
+          <p>October 10, 2026 &bull; 10:00 a.m.&ndash;3:00 p.m. Eastern time<br>Everyone must leave by 5:00 p.m.<br>OU Pavilion<br>464 Golf View Lane, Rochester, Michigan 48309</p>
           <p><a href="https://www.signupgenius.com/go/10C0444AAAA2FA1FDC25-64827609-attendee#/" target="_blank" rel="noopener noreferrer">Register free</a></p>
           <p><a href="https://www.ted.com/tedx/events/69999" target="_blank" rel="noopener noreferrer">View the official TED event page</a></p>
           <p><a href="mailto:lyudongyan@gmail.com">Email the organizers</a></p>
+          <p><button class="cookie-settings" type="button" data-cookie-settings aria-controls="cookie-consent-banner">Cookie settings</button></p>
         </div>
         <div>
           <strong>Image credit</strong>
@@ -205,10 +198,8 @@ function prepareSectionVariants() {
   });
 
   const flowSections = [
-    "why-retooled",
     "what-is-tedx",
     "about-tedx",
-    "speaker-intro",
     "contact-team",
     "why-partner",
     "organizing-team"
@@ -382,13 +373,12 @@ function setupStaticBackdrop() {
 }
 
 function setupSpeakerGrid() {
-  const section = document.querySelector("#speaker-intro");
-  if (!section) return;
-
-  const grid = document.createElement("span");
-  grid.className = "speaker-grid-field";
-  grid.setAttribute("aria-hidden", "true");
-  section.prepend(grid);
+  document.querySelectorAll(".speaker-list-section").forEach(section => {
+    const grid = document.createElement("span");
+    grid.className = "speaker-grid-field";
+    grid.setAttribute("aria-hidden", "true");
+    section.prepend(grid);
+  });
 }
 
 function setupSpeakerProfileNavigation() {
@@ -444,6 +434,129 @@ function setupScrollEffects() {
   update();
   window.addEventListener("scroll", requestUpdate, { passive: true });
   window.addEventListener("resize", requestUpdate, { passive: true });
+}
+
+// The word sequence uses about 1.3 viewports of natural scrolling.
+// Keep a shared readable plateau between the staggered entrance and exit.
+function quoteWordState(progress, index, count) {
+  const clamp = value => Math.max(0, Math.min(1, value));
+  const stagger = index / Math.max(1, count - 1);
+  const entering = clamp((progress - stagger * .12) / .24);
+  const leaving = clamp((progress - .60 - stagger * .14) / .24);
+  const dropIn = 1 - Math.pow(1 - entering, 4);
+  const dropOut = leaving * leaving * leaving;
+  const stretch = Math.sin(entering * Math.PI) - Math.sin(leaving * Math.PI);
+  return {
+    y: dropIn - 1 + dropOut,
+    opacity: clamp(entering * 4) * (1 - Math.pow(leaving, 2)),
+    blur: (1 - dropIn + dropOut) * 7,
+    stretch: stretch * .12,
+    tilt: (1 - dropIn + dropOut) * (index % 2 ? 3 : -3)
+  };
+}
+
+function setupScrollQuote() {
+  const section = document.querySelector("[data-scroll-quote]");
+  if (!section || !window.CSS?.supports("position", "sticky")) return;
+  const stage = section.querySelector(".quote-stage");
+  const paragraph = section.querySelector(".theme-quote p");
+  const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  // Keep one uninterrupted copy for assistive technology and selectable text.
+  const original = document.createElement("span");
+  original.className = "sr-only";
+  original.textContent = paragraph.textContent.trim();
+  const visual = document.createElement("span");
+  visual.setAttribute("aria-hidden", "true");
+  const words = original.textContent.split(/\s+/).map((text, index) => {
+    if (index) visual.append(document.createTextNode(" "));
+    const word = document.createElement("span");
+    word.className = "quote-word";
+    word.textContent = text;
+    visual.append(word);
+    return word;
+  });
+  paragraph.replaceChildren(original, visual);
+
+  let enabled = false;
+  let frame = 0;
+  let measureNext = true;
+  let top = 72;
+  let height = 0;
+  let travel = 0;
+  let current = null;
+  let lastTime = 0;
+  let lastPaint = null;
+
+  const paint = progress => {
+    if (progress === lastPaint) return;
+    lastPaint = progress;
+    words.forEach((word, index) => {
+      const state = quoteWordState(progress, index, words.length);
+      word.style.transform = `translate3d(0, ${(state.y * (height + 60)).toFixed(2)}px, 0) rotate(${state.tilt.toFixed(2)}deg) scale(${(1 - state.stretch * .35).toFixed(3)}, ${(1 + state.stretch).toFixed(3)})`;
+      word.style.opacity = state.opacity.toFixed(3);
+      word.style.filter = state.blur < .01 ? "none" : `blur(${state.blur.toFixed(2)}px)`;
+    });
+  };
+
+  const measure = () => {
+    top = parseFloat(getComputedStyle(section).getPropertyValue("--quote-top"));
+    // Short viewports fall back to static type instead of clipping the quote.
+    height = Math.max(0, document.documentElement.clientHeight - top);
+    travel = Math.min(840, height * .90);
+    section.style.setProperty("--quote-height", `${height}px`);
+    section.style.setProperty("--quote-travel", `${travel}px`);
+    const style = getComputedStyle(stage);
+    const padding = parseFloat(style.paddingTop) + parseFloat(style.paddingBottom);
+    enabled = !motion.matches && paragraph.offsetHeight + padding <= height;
+    section.classList.toggle("is-scroll-animated", enabled);
+    if (!enabled) {
+      section.classList.remove("is-quote-active");
+      words.forEach(word => {
+        word.style.removeProperty("transform");
+        word.style.removeProperty("opacity");
+        word.style.removeProperty("filter");
+      });
+    }
+    current = null;
+    lastPaint = null;
+    measureNext = false;
+  };
+
+  const update = time => {
+    frame = 0;
+    if (measureNext) measure();
+    const rect = section.getBoundingClientRect();
+    const active = rect.top < window.innerHeight && rect.bottom > top;
+    // The gradient also runs on short screens with a static quote, only in view.
+    section.classList.toggle("is-quote-active", active && !motion.matches);
+    if (!enabled) return;
+    const lead = height * .40;
+    const target = Math.max(0, Math.min(1, (top - rect.top + lead) / (travel + lead)));
+    // Brief damping smooths wheel ticks without slowing down quick swipes or jumps.
+    const elapsed = Math.min(64, Math.max(1, time - lastTime));
+    const snap = current === null || !active || Math.abs(target - current) > .28;
+    current = snap ? target : current + (target - current) * (1 - Math.exp(-elapsed / 65));
+    if (Math.abs(target - current) < .0005) current = target;
+    paint(current);
+    lastTime = time;
+    if (current !== target) frame = window.requestAnimationFrame(update);
+  };
+
+  const requestUpdate = () => {
+    if (!frame) frame = window.requestAnimationFrame(update);
+  };
+  const requestMeasure = () => {
+    measureNext = true;
+    requestUpdate();
+  };
+  window.addEventListener("scroll", requestUpdate, { passive: true });
+  window.addEventListener("resize", requestMeasure, { passive: true });
+  window.addEventListener("pageshow", requestMeasure);
+  motion.addEventListener("change", requestMeasure);
+  if (window.ResizeObserver) new ResizeObserver(requestMeasure).observe(paragraph);
+  document.fonts?.ready.then(requestMeasure);
+  requestUpdate();
 }
 
 function setupPointerAtmosphere() {
@@ -511,7 +624,7 @@ function setupPointerAtmosphere() {
     const nextAmbient = event.target.closest(".ambient-zone");
     const nextGlass = event.target.closest("[rt-liquid-glass]");
     const nextMasthead = event.target.closest(".page-masthead");
-    const nextSpeakerGrid = event.target.closest("#speaker-intro");
+    const nextSpeakerGrid = event.target.closest(".speaker-list-section");
     const pointCache = new Map();
 
     if (activeAmbient && activeAmbient !== nextAmbient) resetPair(activeAmbient, "--ambient-x", "--ambient-y", "50%", "50%");
@@ -632,6 +745,103 @@ function setupPageTransitions() {
   document.body.append(curtain);
 }
 
+function readCookieConsent(value) {
+  try {
+    const saved = JSON.parse(value);
+    return saved?.version === 1 && typeof saved.optional === "boolean" ? saved.optional : null;
+  } catch {
+    return null;
+  }
+}
+
+function setupCookieConsent() {
+  const storageKey = "tedx-cookie-consent";
+  let choice = null;
+  try {
+    choice = readCookieConsent(window.localStorage.getItem(storageKey));
+  } catch {
+    // Optional content stays off if the browser blocks preference storage.
+  }
+
+  const banner = document.createElement("aside");
+  banner.id = "cookie-consent-banner";
+  banner.className = "cookie-banner";
+  banner.setAttribute("role", "region");
+  banner.setAttribute("aria-labelledby", "cookie-consent-title");
+  banner.hidden = true;
+  banner.innerHTML = `
+    <div class="cookie-banner-inner">
+      <div class="cookie-banner-copy">
+        <strong id="cookie-consent-title">Cookies and analytics</strong>
+        <p>We use essential storage to remember your preferences. Optional cookies, including those used by embedded maps, are off until you accept. No analytics service is currently enabled. You can change your choice in Cookie settings.</p>
+      </div>
+      <div class="cookie-banner-actions">
+        <button type="button" data-cookie-choice="accept">Accept</button>
+        <button type="button" data-cookie-choice="reject">Reject</button>
+      </div>
+    </div>`;
+  document.body.append(banner);
+
+  const settings = [...document.querySelectorAll("[data-cookie-settings]")];
+  let returnFocus = null;
+  const updateSpace = () => {
+    document.body.style.setProperty("--cookie-banner-height", `${banner.hidden ? 0 : banner.offsetHeight}px`);
+  };
+  const setVisible = visible => {
+    banner.hidden = !visible;
+    document.body.classList.toggle("has-cookie-banner", visible);
+    settings.forEach(button => button.setAttribute("aria-expanded", String(visible)));
+    updateSpace();
+  };
+  const applyChoice = () => {
+    const optional = choice === true;
+    document.querySelectorAll("iframe[data-consent-src]").forEach(frame => {
+      const placeholder = frame.parentElement.querySelector("[data-map-consent-message]");
+      if (optional) {
+        if (!frame.hasAttribute("src")) frame.setAttribute("src", frame.dataset.consentSrc);
+      } else {
+        frame.removeAttribute("src");
+      }
+      frame.hidden = !optional;
+      if (placeholder) placeholder.hidden = optional;
+    });
+    // A future analytics integration must check this state before it loads.
+    // This site intentionally does not load an analytics provider.
+    window.tedxConsent = Object.freeze({ optional, analytics: optional });
+    window.dispatchEvent(new CustomEvent("tedx:consent-change", { detail: window.tedxConsent }));
+  };
+
+  banner.querySelectorAll("[data-cookie-choice]").forEach(button => {
+    button.addEventListener("click", () => {
+      choice = button.dataset.cookieChoice === "accept";
+      try {
+        window.localStorage.setItem(storageKey, JSON.stringify({ version: 1, optional: choice }));
+      } catch {
+        // The selection still applies to this page when storage is unavailable.
+      }
+      applyChoice();
+      setVisible(false);
+      const focusTarget = returnFocus && !returnFocus.closest("[hidden]") ? returnFocus : settings[settings.length - 1];
+      focusTarget?.focus({ preventScroll: true });
+    });
+  });
+  settings.forEach(button => button.addEventListener("click", () => {
+    returnFocus = button;
+    setVisible(true);
+    banner.querySelector("[data-cookie-choice]").focus({ preventScroll: true });
+  }));
+  window.addEventListener("storage", event => {
+    if (event.key !== storageKey && event.key !== null) return;
+    choice = readCookieConsent(event.newValue);
+    applyChoice();
+    setVisible(choice === null);
+  });
+  if (window.ResizeObserver) new ResizeObserver(updateSpace).observe(banner);
+  window.addEventListener("resize", updateSpace, { passive: true });
+  applyChoice();
+  setVisible(choice === null);
+}
+
 function setupRegistrationBanner() {
   const banner = document.querySelector("[data-registration-banner]");
   const closeButton = banner?.querySelector("[data-registration-banner-close]");
@@ -680,8 +890,10 @@ setupSpeakerGrid();
 setupSpeakerProfileNavigation();
 setupPointerAtmosphere();
 setupScrollEffects();
+setupScrollQuote();
 setupScheduleThread();
 setupPageTransitions();
+setupCookieConsent();
 setupRegistrationBanner();
 
 window.addEventListener("DOMContentLoaded", () => {

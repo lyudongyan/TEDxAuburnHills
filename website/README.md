@@ -9,7 +9,6 @@ different tools.**
 - Speakers
 - Schedule
 - Attend
-- Sponsors
 - Organizers
 - Organizer contact details
 
@@ -32,6 +31,17 @@ server. No build step, package installation, database, or hosted service is
 required.
 
 ## Content status
+
+Cookie preferences are stored locally on the visitor's device. Optional content
+is denied by default, and the Google Maps embeds load only after acceptance.
+Visitors can change their choice using Cookie settings in the footer. No
+analytics provider is installed. Any future analytics integration must check
+`window.tedxConsent.analytics` before loading and respond to the
+`tedx:consent-change` event, including withdrawal of consent.
+
+Both speaker directories share fixed-aspect portraits that cannot shrink to
+make room for longer text. Equal-height grid rows let copy expand without
+truncation while keeping every card and text area aligned.
 
 The site includes confirmed event details, the official TED listing, twelve
 speaker profiles, the event schedule, organizer contact information,

@@ -21,6 +21,15 @@
 - Changes: responsive cropping, overlays, and color treatments are applied by
   the site styles. Optimized web copies may also be generated locally.
 
+## User-supplied TED stage background
+
+- Original supplied in the project root: `TED about section background.webp`.
+- Website copy: `assets/images/ted-stage-supplied.webp`.
+- Source: supplied directly by the site owner; the original is preserved.
+- Photographer and usage rights: not provided with the file.
+- Changes: none to the image file; responsive cropping and readability overlays
+  are applied by the site styles.
+
 ## Speaker profile images
 
 The following images were downloaded from the speakers' public professional
@@ -43,8 +52,10 @@ profiles for layout review:
   (`assets/images/khalid-mirza-official.jpg`)
 - Pavan Muzumdar: https://automationalley.com/our-team/
   (`assets/images/pavan-muzumdar-official.jpg`)
-- Darin Weiss: https://gracecentersofhope.org/about-us/meet-the-staff/
-  (`assets/images/darin-weiss-official.jpg`)
+- Darin Weiss portrait supplied directly by the event organizer
+  (`assets/images/darin-weiss-supplied.webp`), copied without modification from
+  `DarinWeiss Image for homepage.webp` in the project root. The previous Grace
+  Centers of Hope portrait is retained as an unused legacy asset.
 - Debbie Wertz: https://www.ccwaterford.org/our-team-board
   (`assets/images/debbie-wertz-official.jpg`)
 
@@ -52,7 +63,8 @@ These images are not treated as openly licensed. Obtain permission from each
 speaker or source organization before public launch.
 
 Optimized `.avif` and `.webp` copies are used when available; the listed JPEG
-files remain the fallbacks.
+files remain the fallbacks. Darin Weiss's replacement is served directly as the
+supplied WebP image in both directories and his full profile.
 
 ## rt-liquid-glass 1.0.2
 
