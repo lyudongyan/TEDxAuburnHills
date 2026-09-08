@@ -35,7 +35,7 @@ for (const name of readdirSync(root).filter(name => name.endsWith('.html'))) {
   const html = read(name);
   const pageIds = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
   assert.equal(new Set(pageIds).size, pageIds.length, `${name}: unique anchors`);
-  const version = '20260904-layout-consent';
+  const version = '20260908-quote-registration';
   assert.ok(html.includes(`index.js?v=${version}`), `${name}: current shared script`);
   assert.ok(html.includes(`index.css?v=${version}`), `${name}: current styles`);
   assert.doesNotMatch(html, /11:00|4:00 p\.m\.|4:00 PM|10:45|T16:00/);
@@ -81,6 +81,9 @@ assert.match(css, /\.home-speaker-card > :is\([^}]+flex: 0 0 auto;[^}]+height: a
 assert.match(css, /\.home-speaker-card \.speaker-copy\s*\{[^}]*flex: 1 0 auto;/);
 assert.match(css, /\.speaker-list-section\s*\{[^}]*background: #fff;/);
 assert.match(css, /#what-is-tedx\.flow-background::before\s*\{[^}]*rgba\(3, 5, 12, \.80\)/);
+const registrationBannerRule = css.match(/\.registration-banner\s*\{([\s\S]*?)\n\}/)[1];
+assert.doesNotMatch(registrationBannerRule, /border-left/);
+assert.match(css, /\.registration-banner\[rt-liquid-glass\]\s*\{[\s\S]*?rgba\(20, 15, 17, \.34\)/);
 assert.match(source, /querySelectorAll\("\.speaker-list-section"\)/);
 for (const [, asset] of css.matchAll(/url\("([^"#]+)"\)/g)) {
   assert.ok(existsSync(resolve(root, 'static/css', asset)), `Stylesheet asset: ${asset}`);
@@ -98,7 +101,7 @@ for (let index = 0; index < count; index++) {
   const initial = stateContext.quoteWordState(0, index, count);
   assert.equal(initial.y, -1);
   assert.equal(initial.opacity, 0);
-  for (const progress of [.365, .45, .55, .60]) {
+  for (const progress of [.425, .48, .55, .61]) {
     const state = stateContext.quoteWordState(progress, index, count);
     assert.equal(state.y, 0, 'every word settles during the readable pause');
     assert.equal(state.opacity, 1);
@@ -181,7 +184,7 @@ function controller({ reduced = false, viewport = 900, paragraphHeight = 420 } =
 
 const normal = controller();
 assert.ok(normal.section.classList.contains('is-scroll-animated'));
-assert.equal(parseFloat(normal.section.style['--quote-travel']), (900 - 72) * .9);
+assert.equal(parseFloat(normal.section.style['--quote-travel']), (900 - 72) * 1.05);
 assert.ok(!normal.section.classList.contains('is-quote-active'), 'gradient pauses offscreen');
 normal.scroll(.5);
 assert.ok(normal.section.classList.contains('is-quote-active'), 'gradient runs while visible');

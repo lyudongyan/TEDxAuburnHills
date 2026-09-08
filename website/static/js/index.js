@@ -436,13 +436,13 @@ function setupScrollEffects() {
   window.addEventListener("resize", requestUpdate, { passive: true });
 }
 
-// The word sequence uses about 1.3 viewports of natural scrolling.
+// The word sequence uses about 1.45 viewports of natural scrolling.
 // Keep a shared readable plateau between the staggered entrance and exit.
 function quoteWordState(progress, index, count) {
   const clamp = value => Math.max(0, Math.min(1, value));
   const stagger = index / Math.max(1, count - 1);
-  const entering = clamp((progress - stagger * .12) / .24);
-  const leaving = clamp((progress - .60 - stagger * .14) / .24);
+  const entering = clamp((progress - stagger * .14) / .28);
+  const leaving = clamp((progress - .61 - stagger * .14) / .24);
   const dropIn = 1 - Math.pow(1 - entering, 4);
   const dropOut = leaving * leaving * leaving;
   const stretch = Math.sin(entering * Math.PI) - Math.sin(leaving * Math.PI);
@@ -503,7 +503,7 @@ function setupScrollQuote() {
     top = parseFloat(getComputedStyle(section).getPropertyValue("--quote-top"));
     // Short viewports fall back to static type instead of clipping the quote.
     height = Math.max(0, document.documentElement.clientHeight - top);
-    travel = Math.min(840, height * .90);
+    travel = Math.min(960, height * 1.05);
     section.style.setProperty("--quote-height", `${height}px`);
     section.style.setProperty("--quote-travel", `${travel}px`);
     const style = getComputedStyle(stage);
