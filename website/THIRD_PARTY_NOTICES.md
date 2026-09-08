@@ -42,12 +42,19 @@ profiles for layout review:
 - Michigan State University Federal Credit Union logo:
   https://media.msufcu.org/publicsites/publicsite/graphics/msufcu/msufcuLogo.svg
   (`assets/images/msufcu-logo.svg`)
-- Janilla Lee: https://asiancentersemi.org/about-us/board-of-directors/
-  (`assets/images/janilla-lee-official.jpg`)
+- Janilla Lee portrait supplied directly by the event organizer
+  (`assets/images/janilla-lee-supplied.png`), copied without modification from
+  `Janilla.png` in the project root. The previous portrait is retained as an
+  unused legacy asset.
 - Ahmad Tafti: https://www.shrs.pitt.edu/person/ahmad-tafti/
   (`assets/images/ahmad-tafti-official.jpg`)
-- Amartya Sen: https://sites.google.com/oakland.edu/sen
-  (`assets/images/amartya-sen-official.jpg`)
+- Amartya Sen portrait supplied directly by the event organizer
+  (`assets/images/amartya-sen-supplied.png`), copied without modification from
+  `Sen.png` in the project root. The previous portrait is retained as an unused
+  legacy asset.
+- Zelora Farmer portrait supplied directly by the event organizer
+  (`assets/images/zelora-farmer-supplied.png`), copied without modification from
+  `Zelora.png` in the project root.
 - Khalid Mirza portrait supplied directly by the event organizer
   (`assets/images/khalid-mirza-official.jpg`)
 - Pavan Muzumdar: https://automationalley.com/our-team/

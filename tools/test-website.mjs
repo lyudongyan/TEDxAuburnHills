@@ -7,17 +7,32 @@ import vm from 'node:vm';
 const root = fileURLToPath(new URL('../website/', import.meta.url));
 const read = name => readFileSync(join(root, name), 'utf8');
 const home = read('index.html');
+const speakers = read('speakers.html');
 const source = read('static/js/index.js');
 const quoteText = 'Find out how every member of our community can adopt new tools to thrive, with curated speakers across AI, medicine, cybersecurity, art, neuroscience, history, recreation, and more.';
+const zeloraBiography = 'Zelora Farmer is a disabled artist, direct care worker, and longtime advocate for people with disabilities. She has worked closely with autistic individuals and others with disabilities, both professionally and while supporting loved ones in her own life. Her experiences across art, caregiving, and disability advocacy shape the perspective she brings to the TEDx stage.';
 const ids = [...home.matchAll(/<section\b[^>]*\bid="([^"]+)"/g)].map(match => match[1]);
 assert.deepEqual(ids, ['home', 'why-retooled', 'register', 'speakers-preview', 'community', 'home-venue-map', 'what-is-tedx', 'participate']);
 assert.equal(home.split(quoteText).length - 1, 1);
 assert.ok(!home.includes('About Retooling'));
 assert.equal([...home.matchAll(/<article class="home-speaker-card"/g)].length, 12);
-assert.doesNotMatch(home + read('speakers.html'), /darin-weiss-official\.(jpg|webp)/);
+assert.doesNotMatch(home + speakers, /darin-weiss-official\.(jpg|webp)/);
 assert.equal([...home.matchAll(/darin-weiss-supplied\.webp/g)].length, 2);
-assert.equal([...read('speakers.html').matchAll(/darin-weiss-supplied\.webp/g)].length, 4);
+assert.equal([...speakers.matchAll(/darin-weiss-supplied\.webp/g)].length, 4);
 assert.deepEqual(readFileSync(join(root, 'assets/images/darin-weiss-supplied.webp')), readFileSync(resolve(root, '../DarinWeiss Image for homepage.webp')), 'new Darin portrait is preserved exactly');
+const speakerMarkup = home + speakers;
+assert.doesNotMatch(speakerMarkup, /(?:janilla-lee-official\.(?:avif|webp|jpg)|amartya-sen-official\.jpg)/);
+for (const [asset, original] of [
+  ['janilla-lee-supplied.png', 'Janilla.png'],
+  ['amartya-sen-supplied.png', 'Sen.png'],
+  ['zelora-farmer-supplied.png', 'Zelora.png']
+]) {
+  assert.equal([...speakerMarkup.matchAll(new RegExp(asset.replace('.', '\\.'), 'g'))].length, 3, `${asset}: homepage, directory, and profile use the supplied image`);
+  assert.deepEqual(readFileSync(join(root, 'assets/images', asset)), readFileSync(resolve(root, '..', original)), `${asset}: supplied image is preserved exactly`);
+}
+assert.equal(speakers.split(zeloraBiography).length - 1, 1, 'Zelora biography appears once');
+const zeloraProfile = speakers.match(/id="zelora-farmer"[\s\S]*?<\/section>/)[0];
+assert.doesNotMatch(zeloraProfile, /portrait-placeholder/);
 
 const graph = JSON.parse(home.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1])['@graph'];
 const event = graph.find(item => item['@type'] === 'Event');
