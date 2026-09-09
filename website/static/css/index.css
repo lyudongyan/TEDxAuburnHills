@@ -2404,6 +2404,41 @@ textarea {
   margin-top: 14px;
 }
 
+/* Keep the portrait track compact in both speaker-card orientations. */
+@media (min-width: 821px) {
+  .speaker-profile .profile-card {
+    min-height: 520px;
+    grid-template-columns: minmax(240px, 340px) minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(34px, 5vw, 72px);
+  }
+
+  .speaker-profile.profile-reverse .profile-card {
+    grid-template-columns: minmax(0, 1fr) minmax(240px, 340px);
+  }
+
+  .speaker-profile .profile-visual {
+    width: 100%;
+    height: clamp(400px, 35vw, 470px);
+    min-height: 0;
+    max-height: none;
+    align-self: center;
+  }
+
+  .speaker-profile .profile-photo,
+  .speaker-profile .profile-placeholder {
+    height: 100%;
+    min-height: 0;
+    max-height: none;
+  }
+
+  .speaker-profile .profile-copy {
+    min-width: 0;
+    padding-right: clamp(12px, 2.5vw, 34px);
+    padding-left: clamp(12px, 2.5vw, 34px);
+  }
+}
+
 .schedule-journey {
   min-height: 1700px;
 }
@@ -3001,6 +3036,19 @@ textarea {
 
   .profile-copy {
     padding: 26px 14px 34px;
+  }
+
+  .speaker-profile .profile-visual {
+    height: clamp(340px, 112vw, 460px);
+    min-height: 0;
+    max-height: none;
+  }
+
+  .speaker-profile .profile-photo,
+  .speaker-profile .profile-placeholder {
+    height: 100%;
+    min-height: 0;
+    max-height: none;
   }
 
   .timeline {

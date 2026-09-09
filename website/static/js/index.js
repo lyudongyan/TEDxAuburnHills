@@ -1,6 +1,6 @@
 document.documentElement.classList.add("js");
 
-const siteRevision = "20260909-canonical-type";
+const siteRevision = "20260909-speaker-balance";
 const pages = [
   ["home", "Home", `./?v=${siteRevision}`],
   ["speakers", "Speakers", `speakers.html?v=${siteRevision}`],
