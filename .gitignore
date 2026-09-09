@@ -1,2 +1,6 @@
 .git-backups/
 poster-build/node_modules/
+__pycache__/
+*.pyc
+outputs/
+tmp/

@@ -16,7 +16,8 @@
   `assets/images/rochester-hills-supplied-2.jpg`
 - Optimized copies: matching `.avif` files, with the original JPEG files kept
   as browser fallbacks.
-- Source: supplied directly in the project root by the site owner.
+- Source originals: `source-assets/backgrounds/Rochester Hills Background 1.jpg`
+  and `source-assets/backgrounds/Rochester Hills Background 2.jpg`.
 - License and photographer: to be verified by the site owner before launch.
 - Changes: responsive cropping, overlays, and color treatments are applied by
   the site styles. Optimized web copies may also be generated locally.
@@ -26,7 +27,7 @@
 
 ## User-supplied TED stage background
 
-- Original supplied in the project root: `TED about section background.webp`.
+- Original: `source-assets/backgrounds/TED about section background.webp`.
 - Website copy: `assets/images/ted-stage-supplied.webp`.
 - Source: supplied directly by the site owner; the original is preserved.
 - Photographer and usage rights: not provided with the file.
@@ -47,24 +48,24 @@ profiles for layout review:
   (`assets/images/msufcu-logo.svg`)
 - Janilla Lee portrait supplied directly by the event organizer
   (`assets/images/janilla-lee-supplied.png`), copied without modification from
-  `Janilla.png` in the project root. The previous portrait is retained as an
+  `source-assets/portraits/Janilla.png`. The previous portrait is retained as an
   unused legacy asset.
 - Ahmad Tafti: https://www.shrs.pitt.edu/person/ahmad-tafti/
   (`assets/images/ahmad-tafti-official.jpg`)
 - Amartya Sen portrait supplied directly by the event organizer
   (`assets/images/amartya-sen-supplied.png`), copied without modification from
-  `Sen.png` in the project root. The previous portrait is retained as an unused
+  `source-assets/portraits/Sen.png`. The previous portrait is retained as an unused
   legacy asset.
 - Zelora Farmer portrait supplied directly by the event organizer
   (`assets/images/zelora-farmer-supplied.png`), copied without modification from
-  `Zelora.png` in the project root.
+  `source-assets/portraits/Zelora.png`.
 - Khalid Mirza portrait supplied directly by the event organizer
   (`assets/images/khalid-mirza-official.jpg`)
 - Pavan Muzumdar: https://automationalley.com/our-team/
   (`assets/images/pavan-muzumdar-official.jpg`)
 - Darin Weiss portrait supplied directly by the event organizer
   (`assets/images/darin-weiss-supplied.webp`), copied without modification from
-  `DarinWeiss Image for homepage.webp` in the project root. The previous Grace
+  `source-assets/portraits/DarinWeiss Image for homepage.webp`. The previous Grace
   Centers of Hope portrait is retained as an unused legacy asset.
 - Debbie Wertz: https://www.ccwaterford.org/our-team-board
   (`assets/images/debbie-wertz-official.jpg`)
@@ -80,7 +81,7 @@ supplied WebP image in both directories and his full profile.
 
 - Lyudong Yan portrait supplied directly by the event organizer
   (`assets/images/lyudong-yan-supplied.png`), copied without modification from
-  `Lyudong Yan.png` in the project root.
+  `source-assets/portraits/Lyudong Yan.png`.
 
 ## rt-liquid-glass 1.0.2
 

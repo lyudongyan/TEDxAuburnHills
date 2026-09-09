@@ -1,7 +1,7 @@
 import { FileBlob, PresentationFile } from "@oai/artifact-tool";
 
 const deck = await PresentationFile.importPptx(
-  await FileBlob.load("C:/Users/Lyuwen Yan/Documents/TEDxAuburnHills/Example Poster.pptx"),
+  await FileBlob.load("C:/Users/Lyuwen Yan/Documents/TEDxAuburnHills/source-assets/references/Example Poster.pptx"),
 );
 
 for (const id of [

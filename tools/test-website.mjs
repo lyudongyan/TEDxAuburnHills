@@ -24,13 +24,13 @@ assert.equal([...home.matchAll(/<article class="home-speaker-card"/g)].length, 1
 assert.doesNotMatch(home + speakers, /darin-weiss-official\.(jpg|webp)/);
 assert.equal([...home.matchAll(/darin-weiss-supplied\.webp/g)].length, 2);
 assert.equal([...speakers.matchAll(/darin-weiss-supplied\.webp/g)].length, 4);
-assert.deepEqual(readFileSync(join(root, 'assets/images/darin-weiss-supplied.webp')), readFileSync(resolve(root, '../DarinWeiss Image for homepage.webp')), 'new Darin portrait is preserved exactly');
+assert.deepEqual(readFileSync(join(root, 'assets/images/darin-weiss-supplied.webp')), readFileSync(resolve(root, '../source-assets/portraits/DarinWeiss Image for homepage.webp')), 'new Darin portrait is preserved exactly');
 const speakerMarkup = home + speakers;
 assert.doesNotMatch(speakerMarkup, /(?:janilla-lee-official\.(?:avif|webp|jpg)|amartya-sen-official\.jpg)/);
 for (const [asset, original] of [
-  ['janilla-lee-supplied.png', 'Janilla.png'],
-  ['amartya-sen-supplied.png', 'Sen.png'],
-  ['zelora-farmer-supplied.png', 'Zelora.png']
+  ['janilla-lee-supplied.png', 'source-assets/portraits/Janilla.png'],
+  ['amartya-sen-supplied.png', 'source-assets/portraits/Sen.png'],
+  ['zelora-farmer-supplied.png', 'source-assets/portraits/Zelora.png']
 ]) {
   assert.equal([...speakerMarkup.matchAll(new RegExp(asset.replace('.', '\\.'), 'g'))].length, 3, `${asset}: homepage, directory, and profile use the supplied image`);
   assert.deepEqual(readFileSync(join(root, 'assets/images', asset)), readFileSync(resolve(root, '..', original)), `${asset}: supplied image is preserved exactly`);
@@ -42,11 +42,12 @@ assert.equal(team.split(organizerBiography).length - 1, 1, 'organizer biography 
 assert.match(team, /<p class="card-kicker">Organizer<\/p>[\s\S]*?<h2>Lyudong Yan<\/h2>/);
 assert.match(team, /<p class="card-kicker">Co-organizer<\/p>\s*<h2>Raina Li<\/h2>/);
 for (const name of ['Zeyad Karichiwala', 'Peter Wang', 'Joanne Lien', 'Himawari Ishihara', 'Cindy Lee', 'Yewon Lee']) {
-  assert.equal(team.split(`role="listitem">${name}<`).length - 1, 1, `${name}: listed once`);
+  assert.equal(team.split(`<li>${name}</li>`).length - 1, 1, `${name}: listed once`);
 }
 assert.match(team, /href="mailto:lyudongyan@gmail\.com">lyudongyan@gmail\.com<\/a>/);
-assert.deepEqual(readFileSync(join(root, 'assets/images/lyudong-yan-supplied.png')), readFileSync(resolve(root, '../Lyudong Yan.png')), 'organizer portrait is preserved exactly');
-assert.deepEqual([...team.matchAll(/<section\b[^>]*\bid="([^"]+)"/g)].map(match => match[1]), ['team-top', 'organizer', 'co-organizer', 'volunteers', 'organizer-contact']);
+assert.deepEqual(readFileSync(join(root, 'assets/images/lyudong-yan-supplied.png')), readFileSync(resolve(root, '../source-assets/portraits/Lyudong Yan.png')), 'organizer portrait is preserved exactly');
+assert.deepEqual([...team.matchAll(/<section\b[^>]*\bid="([^"]+)"/g)].map(match => match[1]), ['team-top', 'organizer', 'team-roster', 'organizer-contact']);
+assert.match(team, /id="team-roster"[\s\S]*?compact-team-layout[\s\S]*?co-organizer-card[\s\S]*?volunteer-list-card/);
 
 const graph = JSON.parse(home.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1])['@graph'];
 const event = graph.find(item => item['@type'] === 'Event');
@@ -55,6 +56,10 @@ assert.equal(event.endDate, '2026-10-10T15:00:00-04:00');
 const schedule = read('schedule.html');
 assert.match(schedule, /<meta name="robots" content="noindex, nofollow">/);
 assert.match(source, /const visiblePages = pages\.filter\(\(\[key\]\) => key !== "schedule"\);/);
+assert.match(source, /const siteRevision = "20260909-canonical-type";/);
+assert.match(source, /\["home", "Home", `\.\/\?v=\$\{siteRevision\}`\]/);
+assert.match(source, /class="conference-brand" href="\$\{pages\[0\]\[2\]\}"/);
+assert.doesNotMatch(source, /href="index\.html"/);
 assert.doesNotMatch(read('sitemap.xml') + read('llms.txt'), /schedule\.html/);
 const footerMarkup = source.slice(source.indexOf('function buildFooter('), source.indexOf('function buildPageFlow('));
 assert.doesNotMatch(footerMarkup, /5:00 p\.m\./);
@@ -71,7 +76,7 @@ for (const name of readdirSync(root).filter(name => name.endsWith('.html'))) {
   const html = read(name);
   const pageIds = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
   assert.equal(new Set(pageIds).size, pageIds.length, `${name}: unique anchors`);
-  const version = '20260908-organizers-navigation';
+  const version = '20260909-canonical-type';
   assert.ok(html.includes(`index.js?v=${version}`), `${name}: current shared script`);
   assert.ok(html.includes(`index.css?v=${version}`), `${name}: current styles`);
   assert.doesNotMatch(html, /11:00|4:00 p\.m\.|4:00 PM|10:45|T16:00/);
@@ -117,6 +122,12 @@ assert.match(css, /\.page-next a:hover,[\s\S]*?background: var\(--red\);/);
 assert.match(css, /\.page-next a:hover \.page-next-arrow,[\s\S]*?color: #383335;/);
 assert.match(css, /\.page-nav a,[\s\S]*?\.anchor-nav a\s*\{\s*font-size: \.94rem;/);
 assert.match(css, /\.card-kicker,[\s\S]*?\.page-next-copy span\s*\{\s*font-size: \.88rem;/);
+assert.match(css, /Garamond body copy[\s\S]*?body\s*\{\s*font-size: 23px;/);
+assert.match(css, /\.hero-context\s*\{[^}]*font-size: clamp\(1\.42rem, 2vw, 1\.65rem\);/);
+assert.match(css, /\.registration-callout h2 \+ p\s*\{[^}]*font-size: clamp\(1\.42rem, 1\.85vw, 1\.62rem\);/);
+assert.match(css, /#organizer\.image-band::before\s*\{[^}]*rgba\(5, 5, 9, \.76\)/);
+assert.match(css, /\.compact-team-layout\s*\{[^}]*grid-template-columns: minmax\(250px, \.78fr\) minmax\(0, 1\.22fr\)/);
+assert.match(css, /\.volunteer-list\s*\{[^}]*grid-template-columns: repeat\(2, minmax\(0, 1fr\)\)/);
 assert.ok(!existsSync(join(root, 'partners.html')));
 assert.doesNotMatch(read('sitemap.xml') + read('llms.txt') + source, /partners\.html/);
 assert.match(css, /\.home-speaker-grid\s*\{[^}]*grid-auto-rows: 1fr/);
@@ -132,7 +143,7 @@ for (const [, asset] of css.matchAll(/url\("([^"#]+)"\)/g)) {
   assert.ok(existsSync(resolve(root, 'static/css', asset)), `Stylesheet asset: ${asset}`);
 }
 assert.match(home, /id="what-is-tedx" data-backdrop="ted-stage"/);
-assert.deepEqual(readFileSync(join(root, 'assets/images/ted-stage-supplied.webp')), readFileSync(resolve(root, '../TED about section background.webp')), 'supplied image is copied without alteration');
+assert.deepEqual(readFileSync(join(root, 'assets/images/ted-stage-supplied.webp')), readFileSync(resolve(root, '../source-assets/backgrounds/TED about section background.webp')), 'supplied image is copied without alteration');
 console.log('Page order, varied backgrounds, original image, quote, speaker count, links, cache versions, and event hours passed.');
 
 // Test the scroll controller without a browser or animation dependencies.

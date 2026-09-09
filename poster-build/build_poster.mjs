@@ -4,8 +4,9 @@ import { FileBlob, PresentationFile } from "@oai/artifact-tool";
 
 const ROOT = "C:/Users/Lyuwen Yan/Documents/TEDxAuburnHills";
 const BUILD = path.join(ROOT, "poster-build");
+const OUTPUT = path.join(ROOT, "poster-output");
 const SOURCE = path.join(BUILD, "template-starter.pptx");
-const FINAL = path.join(ROOT, "TEDxAuburnHills Poster.pptx");
+const FINAL = path.join(OUTPUT, "TEDxAuburnHills Poster.pptx");
 
 const RED = "#EB0028";
 const RED_DEEP = "#B0001E";
@@ -305,8 +306,8 @@ setFill(93, "none", { style: "solid", fill: "none", width: 0 });
 setText(91, "EVENT\nWEBSITE", { fontSize: 36, bold: true, color: WHITE, alignment: "center" });
 setText(94, "FREE\nREGISTRATION", { fontSize: 34, bold: true, color: WHITE, alignment: "center" });
 for (const id of [142, 143, 144]) clearShape(id);
-await setImageFill(142, path.join(ROOT, "httpslyudongyan.github.ioTEDxAuburnHills QR CODE.png"), "image/png");
-await setImageFill(143, path.join(ROOT, "httpswww.signupgenius.comgo10C0444AAAA2FA1FDC25-64827609-attendee QR CODE.png"), "image/png");
+await setImageFill(142, path.join(ROOT, "source-assets/qr-codes/httpslyudongyan.github.ioTEDxAuburnHills QR CODE.png"), "image/png");
+await setImageFill(143, path.join(ROOT, "source-assets/qr-codes/httpswww.signupgenius.comgo10C0444AAAA2FA1FDC25-64827609-attendee QR CODE.png"), "image/png");
 
 // Attendance callout.
 setText(120, "Attend in person", { fontSize: 56, bold: true, color: RED_DEEP, letterSpacing: -1 });
@@ -348,13 +349,13 @@ setText(151, "", { fontSize: 1, color: WHITE });
 
 slide.speakerNotes.textFrame.setText(
   "[Sources]\n" +
-  "- Template: C:/Users/Lyuwen Yan/Documents/TEDxAuburnHills/Example Poster.pptx\n" +
+  "- Template: source-assets/references/Example Poster.pptx\n" +
   "- Event theme, date, time, speakers, and public-event details: website/index.html, website/about.html, website/attend.html, website/schedule.html\n" +
   "- Website typography, palette, and wordmark treatment: website/static/css/index.css and website/static/js/index.js\n" +
   "- Body photo: website/assets/images/rochester-hills-spencer-park.jpg\n" +
   "- Speaker portraits: website/assets/images/*-official.jpg (six announced speakers)\n" +
   "- Top-right artwork: website/assets/images/flow-background.jpg\n" +
-  "- QR codes: user-supplied PNG files in the workspace root\n" +
+  "- QR codes: source-assets/qr-codes/\n" +
   "[/Sources]",
 );
 

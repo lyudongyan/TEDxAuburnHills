@@ -1,11 +1,12 @@
 document.documentElement.classList.add("js");
 
+const siteRevision = "20260909-canonical-type";
 const pages = [
-  ["home", "Home", "index.html"],
-  ["speakers", "Speakers", "speakers.html"],
-  ["schedule", "Schedule", "schedule.html"],
-  ["attend", "Attend", "attend.html"],
-  ["team", "Organizers", "team.html"]
+  ["home", "Home", `./?v=${siteRevision}`],
+  ["speakers", "Speakers", `speakers.html?v=${siteRevision}`],
+  ["schedule", "Schedule", `schedule.html?v=${siteRevision}`],
+  ["attend", "Attend", `attend.html?v=${siteRevision}`],
+  ["team", "Organizers", `team.html?v=${siteRevision}`]
 ];
 const visiblePages = pages.filter(([key]) => key !== "schedule");
 
@@ -51,8 +52,7 @@ const pageSections = {
   team: [
     ["Overview", "#team-top"],
     ["Organizer", "#organizer"],
-    ["Co-organizer", "#co-organizer"],
-    ["Volunteers", "#volunteers"],
+    ["Team", "#team-roster"],
     ["Contact", "#organizer-contact"]
   ]
 };
@@ -83,7 +83,7 @@ function buildHeader() {
         </div>
       </div>
       <div class="conference-header" rt-liquid-glass rt-liquid-glass-blur="11" rt-liquid-glass-scale="30" rt-liquid-glass-map="512" rt-liquid-glass-tint="rgba(255,255,255,.36)">
-        <a class="conference-brand" href="index.html" aria-label="TEDxAuburnHills home">
+        <a class="conference-brand" href="${pages[0][2]}" aria-label="TEDxAuburnHills home">
           <span class="brand-copy">
             <span class="brand-line"><span class="tedx">TEDx</span><span class="place">AuburnHills</span></span>
             <small>x = independently organized TED event</small>
@@ -285,7 +285,8 @@ function setupRevealMotion() {
     ".profile-card",
     ".organizer-profile-card",
     ".co-organizer-card",
-    ".volunteer-grid p",
+    ".volunteer-list-card",
+    ".volunteer-list li",
     ".simple-contact-card",
     ".team-card",
     ".contact-card",
