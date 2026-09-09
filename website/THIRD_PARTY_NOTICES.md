@@ -20,6 +20,9 @@
 - License and photographer: to be verified by the site owner before launch.
 - Changes: responsive cropping, overlays, and color treatments are applied by
   the site styles. Optimized web copies may also be generated locally.
+- Current use: the first Rochester Hills image remains active. The second is
+  retained as an unused legacy asset after its sections were changed to the
+  supplied TED stage image.
 
 ## User-supplied TED stage background
 
@@ -72,6 +75,12 @@ speaker or source organization before public launch.
 Optimized `.avif` and `.webp` copies are used when available; the listed JPEG
 files remain the fallbacks. Darin Weiss's replacement is served directly as the
 supplied WebP image in both directories and his full profile.
+
+## Organizer profile image
+
+- Lyudong Yan portrait supplied directly by the event organizer
+  (`assets/images/lyudong-yan-supplied.png`), copied without modification from
+  `Lyudong Yan.png` in the project root.
 
 ## rt-liquid-glass 1.0.2
 

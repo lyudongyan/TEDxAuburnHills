@@ -7,7 +7,7 @@ different tools.**
 
 - Home
 - Speakers
-- Schedule
+- Schedule (draft retained, hidden from public navigation and search)
 - Attend
 - Organizers
 - Organizer contact details
@@ -44,7 +44,7 @@ make room for longer text. Equal-height grid rows let copy expand without
 truncation while keeping every card and text area aligned.
 
 The site includes confirmed event details, the official TED listing, twelve
-speaker profiles, the event schedule, organizer contact information,
+speaker profiles, a private draft event schedule, organizer contact information,
 accessibility information, an interactive venue map, and downloadable parking
 instructions.
 

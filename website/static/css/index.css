@@ -30,10 +30,7 @@
     url("../../assets/images/rochester-hills-supplied-1.avif") type("image/avif") 1x,
     url("../../assets/images/rochester-hills-supplied-1.jpg") type("image/jpeg") 1x
   );
-  --photo-rochester-two: image-set(
-    url("../../assets/images/rochester-hills-supplied-2.avif") type("image/avif") 1x,
-    url("../../assets/images/rochester-hills-supplied-2.jpg") type("image/jpeg") 1x
-  );
+  --photo-dark-ted: url("../../assets/images/ted-stage-supplied.webp");
   --photo-schedule: image-set(
     url("../../assets/images/schedule-flow.avif") type("image/avif") 1x,
     url("../../assets/images/schedule-flow.webp") type("image/webp") 1x,
@@ -831,7 +828,7 @@ body.is-ready .title-word {
 #session-format,
 #opportunities,
 #official-event {
-  --section-photo: var(--photo-rochester-two);
+  --section-photo: var(--photo-dark-ted);
   --section-photo-position: center 62%;
 }
 
@@ -845,7 +842,7 @@ body.is-ready .title-word {
 #participate,
 #additional-speakers,
 #partner-contact {
-  --section-photo: var(--photo-rochester-two);
+  --section-photo: var(--photo-dark-ted);
   --section-photo-position: center 48%;
 }
 
@@ -1355,6 +1352,108 @@ body.is-ready .title-word {
 
 .team-card .portrait-placeholder {
   min-height: 230px;
+}
+
+.organizer-profile-section {
+  min-height: 620px;
+}
+
+.organizer-profile-card {
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: minmax(280px, .76fr) minmax(0, 1.24fr);
+  align-items: stretch;
+  gap: clamp(24px, 4.5vw, 64px);
+  padding: clamp(18px, 2.3vw, 28px);
+  overflow: hidden;
+  border-radius: 32px;
+}
+
+.organizer-profile-visual {
+  min-height: 430px;
+  overflow: hidden;
+  border-radius: 23px;
+}
+
+.organizer-profile-picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.organizer-profile-photo {
+  width: 100%;
+  height: 100%;
+  min-height: 430px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.organizer-profile-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(22px, 3.3vw, 48px) clamp(10px, 1.8vw, 24px);
+}
+
+.organizer-profile-copy .card-kicker,
+.co-organizer-card .card-kicker {
+  color: var(--red-deep);
+}
+
+.organizer-profile-copy h2,
+.co-organizer-card h2 {
+  margin: 10px 0 24px;
+  font-size: clamp(2.8rem, 4.7vw, 5.1rem);
+  line-height: .9;
+  text-wrap: balance;
+}
+
+.organizer-profile-copy > p:not(.card-kicker) {
+  max-width: 62ch;
+  font-size: clamp(1.03rem, 1.35vw, 1.17rem);
+  line-height: 1.58;
+}
+
+.co-organizer-card {
+  max-width: 920px;
+}
+
+.co-organizer-card h2 {
+  margin-bottom: 0;
+}
+
+.volunteer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.volunteer-grid p {
+  min-height: 92px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 22px 24px;
+  color: var(--ink);
+  border: 1px solid rgba(169, 29, 22, .17);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, .62);
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 1.8vw, 1.42rem);
+  font-weight: 650;
+  line-height: 1.2;
+}
+
+.simple-contact-card {
+  max-width: 920px;
+}
+
+.simple-contact-card > p {
+  max-width: 50ch;
+  margin-bottom: 24px;
+  font-size: clamp(1.05rem, 1.5vw, 1.22rem);
 }
 
 /* Schedule */
@@ -2002,7 +2101,7 @@ textarea {
 #kaiqi-zhao,
 #opportunities,
 #official-event {
-  --section-photo: var(--photo-rochester-two);
+  --section-photo: var(--photo-dark-ted);
   --section-photo-position: center 54%;
 }
 
@@ -2549,8 +2648,24 @@ textarea {
   .action-grid,
   .speaker-grid,
   .team-grid,
+  .volunteer-grid,
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .organizer-profile-card {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .organizer-profile-visual,
+  .organizer-profile-photo {
+    min-height: 390px;
+    max-height: 520px;
+  }
+
+  .organizer-profile-copy {
+    padding: 26px 14px 34px;
   }
 
   .compact-speaker-grid {
@@ -2884,6 +2999,21 @@ textarea {
   .profile-card {
     padding: 14px;
     border-radius: 24px;
+  }
+
+  .organizer-profile-card {
+    padding: 14px;
+    border-radius: 24px;
+  }
+
+  .organizer-profile-visual,
+  .organizer-profile-photo {
+    min-height: 320px;
+  }
+
+  .organizer-profile-copy h2,
+  .co-organizer-card h2 {
+    font-size: clamp(2.5rem, 12vw, 4rem);
   }
 
   .profile-visual,
@@ -3615,7 +3745,7 @@ body {
   background:
     radial-gradient(circle at 82% 8%, rgba(235, 0, 40, .42), transparent 30%),
     linear-gradient(112deg, rgba(15, 10, 12, .9), rgba(74, 4, 17, .66) 58%, rgba(15, 10, 12, .82)),
-    var(--photo-rochester-two) center 52% / cover no-repeat;
+    var(--photo-dark-ted) center 52% / cover no-repeat;
   border-top: 3px solid var(--red);
   border-bottom: 1px solid rgba(255, 255, 255, .16);
 }
@@ -4026,8 +4156,8 @@ body {
   --backdrop-image: var(--photo-rochester-one);
 }
 
-.content-section[data-backdrop="rochester-two"] {
-  --backdrop-image: var(--photo-rochester-two);
+.content-section[data-backdrop="dark-ted"] {
+  --backdrop-image: var(--photo-dark-ted);
 }
 
 .content-section[data-backdrop="spencer"] {
@@ -4237,4 +4367,75 @@ body.has-cookie-banner .registration-banner { visibility: hidden; pointer-events
   .parking-guide-image {
     border-radius: 20px;
   }
+}
+
+/* Keep secondary text close to the body scale throughout the site. */
+.utility-bar {
+  font-size: .84rem;
+  letter-spacing: .045em;
+}
+
+.brand-copy small {
+  font-size: .8rem;
+  letter-spacing: .035em;
+}
+
+.page-nav a,
+.anchor-nav a {
+  font-size: .94rem;
+}
+
+.anchor-title,
+.sidebar-meta,
+.photo-credit,
+.logo-placeholder,
+.portrait-placeholder,
+.placeholder-label {
+  font-size: .82rem;
+}
+
+.button,
+.text-link {
+  font-size: .96rem;
+}
+
+.card-kicker,
+.session-type,
+.speaker-order-note,
+.speaker-jump,
+.registration-eyebrow,
+.page-next-copy span {
+  font-size: .88rem;
+}
+
+.footer-inner strong {
+  font-size: .96rem;
+}
+
+.footer-address,
+.footer-settings {
+  margin-top: 26px;
+}
+
+.page-next a {
+  transition: background-color .35s var(--ease), color .35s var(--ease);
+}
+
+.page-next-arrow {
+  transition: transform .45s var(--ease), color .35s var(--ease);
+}
+
+.page-next a:hover,
+.page-next a:focus-visible {
+  background: var(--red);
+}
+
+.page-next a:hover .page-next-copy span,
+.page-next a:focus-visible .page-next-copy span {
+  color: var(--white);
+}
+
+.page-next a:hover .page-next-arrow,
+.page-next a:focus-visible .page-next-arrow {
+  color: #383335;
 }

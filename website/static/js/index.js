@@ -7,7 +7,7 @@ const pages = [
   ["attend", "Attend", "attend.html"],
   ["team", "Organizers", "team.html"]
 ];
-const visiblePages = pages;
+const visiblePages = pages.filter(([key]) => key !== "schedule");
 
 const pageSections = {
   home: [
@@ -50,9 +50,10 @@ const pageSections = {
   ],
   team: [
     ["Overview", "#team-top"],
-    ["Organizing Team", "#organizing-team"],
-    ["Email Us", "#organizer-contact"],
-    ["Production", "#production"]
+    ["Organizer", "#organizer"],
+    ["Co-organizer", "#co-organizer"],
+    ["Volunteers", "#volunteers"],
+    ["Contact", "#organizer-contact"]
   ]
 };
 
@@ -126,18 +127,19 @@ function buildFooter() {
         <div>
           <p class="footer-brand"><span class="tedx">TEDx</span><span class="place">AuburnHills</span></p>
           <p>Retooling: Same hands, different tools.</p>
+          <p class="footer-address">OU Pavilion<br>464 Golf View Lane<br>Rochester, Michigan 48309</p>
         </div>
         <div>
           <strong>Event</strong>
-          <p>October 10, 2026 &bull; 10:00 a.m.&ndash;3:00 p.m. Eastern time<br>Everyone must leave by 5:00 p.m.<br>OU Pavilion<br>464 Golf View Lane, Rochester, Michigan 48309</p>
+          <p>October 10, 2026<br>10:00 a.m.&ndash;3:00 p.m. Eastern time</p>
           <p><a href="https://www.signupgenius.com/go/10C0444AAAA2FA1FDC25-64827609-attendee#/" target="_blank" rel="noopener noreferrer">Register free</a></p>
           <p><a href="https://www.ted.com/tedx/events/69999" target="_blank" rel="noopener noreferrer">View the official TED event page</a></p>
           <p><a href="mailto:lyudongyan@gmail.com">Email the organizers</a></p>
-          <p><button class="cookie-settings" type="button" data-cookie-settings aria-controls="cookie-consent-banner">Cookie settings</button></p>
         </div>
         <div>
           <strong>Image credit</strong>
           <p><a href="https://commons.wikimedia.org/wiki/File:Autumn_at_Spencer_Park.jpg" target="_blank" rel="noopener noreferrer">Autumn at Spencer Park</a> by Olson.Sarah, resized and adapted under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.</p>
+          <p class="footer-settings"><button class="cookie-settings" type="button" data-cookie-settings aria-controls="cookie-consent-banner">Cookie settings</button></p>
         </div>
       </div>
       <div class="footer-legal">This independent TEDx event is operated under license from TED.</div>
@@ -281,6 +283,10 @@ function setupRevealMotion() {
     ".speaker-card",
     ".home-speaker-card",
     ".profile-card",
+    ".organizer-profile-card",
+    ".co-organizer-card",
+    ".volunteer-grid p",
+    ".simple-contact-card",
     ".team-card",
     ".contact-card",
     ".logo-placeholder",
